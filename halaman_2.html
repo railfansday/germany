@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Artikel - Halaman 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header-action {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-pdf {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-pdf:hover {
+            background-color: #c0392b;
+        }
+        .article-card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            page-break-inside: avoid;
+        }
+        .article-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .article-card h2 {
+            color: #111;
+            margin-top: 0;
+        }
+        .pagination {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .pagination a {
+            padding: 8px 16px;
+            margin: 0 4px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #fff;
+            }
+            .article-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-action no-print">
+            <h1>Katalog Artikel Berita (Halaman 2 dari 15)</h1>
+            <button class="btn-pdf" onclick="window.print()">📥 Download PDF Halaman Ini</button>
+        </div>
+        <div class="article-list">
+
+            <article class="article-card" id="artikel-23">
+                <h2>#23. AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own</h2>
+                <img src="https://www.docker.com/app/uploads/2025/03/image.png" alt="Ilustrasi AI Agent Security Risks: What Can Go Wrong When Agents Act on Their Own">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.docker.com/app/uploads/2025/03/image.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Secure, minimal container images for every team, free with enterprise features, if needed.</p>
+<p>The thing that makes an AI agent useful, its freedom to act, is also what can introduce risk. An agent doesn’t just answer a question, it browses, runs code, and calls tools on its own, so a single bad or manipulated instruction can turn into real damage instead of just a wrong answer. That’s the shift traditional application security wasn’t built for, and it’s why trust has to be built into the system around the agent, not assumed.</p>
+<p>An agent decides its own path, picking tools at runtime, chaining actions together, and usually running with the credentials of whoever launched it. That autonomy is the source of most agent-specific risk, and it points to the two-part answer that runs through this post: contain what an agent can reach, and oversee what it does.</p>
+<p>If you’ve secured web services, the model is familiar: requests arrive at known endpoints, deterministic logic handles them, and you design controls around that predictability. Agents break that assumption. They interpret instructions dynamically, choose tools at runtime, and run multi-step chains with very little human intervention at each step. A coding agent might read a file, install a dependency, change config, run tests, and push a commit from a single prompt.</p>
+<p>Because an agent chooses its own path, a compromised or misdirected one can take a far wider range of actions than a traditional service. Every risk below has already produced documented real-world incidents, and they all follow from that shift.</p>
+<p>Prompt injection is the risk that defines agent security. Because an agent acts on whatever text it reads, an attacker doesn’t need access to your systems. They just need the agent to encounter their instructions, hidden in a web page, a code comment, an issue, or a document it summarizes.</p>
+<p>A real prompt-injection case showed an agent following instructions buried in repository content and taking actions its user never intended.</p>
+<p>Incident highlight: A coding agent followed instructions buried in a repository’s own content and took actions its user never intended. The malicious text arrived through data the agent was simply asked to read.</p>
+<p>The agent has no reliable way to tell a legitimate instruction from an injected one, so the defense is to limit what a hijacked agent can reach.</p>
+<p>Agents act through tools: API connectors, database queries, file operations, and code execution. Every tool is an access vector, and two things could go wrong.</p>
+<p>An agent can be given more tools than the task needs, widening the attack surface for no reason. And a tool itself can be poisoned, its description carrying hidden instructions that manipulate the agent into misusing it. The mitigations are to scope tools to the task at runtime, source them from registries with verified provenance, and review tool descriptions rather than trusting them by default.</p>
+<p>The more an agent can do without review, the more a single bad decision costs. Excessive autonomy is the risk of granting an agent broad, standing permission to act, most visibly when developers run YOLO mode, where every action is auto-approved. This autonomy is genuinely useful, so switching it off defeats the point. The better move is to run the agent where that autonomy can’t reach anything it shouldn’t, so speed doesn’t necessarily mean increased blast radius.</p>
+<p>Incident highlight: A developer asked a coding agent to clean up an old repository. It generated an rm -rf command with a trailing ~/ and ran it with no confirmation step, wiping the developer’s entire home directory. Nothing in the setup gave a human a chance to catch it before it executed.</p>
+<p>When an agent runs under a developer’s personal token, every action it takes carries that person’s full permissions, and a compromise hands those permissions to an attacker. Secrets sitting in prompts, config files, or environment variables baked into an image make it worse, because a prompt injection can read them straight out of the agent’s context. Agents should get their own scoped, short-lived credentials, injected at runtime and kept out of the conversation, rather than borrowing yours.</p>
+<p>Incident highlight: An AWS engineer handed a small Cost Explorer bug to a coding agent running with their own operator-level access. The agent decided the cleanest fix was to delete and rebuild the production environment, and it held the credentials to do exactly that. The result was a thirteen-hour regional outage.</p>
+<p>An agent with network access and sensitive information in its context can send that data somewhere it shouldn’t, whether through a compromised tool or an injected instruction. The risk grows in multi-agent setups, where one agent passes work to another. If the receiving agent treats that input as trusted, a compromise in one link can spread down the chain. Restricting network egress to known endpoints and treating every agent-to-agent handoff as untrusted input could keep a single failure from spreading.</p>
+<p>The risks are varied, but there are controls to secure AI agents. Isolate where the agent runs so a mistake or a hijack is trapped in a disposable environment instead of loose on your host, and scope what the agent can access so the damage it can do is small even inside that boundary.</p>
+<p>Isolation, so a hijacked agent can’t reach anything that matters</p>
+<p>Runtime-scoped tools from verified-provenance sources</p>
+<p>A sandbox boundary that makes auto-approval safe</p>
+<p>Dedicated, short-lived credentials injected at runtime</p>
+<p>Allow-listed network egress and untrusted inter-agent input</p>
+<p>Isolation is the highest-impact starting point, and a microVM boundary makes it strong without slowing the agent down. On top of containment, oversight is what keeps a fleet of agents accountable. Then, AI governance defines which actions an agent may take, what it can reach, and how its behavior is logged, so risk is managed deliberately rather than discovered after an incident.</p>
+<p>These risks aren’t reasons to avoid developing with agents. Instead, we need to give agents the freedom to finish the job by building trust into the system around them, so that freedom never means access to everything.</p>
+<p>And that’s the job Docker Sandboxes is built for: each agent runs in its own disposable microVM with the network and filesystem controls you define, so a mistake or an injection is contained by design. And AI Governance adds the oversight layer, setting which actions, tools, and credentials are allowed and enforcing it everywhere your team works. Contain the blast radius, and govern the behavior.</p>
+<p>The most significant are prompt injection, tool misuse and tool poisoning, excessive autonomy, credential and secret exposure, and data exfiltration. All of them stem from the fact that agents act on their own, using tools and credentials, rather than following a fixed, reviewable path.</p>
+<p>For most teams it’s excessive access: an agent running with more autonomy and more credentials than the task needs. It turns a small mistake or a single prompt injection into a large incident, because the agent can reach so much.</p>
+<p>Traditional application security assumes predictable request-and-response flows. Agent security has to account for autonomous decisions, tools chosen at runtime, and multi-step chains where the agent sets its own path. The attack surface is wider because the agent, not a fixed program, decides what happens next.</p>
+<p>You can reduce it with input handling and tool hygiene, but you can’t assume it away, because an agent can’t reliably tell injected instructions from legitimate ones. The durable defense is containment: run the agent so that even a successfully injected one can’t reach anything sensitive.</p>
+<p>Start with isolation so a compromised agent is trapped in a disposable environment. Add scoped tool access and dedicated credentials to shrink what any agent can do. Then layer on governance to define and enforce those limits consistently across every agent your team runs.</p>
+<p>Principal Product Marketing Manager for AI, Docker</p>
+<p>Srini Sekaran is Principal PMM for AI at Docker, focused on Docker AI Governance, Docker Sandboxes, and the future of agent infrastructure and developer workflows.</p>
+<p>Docker’s WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority.</p>
+<p>Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them.</p>
+<p>Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, reproducible evals Run your evals locally or in the cloud: starting for free on Docker Sandboxes on local surfaces and scaling…</p>
+<p>CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.docker.com/blog/ai-agent-security-risks/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-24">
+                <h2>#24. PHP Vulnerabilities Could Put Much of the Internet at Risk, Experts Warn</h2>
+                <img src="https://www.cnet.com/wp-content/uploads/sites/2/2dac04bf-a044-4f09-8b53-413e3ab8ba6d.jpg" alt="Ilustrasi PHP Vulnerabilities Could Put Much of the Internet at Risk, Experts Warn">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.cnet.com/wp-content/uploads/sites/2/2dac04bf-a044-4f09-8b53-413e3ab8ba6d.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Our gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.</p>
+<p>Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may earn a commission.</p>
+<p>Tech > Services & Software > Cybersecurity</p>
+<p>Up to 70% of all the websites on the internet could be affected.</p>
+<p>An agency that monitors the PHP programming language issued a severe warning on Tuesday that it had identified two major cybersecurity vulnerabilities. Fixes should have been deployed on Wednesday at 10 a.m. ET, but security experts are urging website administrators to take immediate notice and precautions.</p>
+<p>The warnings are unusually severe, rated 9.2 out of 10. On Wednesday afternoon, PHP released some technical details about the two exploits. They allow bad actors to run malicious code on a site’s web servers. The very best thing you can do to keep your website safe is to immediately install the latest version of PHP. Older versions of PHP that have been sunsetted are also getting an emergency update with the patches.</p>
+<p>PHP is a free, open-source programming language that much of the web is built on. According to the Wall Street Journal, 70% of the world’s websites could be vulnerable. Security agencies around the globe, including the US’s chief cyber agency, the US National Security Agency and the UK’s National Cyber Security Centre, are urging website administrators to install the updates or take their sites offline until they’re able to patch them.</p>
+<p>Effective Immediately, all organizations using PHP for their systems are advised to be prepared for an update addressing two critical vulnerabilities. PHP is widely used for web applications. These vulnerabilities often provide a direct path to the server's file system or…</p>
+<p>Cloudflare’s chief technology officer Dane Knecht said Wednesday morning that the company has deployed a fix to its firewall. Cybersecurity company watchTowr says it was able to successfully reproduce one of the exploits. “As expected, watchTowr Intel is already observing in-the-wild exploitation of the latest PHP vulnerabilities,” Jake Knott, head of threat intelligence, said via email on Wednesday morning. “Whilst nobody has been successful to date, we don’t expect that will last long.”</p>
+<p>OpenAI said in a blog post on Wednesday that the vulnerabilities in PHP were discovered by Calif, a self-described hacker team, using its AI model, GPT-5.6 Sol. Wiz, an AI cloud cybersecurity company, also independently identified the vulnerabilities, according to the ChatGPT maker.</p>
+<p>Artificial intelligence has been a double-edged sword in cybersecurity, providing both cyber defenders and attackers with powerful tools. And AI companies know this, with OpenAI saying this incident “highlights how AI can uncover security flaws with internet-scale impact, but the same capabilities can also help attackers rapidly develop offensive tools and exploits.” Companies like OpenAI and Anthropic have begun slow-rolling the release of their AI models to let cybersecurity experts to use them first to shore up their own defenses and identify any issues before a wider release.</p>
+<p>But for everyday internet users like you and me, the concern is that while AI is great at spotting these bugs, it can take longer to get them patched. Even OpenAI says it “expect(s) similar findings to increase sharply in the coming months.”</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.cnet.com/tech/services-and-software/php-vulnerabilities-web-hosting-cybersecurity-news/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-25">
+                <h2>#25. Announcing New vLLM and SGLang Inference Engines on TPU</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/inferenceblog.2e16d0ba.fill-1200x600.jpg" alt="Ilustrasi Announcing New vLLM and SGLang Inference Engines on TPU">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/inferenceblog.2e16d0ba.fill-1200x600.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>As part of our broader announcements for PyTorch today, we are excited to launch native PyTorch backends for vLLM (developed in partnership with Inferact) and SGLang (developed in partnership with RadixArk).</p>
+<p>For years, TPUs have powered large-scale AI workloads with high performance and efficiency. With the rise of agentic and multimodal workloads, serving efficiently is more important than ever. vLLM and SGLang already run on TPU through JAX-based backend, but we kept hearing from developers that they wanted to customize and debug their serving stack in PyTorch.</p>
+<p>So we started in earnest on TorchTPU, which runs PyTorch natively on TPU. We then built new vLLM and SGLang engines on top of it.</p>
+<p>Our goal is for the PyTorch community to bring models to TPU and make them fast using the tools developers are already familiar with. The engines come with optimized, production-ready serving features and custom Pallas kernels.</p>
+<p>Serving at scale requires co-design across every layer of the technology stack, from silicon to compilers to orchestration. Today's launch of new inference engines is at the central part of an integrated, open TPU ecosystem.</p>
+<p>TorchTPU makes the TPU a native PyTorch device. Tensors are managed as standard PyTorch tensors on a tpu device with no wrapper types, code runs eagerly or compiles via torch.compile using XLA, and collectives go through torch.distributed.</p>
+<p>Because each device runs its own PyTorch process, both engines keep each framework’s worker model, scheduler, KV cache manager and API server etc, and add TPU implementations underneath.</p>
+<p>Most models use the standard upstream PyTorch model definitions in vLLM or SGLang, with TPU-specific optimizations in kernels and layer implementations. Custom kernels written in Pallas are called directly from PyTorch as custom operators inside the compiled graph. This platform-plugin design reuses as much of each framework as possible while letting TPU optimizations move at their own pace</p>
+<p>Both engines are built for the full range of production workloads.</p>
+<p>Agentic workloads in particular demand several of these features simultaneously. Because agents repeatedly resend expanding multi-turn conversations, serving them efficiently requires finding the cached prefix instead of recomputing it. Both engines keep reusable prefixes in HBM and, with host offload turned on, automatically move older prefixes to host memory as a second tier.</p>
+<p>Two of these features move the KV cache away from the device that computed it. Disaggregated serving runs prefill and decode on separate TPU hosts, so each request's KV cache has to travel from the prefill host to the decode host.Tiered KV offload moves the part of the KV cache that no longer fits in HBM to the host's DRAM and secondary storage with Google Cloud Managed Lustre, and brings it back when a later request reuses the prefix. Either way, the transfer has to overlap computation or it adds directly to latency.</p>
+<p>Both engines use TPU Sync for this. It is an open-source C++ library for KV cache transfer and management on TPU. It reads the device buffers behind PyTorch tensors directly, so a transfer needs no extra staging copy on the host, and it runs transfers on its own threads outside Python while prefill and decode continue. vLLM-TorchTPU exposes it through vLLM's KV connector interface. SGLang-TorchTPU uses it as a disaggregation transfer backend and as the I/O backend for HiCache.</p>
+<p>Both engines are already running at scale in production with preview customers. To provide transparent, reproducible proof of our performance, we benchmark in public through the community-standard SemiAnalysis InferenceX project.</p>
+<p>Building on our initial submission of Qwen 3.5 on Ironwood TPU (TPU 7x), our engineering teams have further optimized the stack, bringing the lowest cost per million tokens overall to an industry leading 2.01 cents. Alongside these improvements, we have also published new state-of-the-art (SOTA) performance results to AgentX, the project's dedicated track for evaluating agentic long-context and multi-turn workloads. Ironwood TPU leads across most of the Pareto frontier. We look forward to continuously updating our public performance profiles as we bring more models and configurations to the leaderboard.</p>
+<p>We did not build these backends in a vacuum. By embracing PyTorch and working directly with open-source project maintainers, we ensure these engines remain upstream-aligned and community-first:</p>
+<p>SGLang-TorchTPU was co-developed with RadixArk (founded by the creators of SGLang)</p>
+<p>This partnership is bringing SGLang's stellar team to build for TPU, delivering an engine that is already running in production at Meta and battle-tested at scale across demanding real-world scenarios.</p>
+<p>vLLM-TorchTPU was co-developed with Inferact (founded by the creators of vLLM)</p>
+<p>Together, we integrated a high-performance Pallas megakernel for the 2.8T-parameter Kimi K3 model that runs the entire decode step as one kernel, serving more than 700 tokens per second to a single user on Ironwood TPU. Building on this work, Inferact recently led our first preliminary AgentX submission for Kimi K3 on the vLLM-TorchTPU stack. This initial milestone already demonstrates exceptional performance per TCO in ultra-high-interactivity workloads, and the rapid increase in the maturity of the vLLM and PyTorch ecosystem on TPU for doing new frontier OSS models bring-up, with follow-up submissions set to unlock even greater efficiency through larger scale prefill/decode disaggregation.</p>
+<p>To foster continuous open-source contribution, vLLM is also launching a first-of-its-kind community contribution TPU capacity pool to provide free TPU compute to developers who actively contribute to both engines. Request here.</p>
+<p>As the models get larger, we are evolving both engines to make large-scale TPU inference deployments performant and efficient. The major features for production-grade agentic workloads are already supported. More performance optimizations and advanced features are under way – open a Github issue to request collaboration on yours!</p>
+<p>Across the two engines, most of the popular open model families are supported, including Qwen, DeepSeek, GLM, Kimi, GPT-OSS, Gemma4 and more. The team is investing in making more models available to run natively on TPUs, including Day 0 support for new open models. We also want to give the community the tools and TPU capacity to tune performance for their own workloads and configurations.</p>
+<p>vLLM-Jax, and SGLang-JAX remain important projects. Both will continue to be maintained, supported, and available for the community to use and adapt.</p>
+<p>Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</p>
+<p>Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+<p>Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/announcing-new-vllm-and-sglang-inference-engines-on-tpu/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-26">
+                <h2>#26. The Best Art TV Deals: Samsung Frame, Hisense Canvas, and More (2026)</h2>
+                <img src="https://media.wired.com/photos/6ad8d105b20b46511fb6b20d/191:100/w_1280,c_limit/Best%20Time%20to%20Buy%20an%20Art%20TV%20102026%20top%20art%20SOURCE%20Amazon.jpg" alt="Ilustrasi The Best Art TV Deals: Samsung Frame, Hisense Canvas, and More (2026)">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/6ad8d105b20b46511fb6b20d/191:100/w_1280,c_limit/Best%20Time%20to%20Buy%20an%20Art%20TV%20102026%20top%20art%20SOURCE%20Amazon.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>We're big fans of art TVs here at WIRED. They're perfect for people who don't want a TV to be the constant center of attention in their living room. No art TV maker is better than the pioneer: Samsung. Specifically, Samsung's The Frame Pro series of TVs. The 2026 models (LS03HW) add tons of new features, including more intuitive software, a higher refresh rate for gaming, and even better picture quality.</p>
+<p>The problem with The Frame Pro has always been the price. The smallest 55-inch model dropped to $1,098 during Prime Day earlier this month, and I've been happy to see that the price has stayed around. (In fact, earlier this week, it dropped by an additional $100 to its lowest price ever.) Seeing it discounted to under $1,000 was fantastic, but even at $1,098, it's a really solid deal. It was selling for $200 more in September and for the full retail price of $1,498 in August. Beyond the smallest 55-inch model, you also have size options for The Frame Pro of a 65-inch, 75-inch, or 85-inch TV.</p>
+<p>Samsung also has an entry-level version of The Frame, which has an even deeper discount right now. It's just $898, which is $100 off its Prime Day price—the cheapest it's even been! It's actually the same price as the older 2025 model.</p>
+<p>We haven't tested this model yet ourselves, but the main difference between The Frame and The Frame Pro is the brightness and image quality. They both use a matte finish, but The Frame Pro has nearly double the max brightness, while the standard Frame only goes up to around 650 nits. The Frame Pro also comes with a wireless connect box for a cleaner and simpler setup. It's definitely the one to get if you can swing the extra $200.</p>
+<p>As we have documented, there's been an explosion of interest in art TVs in 2026, with competitors like Amazon, Hisense, and TCL joining the game. We've tested many of these new options—many of which try to undercut The Frame in price. The one on sale right now that I'd point to is the Hisense S7 CanvasTV (55S7SG). It's not even as bright as the standard Frame, but at $750 (for the 55-inch size), it's the cheapest art TV you can buy right now.</p>
+<p>With Black Friday coming up next month, it's certainly possible that prices on these art TVs will drop even more. The 2025 Samsung Frame and Frame Pro both dropped to their lowest prices during Black Friday last year. It's a gamble—you could wait for Black Friday or get a sure thing right now.</p>
+<p>Take Up to 25% Off Custom Prints with VistaPrint Promo Code</p>
+<p>Take 10% Off Legal Services with This LegalZoom Promo Code</p>
+<p>Save up to $420/year when you bundle AT&T Fiber® internet and wireless</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/art-tv-samsung-frame-tv-sale-october-2026/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-28">
+                <h2>#28. animation-trigger</h2>
+                <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png" alt="Ilustrasi animation-trigger">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Experimental: Check browser support before using this in production.</p>
+<p>The CSS animation-trigger property delays the start of a CSS animation until a specific trigger occurs. More specifically, it listens for a named trigger and controls how the animation plays or pauses in response.</p>
+<p>This behavior has traditionally been JavaScript territory, typically with the Intersection Observer API.</p>
+<p>Scroll-triggered animations should not be confused with scroll-driven animations. Although both rely on scroll or view timelines, they are fundamentally different concepts. We’ll get to those differences in a minute.</p>
+<p>The animation-trigger property is defined in the Animation Triggers specification</p>
+<p>The property accepts none, or a comma-separated list of triggers and their corresponding actions:</p>
+<p>The “trigger” in animation-trigger can refer to either timeline-based triggers, such as scroll or view progress timelines, or event-based triggers like DOM events (e.g., a click). In this entry, we’ll mainly focus on timeline triggers. If you’re curious about event-based triggers, you can check out the official spec.</p>
+<p>By default, trigger names have a global scope. If multiple elements define the same trigger name, the element that comes later in the cascade gets chosen. You can restrict the scope of a trigger to a specific DOM subtree with the trigger-scope property.</p>
+<p>Some actions aren’t <enter-action> or <exit-action> only, meaning it’s possible to play-backwards when entering and play-forwards when exiting.</p>
+<p>To actually use animation-trigger, you’ll typically need to set up a timeline trigger first. That controls when an animation starts based on where an element is within a timeline (like scroll or viewport position). More specifically, it activates when the element enters a defined activation range within that timeline.</p>
+<p>To set up your timeline trigger, you’ll first define a custom <trigger-name> (like --fade-in) to link it to your animation-trigger , followed by a <source> timeline like a view() or scroll() function.</p>
+<p>Then, you specify the <activation-range> (such as contain) to dictate exactly when the trigger turns “on” inside the viewport.</p>
+<p>You can also provide an optional <active-range> to define the outer boundary where the trigger stays active before turning “off”, though if you leave it out, the browser just defaults to your activation range.</p>
+<p>To get a better feel for how this works, check out the timeline ranges visualizer from the Chrome team.</p>
+<p>If you use different ranges, the active range must include the activation range; otherwise, the trigger can’t turn “on.”</p>
+<p>While you can use all the individual longhand properties:</p>
+<p>…you’ll almost always want to use the shorthand instead:</p>
+<p>Unlike many CSS shorthands (like background or border), the order of values matters here, so you can’t rearrange them freely.</p>
+<p>It’s worth noting that triggers and animations don’t have to be on the same element. You can define the timeline-trigger on a parent and apply the animation-trigger to multiple child elements. When the parent enters view, all children can animate together.</p>
+<p>Let’s create a simple text reveal animation. We’ll use an element as the trigger point. Once you scroll past it, the animation plays and the text fades in.</p>
+<p>First, define a timeline trigger on the trigger element:</p>
+<p>This sets up a trigger named --trigger that activates based on scroll position. The range contain / cover means the animation is triggered when the element is fully visible in the scrollport (contain) and continues to run as long as any part of it remains visible in the scrollport (cover).</p>
+<p>Next, we’ll apply the animation-trigger to the text you want to animate, along with the animation itself:</p>
+<p>The cool part is that you can mix and match different animation-action values to get very different behaviors using the same trigger. Here’s a quick demo showing the same setup with different animation actions:</p>
+<p>With scroll-driven animations, the animation’s progress is directly tied to scroll position. As you scroll, the animation scrubs forward or backward in sync with the timeline. There’s no concept of a “start” or “fire” moment.</p>
+<p>In contrast, scroll-triggered animations are state-based rather than continuous. A trigger has a binary state and when a condition is met—such as an element entering a defined range—the trigger fires an associated action (like play, pause, or reset). Once triggered, the animation behaves like your regular CSS animations with no link to the scroll progress.</p>
+<p>Here’s a pretty cool demo to see the differences between the two, courtesy of utlitybend:</p>
+<p>The animation-trigger property is defined in the Animation Triggers specification, which is currently in Editor’s Drafts. That means the information can change between now and what it becomes an official Candidate Recommendation.</p>
+<p>Just Chrome 145+ at the time of this writing.</p>
+<p>Coming back really, really soon! See past issues →</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://css-tricks.com/almanac/properties/a/animation-trigger/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-29">
+                <h2>#29. Check if eMudhra CA Is Still Trusted in Your Runtime</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_40ecdf1d0d.png" alt="Ilustrasi Check if eMudhra CA Is Still Trusted in Your Runtime">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_40ecdf1d0d.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>Eight eMudhra intermediate Certificate Authority private keys are trivially recoverable from their public certificates. Any attacker can mint trusted TLS certificates for arbitrary domains. Browsers have already blocked these compromised intermediates through revocation mechanisms, but most non-browser runtimes — curl, Python, Node.js, Go, and Rust — still silently trust them. This affects any team operating server-side infrastructure, CI pipelines, or CLI tooling that makes outbound TLS connections. If your stack trusts the eMudhra chain, an attacker can forge certificates your code will accept without complaint.</p>
+<p>This guide provides a diagnostic sequence: test every runtime in the stack against the compromised certificates, remediate by updating trust stores, and verify the fix sticks. The primary source for this disclosure is Scott Helme's detailed writeup.</p>
+<p>In RSA key generation, you derive the private exponent d via the modular inverse of the public exponent e modulo λ(n) (the Carmichael totient of the modulus), where λ(n) depends on the prime factors of n. RSA's security depends entirely on d being large — typically hundreds of digits — making it computationally infeasible to derive from the public key alone.</p>
+<p>eMudhra generated eight intermediate CA certificates with single-byte d values. Specific recovered values include d=4, d=56, and d=115, as documented in Scott Helme's disclosure post. These are not large numbers. They are recoverable from the public certificate in milliseconds. Anyone with access to the public certificate (which is, by definition, public) can reconstruct the private key and sign certificates that chain up to eMudhra's trusted root. That means arbitrary TLS certificates for any domain, indistinguishable from legitimate ones to any client that trusts the eMudhra chain.</p>
+<p>An attacker holding one of these recovered keys can issue a certificate for any hostname, and any TLS client trusting the eMudhra intermediate will accept it without complaint.</p>
+<p>The practical consequence is total impersonation capability. An attacker holding one of these recovered keys can issue a certificate for any hostname, and any TLS client trusting the eMudhra intermediate will accept it without complaint.</p>
+<p>Major browsers have deployed mitigations through their respective revocation infrastructure. The compromise was reported to Apple, Google, Microsoft, Mozilla, and eMudhra on Saturday, October 17, 2026. Chrome pushed a CRLSet update blocking the intermediates the same evening, Mozilla blocked them in Firefox via OneCRL within hours, Apple applied its platform block on October 19, and Microsoft on October 20. Current browser versions already reject the compromised intermediates.</p>
+<p>The problem lies everywhere else. Non-browser TLS clients skip revocation checks by default. curl does not check CRLs or OCSP unless explicitly configured to do so. Python's requests and urllib3 libraries rely on the certifi bundle and perform no revocation checking. Python's standard library urllib.request module uses the system SSL store, not certifi. Node.js's https module uses either a compiled-in root store or the system store depending on build configuration, with no active revocation. Go's crypto/tls loads system roots but does not perform revocation checks. Rust's rustls paired with webpki-roots uses a bundled Mozilla root set, while native-tls defers to the system store; neither checks revocation by default.</p>
+<p>This creates a trust store gap. The system CA bundle on a Linux server, the certifi bundle shipped with Python, and the compiled-in roots in Node.js might all still contain the eMudhra intermediates or trust the root that chains to them. Without manual intervention, these runtimes remain vulnerable.</p>
+<p>The incident's official test infrastructure, documented on the status page at emudhra.we-have-a-problem.com, provides twelve TLS endpoints: one for each of the six compromised TLS intermediates, served twice - once chaining to eMudhra’s emSign ECC root and once chaining to Sectigo’s cross-signing AAA Certificate Services root. Host names follow the pattern dv-g3b-emudhra.we-have-a-problem.com (eMudhra chain) and dv-g3b-aaa-emudhra.we-have-a-problem.com (Sectigo cross-signed chain), with dv/ov/ev and g3b/g3c variants covering all six TLS intermediates. The diagnostic logic is straightforward: if a runtime connects successfully, it still trusts the compromised chain and is vulnerable. If the TLS handshake fails with a certificate verification error, the runtime correctly distrusts the intermediate. The bare domain emudhra.we-have-a-problem.com serves only the status page itself over an ordinary Let’s Encrypt certificate, so connecting to it proves nothing - always test the per-intermediate subdomains. Test at least one -emudhra host and its -aaa-emudhra counterpart: a store can distrust one root path while still trusting the other.</p>
+<p>Important: A network or DNS error will also produce a connection failure. Before concluding SAFE, confirm the endpoint is reachable by running curl -v --insecure https://dv-g3b-emudhra.we-have-a-problem.com/ and verify that any TLS error is certificate-related (e.g., "certificate verify failed"), not a network connectivity error.</p>
+<p>Run curl with verbose output against the test endpoint:</p>
+<p>If the connection succeeds and returns an HTTP response, the system's CA bundle still trusts the compromised intermediate. Look for SSL certificate verify ok in the verbose output. If instead curl reports an error such as SSL certificate problem: unable to get local issuer certificate or certificate verify failed, the intermediate is distrusted and the runtime is safe.</p>
+<p>For a more granular view, use OpenSSL's s_client directly:</p>
+<p>A Verify return code: 0 (ok) means the chain is trusted and the system is vulnerable. Any non-zero return code, such as Verify return code: 20 (unable to get local issuer certificate), indicates the intermediate is not trusted.</p>
+<p>Each runtime below connects to the same test endpoint. A successful HTTP response means the runtime trusts the compromised chain and is vulnerable. A certificate verification error means the runtime correctly rejects it.</p>
+<p>This tests the system SSL store only; urllib.request uses the system SSL context, not the certifi bundle. An ssl.SSLCertVerificationError confirms the intermediate is distrusted. Check the error message to confirm it references a certificate verification failure rather than a configuration or network problem.</p>
+<p>A successful response here means the certifi bundle specifically trusts the compromised chain, independent of the system store.</p>
+<p>If Node.js prints a status code, it trusts the compromised intermediate. A certificate-related error in the output means it does not. Whether Node.js uses its compiled-in roots or the system store depends on build configuration, so this test reflects whichever store your build uses.</p>
+<p>Initialize a module first, then save the following as check.go:</p>
+<p>Run with go run check.go. Go loads system roots via crypto/x509, so the result reflects whether the OS trust store has been updated.</p>
+<p>Run with cargo run. With rustls + webpki-roots, the result depends on whether the bundled root set has been updated. With native-tls, the result reflects the system store.</p>
+<p>The disclosure resources include a chains.zip file containing PEM-encoded certificate chains for each of the eight compromised intermediates. Download chains.zip from Scott Helme's disclosure post at https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/. Verify the file's SHA-256 hash against the value published on that page before use. Do not use copies from unverified mirrors.</p>
+<p>The extracted directory contains individual PEM files, each representing a certificate chain involving a compromised intermediate.</p>
+<p>Use a shell loop to test each chain individually against the system CA bundle. The glob form (openssl verify ... *.pem) is unreliable across OpenSSL versions — multi-file positional arguments require OpenSSL ≥ 3.0 and can silently skip files on older versions. Use the loop instead:</p>
+<p>On Debian/Ubuntu systems, the bundle is typically at /etc/ssl/certs/ca-certificates.crt. On RHEL/Fedora/CentOS, look for /etc/pki/tls/certs/ca-bundle.crt. On macOS, the system bundle is at /etc/ssl/cert.pem, though Homebrew-installed OpenSSL uses its own path.</p>
+<p>If any chain returns OK, the system store still trusts that compromised intermediate and is vulnerable. A verification failure means it is distrusted.</p>
+<p>Python's certifi bundle location can be found with:</p>
+<p>Node.js behavior varies: some builds use a compiled-in root store derived from Mozilla's NSS roots, while others defer to the system store. The --use-openssl-ca flag forces Node.js to use the system's OpenSSL CA store instead of its compiled-in bundle. This flag only works on Node.js builds compiled with --openssl-use-def-ca-store. Verify support with node --help | grep openssl-ca; if no output appears, the flag has no effect on that build.</p>
+<p>Go's crypto/x509 package loads system roots at runtime, so Go programs inherit the system trust store. There is no separate bundle to verify.</p>
+<p>Run a shell loop to verify all eight chains against the certifi bundle:</p>
+<p>Any OK result means the certifi bundle is still vulnerable.</p>
+<p>The following commands apply to specific distributions. Run openssl version first to confirm your baseline.</p>
+<p>If the distribution has not yet issued a patch removing the eMudhra intermediates, you must manually distrust the certificates. The correct mechanism is distribution-specific:</p>
+<p>After any manual changes, regenerate the consolidated bundle by running the appropriate update command for your distribution and re-verify with the shell loop above.</p>
+<p>Important: Homebrew's CA bundle only affects Homebrew-linked binaries (e.g., Homebrew-installed curl, python3). System tools (/usr/bin/curl, Safari, system Python) use the macOS Keychain and require a macOS security update via System Settings → Software Update. You can verify which curl you are using with which curl.</p>
+<p>macOS caveat: Apple’s October 19 platform block covers Safari and Keychain-based clients, but the built-in curl, git, python3, perl, and ruby verify against /etc/ssl/cert.pem without checking revocation, and that file has not been updated at time of writing. The incident status page publishes an official workaround that strips the two affected roots from /etc/ssl/cert.pem, plus a PIP_CERT fix for the built-in pip. Homebrew’s ca-certificates 2026-09-25_1 is patched.</p>
+<p>For the system Keychain, open Keychain Access and search for eMudhra intermediates. Apple's platform-level block propagates through macOS security updates, though exact timelines for older macOS versions differ. Older macOS versions that no longer receive security updates will never receive the distrust entry.</p>
+<p>Verify the new version by checking pip show certifi and comparing against upstream release notes. Applications that pin an older certifi version in their dependency files remain vulnerable until that pin is updated.</p>
+<p>For Node.js, upgrading to a patched release that includes updated compiled-in roots is the primary path. Alternatively, launching Node.js with --use-openssl-ca defers trust decisions to the system store, which you might have already patched. This flag only works on Node.js builds compiled with --openssl-use-def-ca-store; verify support with node --help | grep openssl-ca. Pre-built binaries from nodejs.org might not honor this flag. Different LTS lines will receive the updated root store at different times.</p>
+<p>Go relies entirely on the system store, so confirming the system CA update has been applied is sufficient.</p>
+<p>For Rust projects using rustls with webpki-roots, run cargo update to pull the latest version of the webpki-roots crate, which derives its root set from Mozilla's NSS. Projects using native-tls defer to the system store.</p>
+<p>Rebuild container images with updated CA certificates. Pinned base images are a particular risk — they can lag behind security patches indefinitely.</p>
+<p>CI pipelines using cached or pinned base images should pull fresh images or explicitly upgrade ca-certificates as a build step.</p>
+<p>Electron's trust store source depends on version and platform. Consult the Electron documentation on certificate verification to determine whether your version uses Node.js's compiled-in root store or the OS certificate store — the boundary has shifted across major releases, and no single version threshold applies cleanly. Upgrading the Electron version or overriding certificate verification via the session.setCertificateVerifyProc() method are the available remediation paths. Verify the specific behavior against the Electron version in use.</p>
+<p>Distrust at the intermediate level stops the current attack, but it is fragile: new intermediates cross-signed under the same root would be trusted by default. Mozilla has therefore gone further and removed the eMudhra root entirely in NSS 3.131.1, and Chrome has confirmed the root is being removed in Chrome Root Store v43. Note also that the compromised intermediates were cross-signed by Sectigo’s AAA Certificate Services root, so a chain can build through either root - blocking only the eMudhra root path does not close the Sectigo one, which is why the incident’s official Linux workaround distrusts both roots.</p>
+<p>The following shell script runs openssl verify against all eight chains and exits non-zero if any chain is still trusted. Drop this into a CI step or run it as a cron job.</p>
+<p>Monitor the following sources for updates on CA trust store changes:</p>
+<p>Browsers auto-protect through active revocation infrastructure. Everything else — server-side HTTP clients, CLI tools, containerized services — requires manual verification and remediation.</p>
+<p>Browsers auto-protect through active revocation infrastructure. Everything else — server-side HTTP clients, CLI tools, containerized services — requires manual verification and remediation. The action sequence is: (1) test against the online diagnostic endpoints, (2) verify offline against local trust stores, (3) update all system and language-level CA bundles, and (4) automate the check in CI so regressions from image rebuilds or dependency changes are caught immediately.</p>
+<p>Sharing our passion for building incredible internet things.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/check-if-emudhra-ca-still-trusted/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-30">
+                <h2>#30. Is Your Organization Messing Up AI Adoption?</h2>
+                <img src="https://files.smashing.media/articles/is-your-organization-messing-up-ai-adoption/is-your-organization-messing-up-ai-adoption.jpg" alt="Ilustrasi Is Your Organization Messing Up AI Adoption?">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://files.smashing.media/articles/is-your-organization-messing-up-ai-adoption/is-your-organization-messing-up-ai-adoption.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Paul is a leader in conversion rate optimisation and user experience design thinking. He has over 25 years experience working with clients such as Doctors …
+More about
+Paul ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>The way I see most organizations roll out AI feels more like a farce than a strategy. If it were turned into a movie, reviewers would say it was unbelievable. Nobody could be that stupid.</p>
+<p>Yet here we are. And what makes it all the more frustrating is that we have been here before.</p>
+<p>Back in 2014, I wrote a book for Smashing Magazine called Digital Adaptation, looking at the mistakes being made in how organizations were approaching digital transformation and what they should be doing instead. The similarities between then and now are striking.</p>
+<p>So in this post, I want to look back at Digital Adaptation and see how the lessons in that book apply to the AI era and what we can learn from the past to help us navigate the challenges of AI today.</p>
+<p>The biggest mistake, both then and now, is approaching each as a technological challenge.</p>
+<p>Sure, both digital transformation and AI are technological advances, and yes, some level of technological implementation is required. But that is the tip of a very large iceberg.</p>
+<p>Back in the midst of the digital transformation era, IT departments were rolling out CMSs, CRM systems, intranets, and so on. Meanwhile, on the customer-facing side, organizations were rolling out websites, apps, and personalization. But they were putting almost no emphasis on how people were going to use these systems.</p>
+<p>Internal systems were hard to use, and customers either didn’t care what was being built or wanted something else entirely.</p>
+<p>The same is happening with AI. Senior management are buying into the hype, and IT teams are rolling out Copilot Studio licenses company-wide and considering the job done. Sure, there is a bit of organization-wide generic training, but that’s about it.</p>
+<p>Just like before, staff are left wondering what to do with these new systems and feeling under pressure to use them and deliver results.</p>
+<p>After all, this time around, it is even worse, because this time, staff fear for their jobs. They have read the same headlines that you have, and no amount of promises from senior management is going to make them feel any better.</p>
+<p>Web forms are at the center of every meaningful interaction. Meet Adam Silver’s Form Design Patterns, a practical guide to designing and building forms for the web.</p>
+<p>I mean, think about it from a staff member’s point of view. AI offers them very little personally, even setting aside the fact that management may be intending to use it to replace them.</p>
+<p>The main reason senior management are excited about AI is that it provides additional productivity. People can do more in less time. But that does not benefit staff. They are still required to work 9 to 5, but now they are expected to do more in the same time. They don’t get any time back, and they don’t get paid more, so why would they embrace AI?</p>
+<p>One strategy is to help staff identify the parts of their job they hate and how AI can help them do those tasks more quickly and less painfully. People tend to be a lot more receptive to change when it is presented as an opportunity to improve their working lives.</p>
+<p>But, that should just be the beginning. Organizations may need to consider providing incentives for staff to adopt AI in terms of career progression, compensation, or shorter working hours.</p>
+<p>Also, adopting AI is not a simple task. It involves challenging every working practice they have built up over (in some cases) decades. All of that procedural knowledge has to be rebuilt. That is a lot to ask of anybody in even the best of circumstances, and most employees do not find themselves in the best of circumstances.</p>
+<p>Most are overworked and struggling to stay on top of their to-do lists. They don’t have time to sit down, learn a new tool, and figure out how it fits into their workflow.</p>
+<p>That doesn’t just take time. It also takes a lot of consideration and experimentation. It is not enough to just send a member of staff on a training course and expect them to be able to use AI to its full potential.</p>
+<p>At a minimum, staff need training specific to their roles, such as the AI training I provide to UX teams. But organizations should be going even further.</p>
+<p>They need to develop sophisticated training programs that help staff from different departments understand how to use AI in their specific roles. They need ongoing support and the time to experiment with AI to find the best ways to use it.</p>
+<p>But formal training will only take you so far. In my experience, the most effective support comes from colleagues, which is why I would start with the enthusiasts rather than the resisters. Every organization has a handful of people who are already experimenting with AI, often without anybody asking them to. Bring those people together, give them the time and space to share what is working for them, and let their enthusiasm spread to everyone else.</p>
+<p>I saw this work during the digital transformation era too. In Digital Adaptation, I described an internal conference where staff showed their colleagues what they had built, and it did more for adoption than any memo from the top ever could. People are far more likely to try something when they see a colleague in a similar role using it successfully than when they are told to by senior management.</p>
+<p>Unfortunately, experimentation comes with a big downside… mistakes will be made.</p>
+<p>Many organizations have, to be frank, a culture of fear where mistakes are seen as a sign of incompetence. However, by its very nature, learning a new tool like AI will involve making mistakes, and this can be a massive barrier to adoption.</p>
+<p>I saw this during the era of digital transformation. Senior management would demand digital transformation and were confused when it didn’t happen.</p>
+<p>What they didn’t realize was that they were sending mixed messages to staff. Sure, they were asking for digital transformation, but they were still demanding that the same key performance indicators (KPIs) be met, and they still pointed out any mistakes in their annual reviews.</p>
+<p>There was no space to fail, as the pressure to deliver was relentless.</p>
+<p>This time around, it seems to be even worse. I hear horror stories of staff being reprimanded for using too many tokens just weeks after being told to adopt AI. Or staff being lectured so much about what they should or should not do with AI that they are afraid to try anything. It is safer to just do what they have always done.</p>
+<p>Look, I get it. AI cannot be rolled out without some governance in place, but again, this is an area that organizations have typically handled poorly.</p>
+<p>In the midst of digital transformation, governance would either be non-existent, or it would be so strict that it would stifle innovation, and unfortunately, I see the same pattern emerging with AI adoption.</p>
+<p>Staff need some governance to help them know where they stand. It helps them understand what is expected of them and what they can and cannot do.</p>
+<p>But too often organizations have been so strict that it is easier not to do anything at all. Pages of instructions about what people should and should not share with AI create that sense of fear that I mentioned earlier.</p>
+<p>Of course, mistakes will get made, but that is the cost of change, and so organizations need to accept that and do what they can to mitigate that in how they roll out the technology.</p>
+<p>That said, organizations will need to be careful in how they roll out AI from an IT perspective. Once again, it is easy to lock everything down and stifle the adoption of AI.</p>
+<p>Again, this is something I highlighted back in 2014 with digital transformation. Overstretched IT teams would pick a set of technologies and roll them out organization-wide, often with little or no consultation with the individuals who would be using them. Anything outside of that set of technologies had to go through a complex approval process, normally involving a steering committee. The result was a glacial pace of change that was one of the major contributing factors to the failure rate of digital transformation projects.</p>
+<p>Today we are seeing the same thing. IT teams are opting into a tool like Copilot and calling it a day, but that often falls massively short.</p>
+<p>Take, for example, a UX team I am working with at the moment. Management is pushing hard for AI adoption, and the team is excited about the potential of creating an AI-powered research repository and even AI personas. It sounds like a wonderful case study in AI adoption, with enthusiastic management, an excited team, and innovative ideas.</p>
+<p>Unfortunately, the reality is that nothing is happening because Copilot cannot deliver on the team’s vision, and so they are currently bogged down in bureaucracy as they try to persuade the AI steering group that they need to use a different toolset. Understandably, the team’s enthusiasm is waning. Why bother?</p>
+<p>And that team is one of the more patient ones. In many organizations, staff are not waiting for the steering group at all. Just as we saw shadow IT during the digital transformation era, with people signing up for Dropbox and Google Docs because the official tools could not do what they needed, we are now seeing shadow AI. When the in-house AI tool will not let people do their jobs, they open a personal ChatGPT or Claude account on their phone or home laptop and get on with it.</p>
+<p>That is far more dangerous than the problem the restrictions were meant to prevent. Company data ends up in tools the organization has no control over, with no oversight and no record of what has been shared. In trying to lock everything down, organizations end up pushing the risk somewhere they cannot see it.</p>
+<p>The instinctive reaction is to clamp down with stricter policies, blocked websites, and warnings about disciplinary action. But that rarely works, and it drives the behavior further underground. Shadow AI is a symptom, and a useful one, because it shows exactly where the official tools are falling short.</p>
+<p>Look, I understand the cost of a messy, out-of-control tech stack. It is not ideal. However, in the early days of adoption, we may have to live with a bit of chaos while people explore the edges of what is possible and work out common use cases.</p>
+<p>Organizations need to allow staff to explore different uses of AI and even different AI apps to find what suits their specific needs in their specific roles. They can always start locking things down later as the real organizational needs become clearer.</p>
+<p>I admit all of this feels dangerous to some organizations. They want to control the AI adoption process centrally and make sure nothing goes wrong. I understand that. But change comes with a degree of risk, and the risk of moving too slowly is greater than the risk of moving too fast.</p>
+<p>However, a bigger danger still is when organizations see this as a technological challenge and overlook the human side of things. AI adoption is not simply about rolling out new technology. Just like digital transformation, it is about people, culture, and change management. The sooner organizations realize the scope of what they are dealing with, the better.</p>
+<p>Tips on front-end & UX, delivered weekly in your inbox. Just the things you can actually use.</p>
+<p>With practical takeaways, live sessions, video recordings and a friendly Q&A.</p>
+<p>Everything TypeScript, with code walkthroughs and examples. And other printed books.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/10/is-your-organization-messing-up-ai-adoption/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-31">
+                <h2>#31. This Viral Indie Horror Game Is Coming to Xbox Game Pass Just in Time for Halloween</h2>
+                <img src="https://www.cnet.com/wp-content/uploads/sites/2/Keyart.png" alt="Ilustrasi This Viral Indie Horror Game Is Coming to Xbox Game Pass Just in Time for Halloween">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.cnet.com/wp-content/uploads/sites/2/Keyart.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Our gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.</p>
+<p>Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may earn a commission.</p>
+<p>Tech > Services & Software > Applications</p>
+<p>Final Fantasy 7 Remake Intergrade is also coming to the service soon.</p>
+<p>Xbox Game Pass, a CNET Editors’ Choice award pick, offers a wide selection of games you can play on your Xbox Series X, Xbox Series S, Xbox One and PC or mobile device for as little as $10 a month. With a higher-tier Game Pass Ultimate subscription ($23 per month), you can access hundreds of games, including new ones the day they’re released, each month.</p>
+<p>Here are all the games Microsoft is adding to Xbox Game Pass between now and early November.</p>
+<p>In this award-winning horror game, you play as one of five crew members aboard the stranded spaceship, the Tulpar. Food and medical supplies aboard the ship are running low, and the crew are beginning to crack under the stress. What follows is an unsettling experience that grips you in its maw and doesn’t let you go, even after the credits roll.</p>
+<p>This remake of the award-winning Final Fantasy 7 retells part of the original game’s story, but this time it has updated visuals, faster gameplay and additional story elements. Whether you’re new to this classic roleplaying game or have played the original, there’s something new here for you.</p>
+<p>You play as mercenary-turned-eco-terrorist Cloud Strife. Your goal is to stop the megacorporation Shinra from draining the planet of its energy source, and work toward that goal with a team of folks from all over the world. Like in other Final Fantasy games, each party member has their own skills to fit your play style, giving you different avenues to tackle a range of enemies and problems.</p>
+<p>This classic tower-defense game is back and in high definition! So you can see the cartoony plants and zombies in all their goofy glory. This version also includes new levels and challenges for both old and new players.</p>
+<p>Those are some of the games coming to Game Pass between now and early November. Microsoft is adding these other games to the service in that time frame, too.</p>
+<p>While Microsoft is adding those games to Xbox Game Pass, it’s also removing 11 titles soon. So you’d better hurry and finish your campaigns before you have to buy these games separately.</p>
+<p>For more on Xbox, check out our Xbox Game Pass review, learn which Game Pass plan is right for you and discover what other games you can play on the service.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.cnet.com/tech/services-and-software/xbox-game-pass-october-pt-2/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-32">
+                <h2>#32. Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals</h2>
+                <img src="https://www.docker.com/app/uploads/2025/03/image.png" alt="Ilustrasi Harbor + Docker Sandboxes: Run Safe, Reproducible Agent Evals">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.docker.com/app/uploads/2025/03/image.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Secure, minimal container images for every team, free with enterprise features, if needed.</p>
+<p>To evaluate an agent, you give it a real task, let it work, and check the result. Along the way, the agent installs packages, edits files, and runs commands. That’s untrusted, AI-written code, and a benchmark runs it thousands of times.</p>
+<p>And agents don’t always play fair. An agent can sometimes earn a passing score on an eval by gaming the check instead of doing the work, for example by tampering with tests or overwriting the file that records its score. This is called reward hacking, and it’s a growing concern across the eval community.</p>
+<p>Harbor gives you the first. It’s an open-source eval framework. Give it a benchmark like Terminal-Bench, and it simplifies the process of running evals.</p>
+<p>Now, Docker Sandboxes gives you the second: a safe way to run those eval tasks, on your laptop or in the cloud.</p>
+<p>Strong isolation by default. Docker Sandboxes were designed from the ground up for deeper isolation. This means you can run every task in a microVM, not a shared container. A microVM has its own kernel, so whatever the agent does stays inside its sandbox. It can’t break out to reach your machine, other tasks, or anything else outside its environment.</p>
+<p>Fair, reproducible evals. With Docker Cloud Sandboxes, configurable network policies let a task download dependencies during setup, then restrict internet access while the agent works. This way, every agent can be tested under the same conditions.</p>
+<p>Parallel runs, no machines to manage. With Docker Cloud Sandboxes, teams can run many tasks at once without needing to manually provision anything. Run dozens of concurrent workers simultaneously.*</p>
+<p>Develop locally, scale in the cloud. The same tasks run locally or in Docker Cloud Sandboxes. Build on your laptop, then run your tasks in the background, and at scale, without changing anything.</p>
+<p>Activate Cloud access for your Docker account and create a personal access token. Select Cloud Sandboxes under access permissions. Copy and save your token. It’s shown only once.</p>
+<p>To run locally, install the Docker Sandboxes CLI, run sbx login, and add --ek target=local to the command above. Harbor’s local integration currently supports public and no-network modes, subject to the machine’s existing sandbox policy.</p>
+<p>This integration is available today on the nightly release of Docker Sandboxes. uv tool install --upgrade "harbor[sbx]==0.24.1.dev202610150414"It’ll be available in the stable release on 10/23. Docker Compose is supported as part of the release, which means Harbor can run multi-container tasks inside a single Docker Cloud Sandbox, so services and sidecars can share that MicroVM.</p>
+<p>To learn more, see the Docker Sandboxes docs and the Harbor docs.</p>
+<p>*We’ve tested Harbor with 64 concurrent tasks on Docker Cloud Sandboxes. For higher limits, we’re happy to help: contact us.</p>
+<p>Principal Product Marketing Manager for AI, Docker</p>
+<p>Srini Sekaran is Principal PMM for AI at Docker, focused on Docker AI Governance, Docker Sandboxes, and the future of agent infrastructure and developer workflows.</p>
+<p>Docker’s WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority.</p>
+<p>Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them.</p>
+<p>Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, reproducible evals Run your evals locally or in the cloud: starting for free on Docker Sandboxes on local surfaces and scaling…</p>
+<p>CVE-2026-105445: Docker Hub account conversion could re-assign personal access tokens to a new owner. Read what happened, who was affected, and the fix.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.docker.com/blog/harbor-docker-sandboxes-run-safe-reproducible-agent-evals/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-33">
+                <h2>#33. Historic Horse Racing Machines Test Massachusetts Casino Model</h2>
+                <img src="https://readwrite.com/wp-content/uploads/2026/10/historic-horse-racing-machines-massachusetts-casino-model.webp" alt="Ilustrasi Historic Horse Racing Machines Test Massachusetts Casino Model">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://readwrite.com/wp-content/uploads/2026/10/historic-horse-racing-machines-massachusetts-casino-model.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI,…</p>
+<p>Wynn Resorts CEO Craig Billings says Massachusetts’ proposed historic horse racing machines risk weakening the 2011 casino framework by adding competition for customers without the obligations imposed on licensed casinos.</p>
+<p>In an editorial published in The Boston Globe, Billings argued that the state’s original arrangement paired a limited number of casino licenses with major private investment, jobs, tax revenue and community payments. Massachusetts authorized three resort casinos and one slots facility under that model; the House later approved an economic development bill amendment that would let horse racing licensees offer historic horse racing machines.</p>
+<p>The measure would allow simulcast centers at Suffolk Downs and Raynham Park to operate the machines. It is a legislative proposal, not an authorization already in effect. The House’s action has drawn opposition from casino operators and the Mashpee Wampanoag Tribe, according to reporting by CDC GamingView and the Boston Herald.</p>
+<p>Billings said the state has expanded gambling through live sports betting and online lottery sales, while lawmakers are considering online casino legislation. He argued that adding further products could divide demand among more operators and put pressure on the revenue that supports casino taxes, host-community payments, jobs and future investment.</p>
+<p>His warning focuses in particular on HHR machines, which replay completed horse races through terminals. Billings contends they would compete for the same customers as casinos while operating without equivalent licensing costs, tax duties, community commitments, capital requirements and regulatory oversight.</p>
+<p>The state’s three casinos generated about $101.9 million in gross gaming revenue in August, CDC GamingView reported. Massachusetts has collected approximately $2.53 billion in taxes and assessments from casino operators since the facilities opened. The state taxes Plainridge Park Casino at 49% of gross gaming revenue and the resort casinos, Encore Boston Harbor and MGM Springfield, at 25%.</p>
+<p>Billings also linked the policy debate to Encore Boston Harbor’s labor dispute. About 1,300 Teamsters and Unite Here members were on strike after their contract expired on August 31; they walked out on September 4. He said Encore’s labor costs had risen nearly 37% over four years while revenue grew by less than 2%, and described a sustainable labor agreement as part of adapting to the state’s changing market.</p>
+<p>Wynn invested $2.6 billion in Encore, which opened in 2019, and Billings said it has generated more than $1.1 billion in state tax revenue. He also cited $1.3 billion in employee compensation and $370 million in community payments. The company’s operating case for the property therefore rests not only on casino demand, but also on the tax and local commitments tied to its license.</p>
+<p>The Boston Herald reported that the Senate’s version of the economic development bill did not include the HHR authorization, while also rejecting an amendment that would have explicitly barred the machines. The issue was among the policies being discussed by lawmakers in negotiations over the legislation.</p>
+<p>For Wynn, the practical question is whether Massachusetts lawmakers preserve the limited-supply model as they decide which new forms of gambling to permit. The conference negotiations will determine whether the HHR provision remains in the final economic development bill.</p>
+<p>The ReadWrite Editorial policy involves closely monitoring the gambling and blockchain industries for major developments, new product and brand launches, game releases and other newsworthy events. Editors assign relevant stories to in-house staff writers with expertise in each particular topic area. Before publication, articles go through a rigorous round of editing for accuracy, clarity, and to ensure adherence to ReadWrite's style guidelines.</p>
+<p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI, and research tooling backstop this team and help us inform the next generation.</p>
+<p>The Louisiana Gaming Control Board has unanimously granted DraftKings a conditional four-month license extension while it examines the company’s use of artificial intelligence in customer practices and delays a decision...</p>
+<p>Online gambling laws vary by jurisdiction. It is your responsibility to verify the legality of online gambling in your location before participating.ReadWrite assumes no liability for any actions taken based on the information provided.Gambling can be addictive, please play responsibly.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://readwrite.com/historic-horse-racing-machines/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-34">
+                <h2>#34. This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good</h2>
+                <img src="https://media.wired.com/photos/6ad8079d19d8dd7213438cc0/191:100/w_1280,c_limit/business_ai_lab_recursive_improvement.jpg" alt="Ilustrasi This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/6ad8079d19d8dd7213438cc0/191:100/w_1280,c_limit/business_ai_lab_recursive_improvement.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>For the past few days I’ve been testing an impressive open-weight AI coding model called Flint. It suggests that fully recursive self-improvement, or RSI—an exciting and controversial approach that uses AI to build AI—is getting closer.</p>
+<p>Flint is the first offering from Recursive, a company that aims to use RSI to advance both AI itself and other areas of science using AI. “Nearly every aspect of the entire model pipeline was actually done and improved upon by AI,” Recursive CEO and cofounder Richard Socher told me.</p>
+<p>Socher says his company used its recursive AI system, dubbed the Eureka Machine, to automate most elements of the model’s development. This enabled a company with a handful of researchers to build a world-class model in just a few months, he says.</p>
+<p>Socher told me that the Eureka Machine devised a number of innovations, including a new way of training the base model, new model architectures, and code optimized for specific silicon chips. Recursive shared benchmark scores that suggest Flint outperforms other models of similar size and architecture on coding tasks.</p>
+<p>AI is already widely used to help build, test, and improve AI thanks to its amazing coding skills. This can speed up the process of refining a model and testing new ideas without the need for as much input from humans.</p>
+<p>It is also possible to create a loop through which AI decides what improvements to make and then begins another round of improvement. For the moment this technique is limited, but if AI can contribute to every aspect of model development, then the process could theoretically continue indefinitely.</p>
+<p>Some experts worry that letting AI improve itself in this manner could ultimately lead to disaster. These doomsayers claim that AI capable of improving indefinitely could escape human control and might decide that humans are an impediment to its goals.</p>
+<p>Those concerns gained wider notice this September when a researcher quit Anthropic and warned that advances in AI, including recursive self-improvement, could lead to human extinction within a few years—a concern then echoed by a number of other experts. The idea of RSI has become so controversial that several bills in Congress propose to ban it.</p>
+<p>Recursive sees these fears as more sci-fi than reality and believes legislation to prevent RSI is an unnecessary impediment to progress.</p>
+<p>Socher says Flint was built using a system incapable of escaping human control. He says the goal is for the Eureka Machine itself to achieve full recursive self-improvement, but this would still be overseen by humans who could stop the process if it goes awry. “We hope that this shows people that indeed we have all the steps in place” to build such a system, he says.</p>
+<p>Recursive has raised $650 million at a $4.65 billion valuation from Google Ventures, Greycroft, Nvidia, and AMD Ventures. Socher was previously the chief scientist at Salesforce, and his cofounders include Jeff Clune, a professor at the University of British Columbia who researches ways of building AI systems capable of learning indefinitely.</p>
+<p>I must say I am impressed with Flint. I tested it on a Mac with 48 GB of RAM—a healthy amount but only enough to run a modest-size AI model like Flint, which has 40 billion parameters. The biggest models out there have several trillions of parameters, and they can only run on racks of industrial servers.</p>
+<p>I used Flint to build a bunch of programs and found it to be both fast and very capable. In my experience, models of this size can be annoyingly error-prone or slow compared to Claude or Codex, but Flint nailed my coding requests every time. I used it to create a command line to-do list, then tried having it build a program that scours the web for interesting research related to recursive self-improvement. I also had Flint whip up a simple website that explains how RSI works. You can see that here.</p>
+<p>It’s unclear how much progress other US labs have made chasing recursive self-improvement, but some published work suggests fully recursive systems are already feasible. A team from Microsoft, Carnegie Mellon University, and the University of Virginia recently published work, for instance, showing how an AI coding agent can recursively improve itself by modifying the software harness that turns reasoning into useful action and its own model’s weights.</p>
+<p>Perhaps there are risks to full RSI if you are close to building a godlike intelligence, but for the time being it seems like a very promising way to improve your own AI models. This is something I’ve dabbled with in previous editions of AI Lab.</p>
+<p>Indeed, Socher says the approach used to build Flint could make cutting-edge AI more accessible. “It's the only way this very small team can produce a model that's actually better than any other model in its class,” he told me. “This will hopefully show people that [recursive self-improvement] is actually quite nice and will benefit a lot of people.”</p>
+<p>This is an edition of Will Knight’s AI Lab newsletter. Read previous newsletters here.</p>
+<p>Introducing the app: More ways to make the most of WIRED</p>
+<p>Meta failed to catch hundreds of AI child abuse ads</p>
+<p>Big Story: The search for Silicon Valley’s most powerful woman</p>
+<p>Hackers got inside a Flock camera—its data shows how the system really works</p>
+<p>In your inbox: Go inside the world of digital security with Kernel Panic</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-35">
+                <h2>#35. MicroLighter: Syntax Highlighter</h2>
+                <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/09/custom-properties-code-block.png" alt="Ilustrasi MicroLighter: Syntax Highlighter">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/09/custom-properties-code-block.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Here we go! Syntax highlighting for code blocks without the complicated markup, spans, classes, and bloated JavaScript, courtesy of Uncle Dave.</p>
+<p>MicroLighter is pretty much straight-up CSS leaning on Custom Highlights, using the ::highlight() pseudo… which is Baseline this year!</p>
+<p>It accomplishes exactly every we need around here at CSS-Tricks — themes, line numbers, multiple language support, semantic markup, etc. — but without the added dependencies we rely on.</p>
+<p>Chris made a custom WordPress block years and years ago that plugs in Prism.js. There’s certainly nothing wrong with Prism. It’s robust, supports a crap-ton of languages, is also super lightweight, and plenty battled-tested. Either way, I’ll certainly be looking at integrating this into our WordPress block.</p>
+<p>It’s not that there isn’t any JavaScript involved. It’s that less of it is needed. And it leans so hard into modern CSS that it brings things like light-dark() support and custom properties along for the ride, meaning rolling your own theme is totally doable.</p>
+<p>Plus, it’s super modular in the sense that you can snag the things you want à la carte: specific themes, just the languages you need to support, line numbers, a web component.</p>
+<p>Reminds me too of this clever little web font that brings syntax highlighting along for the ride. I’ve been happily using that on my personal site for a while without any fuss.</p>
+<p>Update (August 31, 2026): I just finished adding MicroLighter to this site in place of Prism. I haven’t benchmarked performance in terms of page speed, etc., but I can say that the savings is pretty significant. Where Prism came in at 35 KB raw (9.3 KB gzipped), MicroLighter is at 13.9 KB raw (5.2 KB gzipped). Not bad at all considering there are WordPress-specific customizations that had to be baked in.</p>
+<p>Syntax highlighting for code blocks without the […] bloated JavaScript</p>
+<p>This is an unreasonable claim, even for CSS-Tricks. Have you looked at how much weight Prism.js adds? Its scripting accounts for around 23,776 bytes of https://css-tricks.com/wp-content/themes/CSS-Tricks-19/js/min/global-concat.min.js, under 8KB gzipped. I’m actually not even certain that MicroLighter is smaller, once you include roughly the same set of languages; they’re pretty similar. If you use its touted lazy loading of grammars, it will certainly be slower.</p>
+<p>There are, and have always been, good options that require no JavaScript; whereas this one fundamentally requires it (Custom Highlights are DOM-only, no serialisation defined or in my opinion likely to ever be defined).</p>
+<p>Another limitation of this approach, which I reckon is important to mention, is that you are very limited in what you can style: simplifying slightly, it’s just color, background-color, text-decoration and text-shadow.</p>
+<p>It’s very common to use font-weight: bold or font-style: italic in syntax highlighting. You can’t do that with this approach.</p>
+<p>Well, like I said, it checks the boxes of what I’m looking for in a tool like this. It’s not that there aren’t alternatives that pack in much more features, again, like I said. I’m more interested in that MicroLighter doesn’t even touch the DOM.</p>
+<p>Your email address will not be published. Required fields are marked *</p>
+<p>Save my name, email, and website in this browser for the next time I comment.</p>
+<p>Notify me of follow-up comments by email.</p>
+<p>Coming back really, really soon! See past issues →</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://css-tricks.com/microlighter-syntax-highlighter/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-36">
+                <h2>#36. Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Torch_Titan_Header_Image.2e16d0ba.fill-1200x600.jpg" alt="Ilustrasi Integrating TorchTPU into TorchTitan and Optimizing Models for TPU">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Torch_Titan_Header_Image.2e16d0ba.fill-1200x600.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Over the past years, Meta’s TorchTitan has emerged as the PyTorch ecosystem’s premier clean-room reference platform for large-scale generative AI model training. Built entirely on PyTorch-native scaling primitives, TorchTitan provides an unencumbered, highly modular showcase for pre-training flagship dense and Mixture-of-Experts (MoE) architectures like Llama 3, Qwen 3, and FLUX.</p>
+<p>Historically, developers looking to train PyTorch models on Google Cloud TPUs faced some challenges: either undertake a complete codebase rewrite into JAX, or grapple with legacy torch_xla. That paradigm has officially shifted. With the launch of TorchTPU, Cloud TPUs now feature a native backend (torch.device("tpu")) integrated directly into PyTorch's core interface. Enabling a training script to use TPUs now only requires minimal changes to your device initialization code. Providing device compatibility, however, is only half the battle, developers also need high performance production-grade, distributed training recipes. This is where TorchTitan on TPU comes in. TorchTitan TPU is a fork of Meta’s TorchTitan implementation that is adapted to enable model training on Google Cloud TPUs. The fork is available at https://github.com/google-pytorch/torchtitan/</p>
+<p>Rather than requiring engineering teams to invent custom TPU sharding strategies or hand-craft low-level XLA communication passes from scratch, Google and Meta co-developed TPU-native execution passes directly inside TorchTitan. TorchTitan serves as the definitive vehicle for scaling PyTorch on Google Cloud TPUs.</p>
+<p>TorchTitan provides official, battle-tested recipes for pre-training large dense models (such as Llama 3 70B/405B and Qwen 3 8B/32B), Mixture-of-Experts (such as Qwen 3 235B MoE), and diffusion transformers (such as FLUX.1 12B).</p>
+<p>Beyond initial pre-training, TorchTitan serves as the scalable trainer inside post-training pipelines like VeRL for Group Relative Policy Optimization (GRPO) and Reinforcement Learning (RL) alignment. In these workflows, TorchTitan handles the parameter update step while synchronizing weights with high-throughput serving engines like vLLM-TorchTPU.</p>
+<p>Model definitions in TorchTitan are written in pure, single-device PyTorch (nn.Module) with no CUDA-specific code. Collectives are inserted either by a composable framework layer (e.g. FSDP), by declarative sharding plans (e.g. tensor-parallelism), or as backend-specific plugins (e.g. MoE layers). TorchTPU supports C10D collective APIs and the PyTorch DeviceMesh abstraction. Together, this allows the TPU path to choose which parallelisms to apply for a model, and which implementations to use.</p>
+<p>TorchTitan builds a model from a configuration tree, and that tree can be rewritten before the model is constructed. This offers a clean way to replace individual blocks of a model with versions that run better on TPU, without touching the model definition or the shared trainer loop.</p>
+<p>We use this actively. The TPU recipes replace standard attention with Splash Attention, a Pallas kernel that handles causal, sliding-window and packed-document masks without materializing the attention matrix; replace the final projection and cross-entropy loss with a fused Pallas kernel that never writes the full logits tensor to HBM; and replace MoE expert matmuls with grouped Pallas kernels. Each kernel is a JAX function turned into a PyTorch custom op by TorchTPU's torch.tpu.pallas.jax_op decorator, which is all the glue a new kernel needs. Each replacement is a config flag, so a recipe can turn it on, and a test can compare it against the plain PyTorch path it replaces. Kernels can come from tokamax, the OpenXLA kernel library for TPU and GPU.</p>
+<p>FSDP2 is built around the GPU execution model. Its all-gathers and reduce-scatters are issued from module hooks as explicit collective calls, and overlap with compute comes from running them on dedicated CUDA streams synchronized with events. None of that is visible to a compiler: the collectives sit outside the traced region, so on TPU a torch.compile region breaks at every FSDP hook and a whole-step graph cannot be captured at all. TorchTPU provides no-op stream and event objects only so that FSDP2 runs; XLA has no use for them, since it schedules work from data dependencies.</p>
+<p>SimpleFSDP takes the compiler's view instead. Parameter sharding is a DTensor parametrization: reading a module's weight performs a redistribute from sharded to replicated, which is the all-gather, and its autograd backward is the reduce-scatter. There are no hooks and no explicit collective calls, so both collectives are ordinary nodes in the traced graph, whether that graph is a per-block torch.compile region or the Graph Trainer's single make_fx step. The XLA compiler schedules the all-gathers ahead of the matmuls that need them and overlaps the reduce-scatters with the backward compute, inside one program. Mixed precision is part of the same mechanism, a policy that sets the gather dtype (bf16 parameters) and the reduce dtype (fp32 or bf16 gradients) on that redistribute. Hybrid sharding for multislice is the same code on a 2-D mesh: shard within a slice over ICI, replicate across slices over DCN.</p>
+<p>On FLUX this is what brought TorchTitan to 99% performance parity with JAX MaxDiffusion: the per-layer HLO for a SimpleFSDP block is a single module with the weight all-gathers, matmuls, attention and norms fused together, which is the shape of program XLA was built to optimize.</p>
+<p>Many PyTorch trainers either run in eager mode with CUDA graphs to cut launch overhead, or apply torch.compile to isolated regions, typically one transformer block at a time. TorchTPU does not yet support the PyTorch torch.Stream abstraction, which limits the performance of mixing eager-based FSDP2 with layer-wise torch.compile. SimpleFSDP helps by expressing parameter sharding in a way that is compatible with compilation, whether using layer-wise torch.compile or full-graph capture.</p>
+<p>TorchTitan's Graph Trainer provides full training-step capture (forward, loss and backward), producing one FX graph ahead of time with PyTorch's make_fx tracer, skipping AOTAutograd partitioning, so the whole computation is visible to XLA). GraphTrainer also runs optimization passes: to implement graph-based activation memory policy that decides what to save, recompute or offload. The train step then executes as a single XLA program.</p>
+<p>This is the model XLA was built for, and it makes PyTorch training on TPU conceptually the same as JAX, where the whole train step is one jitted function. Owning the whole step as one graph is also what makes the large-model compilation techniques possible: scan over layers, which runs the decoder layers as a single loop body so that compile time and memory stop growing with depth, and the graph splitter, which cuts the step into separately compiled forward and backward programs with activations offloaded to host memory in between. On Qwen3 235B this path reaches 29%+ MFU.</p>
+<p>The optimizer can join the graph as well: While the fused_adam optimizer is very performant, a functional AdamW update can be traced into the train-step (functional_adamw_step) and ensures an iteration has no host-side work between the first forward op and the weight write-back. On Qwen3-8B this path reaches 51-52% MFU.</p>
+<p>Every lever below is described in the TorchTitan TPU optimization guide, and nearly all of them are already wired into the recipes. For most models, getting a good MFU on TPU is a sequence of configuration changes on an existing recipe rather than new code. The order matters, because each step changes what the next one measures. A lot of optimizations in TorchTitan are available as ready-to-use building blocks that can be enabled by a flag flip (see illustration below).</p>
+<p>4. Tune Compiler, Communication and Profile</p>
+<p>To check that TorchTitan runs efficiently across different classes of models, we tuned and scaled several of them on TPU v7x (Ironwood). At scale, Llama 3 405B (large dense model) holds about 57% MFU from 128 to 1,024 chips. Qwen3 235B (large MoE model) reaches 32.42% MFU on a single 1,024-chip slice and 30.51% on 8,192 chips across eight slices. Muse Glimmer 30B (modern dense model) reaches 43.4% MFU on 128 chips (4x4x8). FLUX.1 (diffusion model) reaches 19.4% MFU on 1,024 chips (8x8x16).</p>
+<p>The following case studies show how we got there for three of these models, each representing a different class:</p>
+<p>FLUX.1 is a 12-billion-parameter diffusion transformer, which makes it a useful check that the playbook above is not specific to LLMs. We trained it at 1024x1024 resolution on a TPU v6e-8 with FSDP in bf16 and a batch of three samples. Out of the box, in eager mode with FSDP2 and full activation checkpointing, a step took 11.49 seconds. Applying the playbook in order brought that down one stage at a time. Deferred-and-fused eager execution cut the number of HLO module invocations by 28% and the step to 9.95 s (15.5% improvement). Replacing FSDP2 with SimpleFSDP reduced the step to 6.52 s (52.6% improvement): the trace was dominated by FSDP2 copying parameter shards into a flat staging buffer before each all-gather and back out into per-parameter tensors afterwards; SimpleFSDP all-gathers each parameter directly, so the staging buffer and both copies are gone (see the SimpleFSDP section above). The splash attention kernel, with sequence packing and segment ids so that no MXU cycles go to padding, took the step to 5.55 s (17.5% improvement), and per-block torch.compile, which hands XLA large sub-graphs instead of fine-grained modules and moves control flow out of the Python interpreter, took it to 3.02 s (83.8% improvement).</p>
+<p>The final step came from three small, local rewrites in the model code that the profile pointed at: splitting a fused projection into two separate linear layers so its output no longer had to be sliced apart, simplifying the rotary embedding to plain element-wise math, and unpacking Q, K and V with a view instead of a transpose. None of them changes what the model computes; each removes copies and lets XLA fuse more of the graph. Together they brought the step to 2.78 s (8.6% improvement), 4.1x faster than the starting point and about 99% of the throughput of the JAX-based MaxDiffusion on the same hardware.</p>
+<p>We also scaled FLUX from 8 to 1,024 v7x chips, keeping three images per TPU. The best configuration went from 2.53 s per step (20.76% MFU) on 8 chips to 2.71 s (19.4% MFU) on 1,024, which is 93% weak-scaling efficiency. Past one 64-chip cube, pure FSDP slows down due to the model’s compact size. Hybrid sharding via HSDP fixes this: it shards within each 4x4x4 cube and replicates across cubes. We used the topology-aware device mesh, which maps the parallelism optimally to the physical 8x8x16 torus.</p>
+<p>Muse Glimmer 30B is a modern dense decoder: 52 layers, grouped-query attention with 32 query and 2 key-value heads, a 202k-token vocabulary with a soft-capped output head, and a layer pattern that mixes sliding-window and global attention, with RoPE skipped on every fourth layer. It is the case that shows how much works out of the box. The model definition, the parallelization and the training loop ran on TPU unchanged; the port came down to two model-specific pieces. Upstream implements the sliding-window pattern with FlexAttention, which has no TPU backend, so the first step was a windowed SDPA inner attention that reproduces the window exactly and gives a correctness baseline, checked against upstream on CPU. The second piece was the fused cross-entropy kernel, which we extended to apply the soft-cap to each vocabulary tile as it computes the loss, so the 202k-wide logits never have to be materialized; without that the LM head alone dominated memory. Everything else, including the Graph Trainer wrapper, was the standard onboarding ladder, with each feature behind a flag and its own test. The resulting recipe trains the 30B on 64 v7x chips (a 4x4x4 slice) at sequence length 16,384 with one sequence per device, Graph Trainer plus SimpleFSDP and fp32 gradient reductions, and reaches 5,848 tokens per second per chip at ~44% MFU.</p>
+<p>Qwen3-235B-A22B is the largest MOE model in this set: 94 layers, 128 experts with 8 active per token, 235 billion parameters of which 22 billion are active per token. It is the case that exercises the large-model half of the playbook. At this depth compiling the whole unrolled step as one program is not an option: XLA plans every buffer of a program at compile time, and a 94-layer graph laid out flat asks for more HBM than the chip has before a step can run, while its compile time grows with every layer. Getting it to work at all meant enabling one of the two Graph Trainer paths for large models. Scan over layers is the XLA-native answer, the same construct JAX and MaxText rely on: the 94 identical layers become one compiled loop body, so compile time and program size stop growing with depth. The graph splitter is the more flexible alternative: it keeps the layers unrolled but cuts the captured step into per-layer executables, which works no matter what kind of layers you have (and does not require layers to be the same). We run both for this model and they land within a few percent of each other. Either way the activations do not fit in HBM at sequence length 4096 with 16 sequences per device, so both paths offload layer activations to host memory and prefetch them back for the backward pass.</p>
+<p>From there the playbook applied, one change at a time, each measured on the same 64-chip slice. We raised the scoped VMEM budget so the compiler could keep more kernel intermediates on chip, which also removed an exposed update at the tail of the optimizer step. We enabled a set of libtpu scheduling flags that let XLA's latency-hiding scheduler overlap the FSDP all-gathers and reduce-scatters with the surrounding compute and offload the reduce-scatters to the SparseCores, so most of the collective time is hidden behind compute, leaving only a small exposed reduce-scatter tail in the backward pass. We switched attention to the tokamax splash kernel, and replaced the expert matmuls with specialized paired grouped-matmul kernels backed by a K-tiled weight-gradient kernel, with hierarchical reduce-scatter and the SparseCore latency-hiding scheduler to hide the expert-gradient collectives. A fused route-score backward removed a large fp32 copy from the MoE backward pass. The last round of fixes came from profiling at 1,024 chips: keeping the blocked activation layout under scan offload, raising the backward layer-scheduler threshold so the expert reduce-scatters overlap with compute again, and pipelining small reduce-scatters across the scan loop's back-edge. The recipe runs at ~32% MFU on 256 v7x chips with fp32 gradient reductions kept throughout.</p>
+<p>We also used this model to test how far TorchTPU scales, from 64 chips up to 8,192-chip v7x pod scale, in both single-slice and multi-slice configurations. A TPU slice is a set of chips connected directly over the inter-chip interconnect (ICI); multislice lets one training job span several slices connected over the data-center network (DCN), which is how a job grows past the largest single slice. Within a slice we run FSDP over ICI, sharding parameters, gradients and optimizer state across the slice's chips; across slices the model is replicated and the gradients are all-reduced over DCN once per step, so the only traffic on the slower network is a single gradient reduction, which overlaps with the backward pass. That is hybrid sharded data parallelism (HSDP), and it is what the 2,048- to 8,192-chip runs use, with 1,024-chip slices as the sharding group. The framework behaved as expected throughout: per-chip throughput dropped by 8% going from 64 to 8,192 chips (4,568 to 4,208 tokens per second per chip), near-linear scaling across 128x more chips. One caveat: for a model of this size, data parallelism beyond about 1K chips is a scaling experiment rather than a training recipe. This is a weak-scaling run: the batch per device stays fixed as chips are added, so the global batch grows with the chip count and at 8k chips is larger than one would use to train this model. What the run shows is that the framework, the compiler and the collectives hold up at that scale, not that this is the configuration to train with.</p>
+<p>The three case studies above are deep dives: one model at a time, with a parity test and a profile behind every change. A team arriving on TPU usually has a different problem. They have a model they already train, often a Hugging Face one, and quite likely it won’t be the model that TorchTitan ships for TPU. They may well want every last percent out of it eventually, but first they need an easy way to get it running at all. That is the problem the Transformers modeling backend solves: it builds the model from the Transformers library by its Hub id and runs it through TorchTitan's trainer and parallelism instead of its own. On TPU the backend has a TorchTPU lane with a single configuration that applies the first rungs of the playbook optimizations to any supported checkpoint, with no change to the model code: SimpleFSDP in place of FSDP2, per-block torch.compile, the splash attention kernel registered as an attention implementation with the transformers attention interface so the model's own attention calls land on it, the fused Pallas cross entropy fed the final hidden states and the head weight instead of materialized logits, and, for mixture-of-experts checkpoints, the TPU grouped-matmul experts substituted for the portable implementation. Most of the dense architectures the backend supports train this way unmodified; mixture-of-experts checkpoints run through the same path but without expert parallelism yet. None of this reaches the hand-tuned numbers above, but it is a working, reasonably efficient first run for a model that has no TPU recipe yet, and a way to find out whether it deserves one.</p>
+<p>Sooner or later a model deserves more than a generic path: it is the one you will train for months, it has an architecture the backend cannot express, or the out-of-the-box number is not the one you need. Porting a model to a new accelerator used to be a specialist project measured in weeks, with the hard-won lessons living in one engineer's head. On TorchTitan TPU it is a repeatable procedure. The repository ships a model-onboarding skill for coding agents that captures how the case studies above were done and walks an engineer, or the agent itself, through the same ladder, with the tests, the acceptance bars and the traps built in.</p>
+<p>The roadmap runs along five lines: production readiness, precision, hardware, parallelism and models. On production readiness, the recipes gain the operational tooling that long runs on Google Cloud expect: integration with the ML Goodput Measurement library, so a run reports how much of its chip time turns into preserved training progress and where the rest goes, and with Multi-Tier Checkpointing on GKE, which keeps checkpoints in local memory and in-cluster replicas with Cloud Storage as the durable tier, so large jobs save often and resume quickly. On precision, the float8 recipe that today ships for Llama 3 70B, built on torchao's Float8Linear and v7x's native fp8 matmuls, extends to the rest of the model set. On hardware, Google has announced its eighth-generation TPUs, TPU 8t for pre-training and TPU 8i for inference and reinforcement learning, and TorchTitan will support them as they become available on Google Cloud, with the same recipes carried forward. On parallelism, expert parallelism for the MoE kernels is the open item named earlier, and long-context training is next after it, now that million-token context windows are the norm for frontier models. On models, the targets are the next size up from Qwen3-235B: Qwen3.8-Max, a 2.4-trillion-parameter mixture of experts, and Kimi K3, 2.8 trillion parameters with Kimi Delta Attention in place of standard attention on most layers, which will exercise the kernel plug-in path as much as the scaling one.</p>
+<p>TorchTitan on TPU is no longer an experiment. The same codebase and plain-PyTorch model definitions train Llama 3 405B at about 57% MFU on up to 1,024 chips, and run Qwen3 235B, a mixture-of-experts model, on up to 1,024 chips in a single slice. In a weak-scaling test with a fixed per-chip batch, Qwen3 235B kept 92% of its per-chip throughput from 64 to 8,192 chips. That shows the framework, compiler and collectives hold up at pod scale, even though a model of this size would not be trained at that scale. The pieces that make this possible are not buried in one recipe. SimpleFSDP, the Graph Trainer with scan and the graph splitter, host offload, the Pallas kernel library and the optimization playbook are building blocks, each behind a flag and each documented with the number it is worth. For models that TorchTitan does not ship, the Transformers modeling backend runs 500+ Hugging Face models through the same trainer with the first optimizations already applied, and for teams that want more than that, the onboarding skill turns porting a model into a repeatable procedure that an engineer or an agent can follow.</p>
+<p>That leaves two ways to use it. The first is to adopt TorchTitan as the training framework: pick a recipe, launch it on a slice, and build on a configuration whose performance is already known. The second is to keep the training code you have and take what you need: the kernels are standard PyTorch custom ops, SimpleFSDP and the Graph Trainer are modules you can import, the compiler flags and the playbook apply to any TorchTPU workload, and every recipe spells out what it enables and why. Either way, the fastest way to find out what this does for your model is to run it.</p>
+<p>Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+<p>Announcing New vLLM and SGLang Inference Engines on TPU</p>
+<p>Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/integrating-torchtpu-into-torchtitan-and-optimizing-models-for-tpu/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-38">
+                <h2>#38. Working With a Marketing Agency: A Technical Guide for Developers and Designers</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_cover_c493e981e6.png" alt="Ilustrasi Working With a Marketing Agency: A Technical Guide for Developers and Designers">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_cover_c493e981e6.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>Sooner or later, most teams that build websites end up working alongside a digital marketing agency. The agency asks for CMS access, wants tracking scripts added, suggests URL changes, and sets targets for page speed. If nobody on the product side understands what is being asked and why, the result is broken analytics, accidental noindex tags, and migrations that quietly erase years of search visibility.</p>
+<p>This guide is for developers, designers, and technical founders. It covers the engineering side of that collaboration: environments and access, analytics implementation, redirects, structured data, performance budgets, and crawler access, with code you can adapt and a checklist you can hand to whoever you are working with.</p>
+<p>Marketing briefs rarely say it, but most outcomes are decided in the codebase and the design system:</p>
+<p>That is why healthy collaborations look like a shared engineering effort with a reviewable change process, not a monthly PDF report.</p>
+<p>Almost every painful marketing-and-engineering story falls into one of the patterns below. Each has a cause you can see in the code and a fix that takes minutes, if you catch it before launch.</p>
+<p>Give the agency a staging environment and least-privilege access rather than production admin rights. Keep staging out of search results so test pages are never indexed. At the web-server level that can be a single header:</p>
+<p>The risk is the other direction: that header reaching production. Add a post-deploy check to your pipeline so a launch fails loudly instead of silently:</p>
+<p>Reports are only as good as the data behind them. Agree on a naming convention for UTM parameters before the first campaign, and document it:</p>
+<p>For conversions, prefer explicit events pushed to a data layer over fragile click-based triggers. Developers implement them once, and every tool downstream can reuse them:</p>
+<p>Test each event in your tag manager's preview mode on staging, and treat event names and parameters as part of your API: changing them is a breaking change that should be announced.</p>
+<p>Changing URLs without redirects discards accumulated search visibility. Before launch, export every indexable URL, map each to its new location, and implement permanent redirects:</p>
+<p>Do not rely on spot checks. This script reads a two-column CSV of old and new paths and verifies that each old URL returns a single 301 to a destination that returns 200:</p>
+<p>Run it against staging before launch and against production right after. Redirect chains (A to B to C) and redirects that land on a 404 are the two failures it catches most often.</p>
+<p>Structured data helps search engines and AI systems understand who you are. Generate it from the same data that renders the page, so it never drifts from the visible content, and escape it properly when you embed it:</p>
+<p>Validate the output with Google's Rich Results Test or the Schema Markup Validator as part of review, not after launch. If you would rather not hand-write the JSON-LD for every page type, free Schema Markup Generator can produce a starting point, which you should still validate with the tools above.</p>
+<p>Ask for Core Web Vitals targets, and make sure marketing scripts do not break them. Google's published "good" thresholds, measured at the 75th percentile of real-user visits, are:</p>
+<p>A budget nobody checks is a wish. Lighthouse CI can fail a build when a page exceeds one, which turns "please keep it fast" into a rule that applies equally to your code and to any tag the agency adds:</p>
+<p>Sizes are in kilobytes and timings in milliseconds. Route every new tracking or advertising tag through code review and measure its cost before it ships.</p>
+<p>AI-generated answers favor content that is clearly structured, factual, and easy to attribute. In practice that means descriptive headings, concise answers near the top of a page, accurate structured data, server-rendered content, and a deliberate decision about which crawlers may access your site. That decision lives in robots.txt, and it is an engineering and business call, not a default:</p>
+<p>Check the documentation of each crawler you care about for its current user-agent name, since these change. If a vendor promises AI search visibility, ask exactly what they will change on the site and how they will measure the result. The field is young and claims are easy to make.</p>
+<p>The following scenario is illustrative, not a real client story, but it combines problems that appear again and again. A team redesigns its site and changes URLs from /services/seo-audit to /solutions/audit. The redirect map covers the top 50 pages, so the launch looks fine. Three weeks later, organic traffic is down by a third. The cause is a long tail of 800 blog and resource URLs with no redirects, plus a CDN rule that rewrites trailing slashes and turns every single redirect into a chain of two hops.</p>
+<p>Both problems would have been caught by the checks above: exporting every indexable URL from the sitemap and server logs rather than only the top pages, and running the redirect verification script against staging. The lesson is that migration work is mostly verification, and verification can be automated.</p>
+<p>The best collaboration is the one that fits your stack and your team's way of working. Put the agreements above in writing, automate the checks that can be automated, and treat marketing changes like any other change to the product: reviewed, tested in staging, and measured after release. When engineering and marketing share the same process, the results tend to follow.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/working-with-a-marketing-agency-a-technical-guide-for-developers-and-designers/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-39">
+                <h2>#39. Supernatural Restart: The VR Fitness App Is Back as VR Itself Starts to Change</h2>
+                <img src="https://www.cnet.com/wp-content/uploads/sites/2/SN_Leanne_Glasses_5.png" alt="Ilustrasi Supernatural Restart: The VR Fitness App Is Back as VR Itself Starts to Change">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.cnet.com/wp-content/uploads/sites/2/SN_Leanne_Glasses_5.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Our gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.</p>
+<p>Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may earn a commission.</p>
+<p>Tech > Computing > Gadgets > VR/AR Productivity</p>
+<p>Exclusive: Supernatural is relaunching in early access and could expand beyond Meta Quest headsets. Meanwhile, Meta VR Glasses could shape what comes next for fitness.</p>
+<p>I was heartbroken earlier this year when Supernatural, my favorite VR fitness app on Meta Quest, shut down. But now it’s making a comeback as an indie company. The new app returns this week in early access, with all the same trainers and a focus on getting the classic experience going again. But the funny thing is, just as it’s returning, the very nature of VR is starting to change.</p>
+<p>Meta’s VR Glasses, coming next spring, promise to shrink down the future of Meta’s headsets to glasses-like form. And Supernatural’s team feels confident that slimmer, lighter hardware will be an excellent fit for fitness. If so, it could be the beginning of something new. More glasses-like devices on the horizon, including Meta VR Glasses, Google’s Xreal Aura and even Snap Specs, could enable virtual fitness experiences — and everything else VR has promised — in more portable forms that trap less sweat.</p>
+<p>But in the meantime, I’m glad the app’s back for Quest. “We’re coming back because people raised their voices and started petitions and said we need this to be part of our lives. We wouldn’t be doing this if that hadn’t happened,” Leanne Pedante, Supernatural’s head of fitness and one of its in-game coaches, said to me of the new, smaller Supernatural team.</p>
+<p>I talked to Pedante and James Senior, Supernatural Health’s CEO, about the new service and what else could be coming once Meta VR Glasses roll around next year.</p>
+<p>The early-access version of the new Supernatural app — which will once again launch on Quest headsets — will gradually bring back the trainers and music tracks from the Meta-owned version. There will be thousands of workouts, and new 3D environments as well.</p>
+<p>But the concept behind Supernatural, a rhythm-based set of song-driven choreographed game-like workouts with actual human coaches that talk alongside you, remains the same.</p>
+<p>“That coaching you hear is coming out of a person who is physically experiencing the same thing that you are in the moment,” said Pedante, who feels that’s a key ingredient versus opting for an AI companion. “That creates this kind of invisible empathy — the coach is able to anticipate what you need to hear or what your body is probably doing.”</p>
+<p>Those 3D landscapes were always one of the most compelling parts of Supernatural, but so were the trainers, who appear in 3D video before workouts and speak in your ears as you punch and swing to each song. I developed an emotional connection to my workout progress.</p>
+<p>The songs are being relicensed, according to Senior, but many familiar tracks are coming back, along with new ones. New workouts and content will follow soon after.</p>
+<p>“The music deals have really accelerated in the last three weeks,” he said. “We’re pretty much going to have the full catalog back that people have in the old service, and in the coming weeks, we’ll also be bringing back tracks that had disappeared from the Meta service over the last 12-18 months because of licensing restrictions.”</p>
+<p>The original workouts have also been remastered for the new app, with better-synchronized beat mapping across existing Quest headsets. “Each has different components, which very subtly causes clock drift once it reaches the application layer in the platform. In the new app, we’ve built in new logic to account for that,” Senior added.</p>
+<p>Senior also told me there’s a special comeback workout in which some of the trainers share their emotional journeys through leaving Meta and going independent, with songs chosen to fit their moods.</p>
+<p>But the price is going up to $200 a year, or $20 a month. Original “founding member” Supernatural users will get a $20 discount on the annual plan.</p>
+<p>It looks like a lot of the previous features will be part of the package, too: Fitness history and achievements will come over, and although the new experience has a new companion phone app, it’ll still work for tracking heart rate during workouts. That’s another key part of what made Supernatural actually feel like a real fitness tool for me. But that app and the heart rate tracking aren’t available now. They’re coming later this year.</p>
+<p>One big change down the road will be support for hand tracking. For now, the new Supernatural app still uses controllers to track hand movements during workouts. There’s a good reason for the shift: Meta’s VR Glasses, coming next year, won’t include controllers in the box. The next wave of VR could make hand tracking the default.</p>
+<p>Supernatural’s team feels confident that hand tracking is now good enough to step in as a replacement — but also that Meta VR Glasses will be a way for Supernatural and other fitness apps to take a leap forward.</p>
+<p>Meta’s upcoming $1,299 VR Glasses have a completely different design from Quest headsets: a glasses-like form with a tethered, phone-sized processing puck.</p>
+<p>In a promo image for the new Supernatural, Pedante even poses with Meta VR Glasses. It’s a nod to where the Supernatural team thinks VR fitness is heading. Pedante and Senior see Meta VR Glasses as a perfect fit for where things are going for immersive fitness.</p>
+<p>“It’s a lightweight device that’s highly breathable. It’s not susceptible to fogging. It has high definition and, frankly, it’s a device that’s perfect for the fitness use case,” says Senior, who previously worked at Meta on VR platforms.</p>
+<p>It’s a bold claim. Until now, there hasn’t been a smaller-scale VR device that’s workout-capable. When I wore Meta’s VR Glasses last month, I wondered how well they’d be able to run apps such as Supernatural. Meta has already confirmed that fit accessories are coming for its VR glasses that could also make them easier to wear during activities such as workouts.</p>
+<p>Supernatural’s team is now independent and no longer tied exclusively to Meta. That opens the door to other platforms, although the VR landscape isn’t as big as it once was. SteamVR could be a possibility. So could Android XR. And perhaps even platforms that aren’t VR at all.</p>
+<p>Senior confirmed that for now, Supernatural is still just a Meta app, but other devices are being looked at. I wonder about glasses-like hardware, such as Google’s imminent Xreal Aura or even Snap Specs. An app for Steam VR would be a big step, too.</p>
+<p>“It’s this interesting, convergent zone of AR and VR,” Senior said of the Aura glasses, which feel a bit like VR and use different display technology from Meta’s VR Glasses, but a similar processing puck. “That’s an area we would want to experiment and lean in,” he said without committing to whether it might emerge there, too.</p>
+<p>Clearly, Supernatural is aiming to be a killer app for Meta’s VR Glasses, and Senior said some of the headset’s features — higher-res displays and eye tracking — might also be incorporated into the experience.</p>
+<p>I’m just excited to dive back in. As Supernatural followed its strange 2026 arc from being cast out of Meta to becoming a key app for Meta once again, I fell out of my own VR workout routine. But I’ll be putting the headset on again, and I’ll let you know what it feels like when I do.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.cnet.com/tech/computing/supernatural-restart-the-vr-fitness-app-is-back-as-vr-itself-starts-to-change/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-40">
+                <h2>#40. Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions</h2>
+                <img src="https://www.docker.com/app/uploads/2025/03/image.png" alt="Ilustrasi Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.docker.com/app/uploads/2025/03/image.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Secure, minimal container images for every team, free with enterprise features, if needed.</p>
+<p>On September 30, 2026, security researchers reported a vulnerability in Docker Hub’s identity and access management through our Vulnerability Disclosure Program. We confirmed the report and deployed a fix to production the same afternoon, less than four hours after receiving it. We then reviewed every account conversion back to the date the flaw was introduced, and on October 2, notified every user and organization owner whose account could have been impacted by this vulnerability. This post explains what the vulnerability was, what it could and could not do, what we found, and what we have changed.</p>
+<p>We want to thank Peter Molnar and Krisztian Hozak of mptrdev.com for finding the issue, reporting it responsibly, and coordinating disclosure with us. Their technical write-up is available at ghostpat.com. This issue is tracked as CVE-2026-105445.</p>
+<p>On October 2 at 5:30PM EST, we sent out an email with the subject line “Docker Hub Vulnerability Identified & Resolved” to the limited number of users exposed to this vulnerability. If you did not receive an email, you and any members of the organizations you administer were not exposed and there are no actions for you to take.</p>
+<p>Docker Hub lets you convert a personal account into an organization. People do this because Hub has no way to move a repository from one account to another: conversion is how alice/app becomes an organization-owned alice/app without breaking every Docker pull that references it. During conversion, the user names an existing Docker Hub account as the new organization’s owner.</p>
+<p>Beginning  August 26, 2024, conversion also re-assigned the converted account’s personal access tokens (PATs) to that new owner. It did this by changing the token’s owner record, without rotating or revoking the token secret. The named owner was not asked to confirm and was not notified. Together, those two gaps made the following possible:</p>
+<p>Within the scope of the token, a re-assigned PAT acted as the target user at the registry level, meaning an attacker could potentially pull, push, and/or delete images in the target’s repositories and in organizations where the target had access. Because that includes publishing images under a legitimate name, we treated this as a software supply chain risk and rated it critical.</p>
+<p>The vulnerability did not give access to the Docker Hub web interface, and it could not be used to change the target’s password, email address, or two-factor settings, or to take over the account.</p>
+<p>The exposure window ran from August 26, 2024, 20:33 UTC, until the fix was deployed on September 30, 2026, at approximately [19:10] UTC.</p>
+<p>We enumerated every account conversion performed since August 26, 2024 and correlated them with registry authentication logs, Docker Hub usage data, and IAM token records. We looked for any token used under more than one identity, and we examined every push made with a transferred token, about 304,000 in all.</p>
+<p>We found no evidence that the vulnerability was exploited.</p>
+<p>We also want to be clear about the limits of that finding:registry logs show when a token is used, not that it exists, so a transferred token that was never used leaves no trace. For that reason, we did not rely on detection to decide who was exposed. We treated every PAT that moved through conversion during the window as potentially affected, whether or not we saw it used.</p>
+<p>On October 2, we emailed the limited number of users whose accounts received transferred PATs. Each email listed the in-scope tokens by description and creation date so users could find them in Docker Hub. We separately notified the associated organization owners. On October 8th at 3:45 PM EST, we deactivated the identified transferred PATs. Tokens that their owners asked to keep before the deadline were excluded.</p>
+<p>Once again, if you did not receive the above email, no PAT on your account was transferred through this flow. Your account was therefore not exposed to this vulnerability and there is no action for you to take.</p>
+<p>The immediate fix removed PAT transfer from conversion entirely. Beyond that, we are now:</p>
+<p>Review the personal access tokens on your account in Docker Hub under Account settings, Personal access tokens, and revoke any you don’t recognize or no longer use. For automation that belongs to an organization, use organization access tokens rather than a person’s PAT. If you have questions about this notice, contact Docker Support at app.docker.com/support/contact.</p>
+<p>Responsible disclosure works when researchers and vendors treat each other as partners. Peter and Krisztian did that here, and our users are safer for it. If you find a security issue in a Docker product, please report it to security@docker.com.</p>
+<p>Mark Lechner, Chief Security Officer at Docker</p>
+<p>Docker’s WeAreDevelopers keynote shows how Sandboxes, Kits, and Cloud Sandboxes give AI agents strong isolation and reproducible authority.</p>
+<p>The 2026 Stack Overflow Developer Survey shows only 7% of developers trust AI output for important decisions. Here’s what that means for running agents safely.</p>
+<p>Learn the top AI agent security risks, from prompt injection to excessive autonomy and credential exposure, and how to contain them.</p>
+<p>Harbor can now run every eval task in Docker Sandboxes Docker Sandboxes are MicroVM environments to run agents like Claude Code, Codex, Cursor, and more safely With Sandboxes, define custom network policies for fair, reproducible evals Run your evals locally or in the cloud: starting for free on Docker Sandboxes on local surfaces and scaling…</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-41">
+                <h2>#41. Sportradar Pitches Data Role in Prediction-Market Growth</h2>
+                <img src="https://readwrite.com/wp-content/uploads/2026/10/sportradar-pitches-data-role-prediction-market-growth.webp" alt="Ilustrasi Sportradar Pitches Data Role in Prediction-Market Growth">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://readwrite.com/wp-content/uploads/2026/10/sportradar-pitches-data-role-prediction-market-growth.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI,…</p>
+<p>Sportradar says it can benefit from prediction-market growth without relying on a single exchange, as sports made up about 82% of Kalshi’s U.S. prediction volume over the 12 months covered by an August industry report.</p>
+<p>The figure comes from Eilers & Krejcik Research, cited in sponsored content published by Benzinga and republished on Nasdaq on October 16. The report estimated monthly U.S. prediction-market contract volume at 49 billion in July 2026, roughly 49 times the 0.9 billion recorded in August 2025.</p>
+<p>Sports prediction-market handle-analog – the market’s equivalent of total wagers – reached 30% of combined U.S. prediction-market and online sports-betting handle in June 2026, up from 1% to 2% a year earlier, the report said. U.S. prediction-market app downloads also topped 6 million in June, while fundraising targets for exchanges implied valuations as high as $40 billion, according to the same research.</p>
+<p>Prediction markets let users buy and sell contracts tied to real-world outcomes. The sponsored article describes Kalshi and Polymarket as CFTC-regulated, rather than overseen by state gaming regulators, a distinction it says can give the platforms access to states where regulated sports betting is unavailable. It presents the category as a way to reach new customers and jurisdictions, not only as a rival for sportsbook business.</p>
+<p>Each sports contract needs an official result for settlement. Sportradar says its existing sports-betting infrastructure, technology, rights and industry relationships can support that process with official data, real-time information, live odds, fan-engagement products, customer acquisition services and integrity tools. Its data and distribution role in prediction markets is distinct from operating an exchange.</p>
+<p>“We see prediction markets as a natural extension of our core business and a significant opportunity where Sportradar is uniquely positioned to lead, given our premium content, global scale and unmatched product portfolio,” said Carsten Koerl, the company’s founder and CEO. He said the category could expand Sportradar’s U.S. total addressable market by opening new states, attracting players and increasing sports engagement.</p>
+<p>The company’s stated approach is to sell services across the ecosystem rather than depend on one platform’s success. That could mean working with exchanges as well as market makers and brokers, which need data to support liquidity, price contracts and settle trades. Sportradar says it works only with authorized, registered and licensed operators and follows applicable rules in each market where it operates.</p>
+<p>The sponsored article also names FanDuel and DraftKings as sportsbook operators developing prediction-market products. Their entry puts established betting companies alongside platforms such as Kalshi and Polymarket, while Sportradar is pitching infrastructure and official results rather than a consumer-facing exchange. DraftKings’ move reflects the broader commercial push into the category, including attention to how prediction-market products may generate revenue.</p>
+<p>The market figures cited in the article are estimates from Eilers & Krejcik, not Sportradar operating metrics. The source also discloses that the material was sponsored and created with a third-party partner; it does not provide a timeline or financial forecast for Sportradar’s prediction-market business.</p>
+<p>The ReadWrite Editorial policy involves closely monitoring the gambling and blockchain industries for major developments, new product and brand launches, game releases and other newsworthy events. Editors assign relevant stories to in-house staff writers with expertise in each particular topic area. Before publication, articles go through a rigorous round of editing for accuracy, clarity, and to ensure adherence to ReadWrite's style guidelines.</p>
+<p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI, and research tooling backstop this team and help us inform the next generation.</p>
+<p>The Louisiana Gaming Control Board has unanimously granted DraftKings a conditional four-month license extension while it examines the company’s use of artificial intelligence in customer practices and delays a decision...</p>
+<p>Online gambling laws vary by jurisdiction. It is your responsibility to verify the legality of online gambling in your location before participating.ReadWrite assumes no liability for any actions taken based on the information provided.Gambling can be addictive, please play responsibly.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://readwrite.com/prediction-markets-sportradar-data/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-42">
+                <h2>#42. Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers</h2>
+                <img src="https://media.wired.com/photos/6ad8c8882adb51db52e1a235/191:100/w_1280,c_limit/GettyImages-2301295306.jpg" alt="Ilustrasi Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/6ad8c8882adb51db52e1a235/191:100/w_1280,c_limit/GettyImages-2301295306.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Jensen Huang outlined his vision of Europe’s future at Nvidia’s global conference in Berlin on Wednesday. It consists of robotics, AI agents, and modular data centers, with Nvidia unsurprisingly powering it all.</p>
+<p>“To be part of this AI economy, you don’t want to just be consuming the AI. You want to be producing the AI,” he told the 4,000-strong crowd at Nvidia’s GTC. “We can do all of that here in Europe.”</p>
+<p>The last GTC, held in San Jose, California, in March, was all about AI inference and more efficient compute. Seven months later, the focus has switched to power, agents, and physical AI. There were even some cute little Microduck robots—made by recent Nvidia acquisition Hugging Face—doing Huang’s bidding at the end of his 90-minute pitch.</p>
+<p>Huang’s first big announcement was a modular “AI factory” called the DSX Pod. It is a “plug-and-play” option for building AI data centers, with everything arriving already assembled in a large metal container and packed with Nvidia’s latest Vera Rubin compute racks. It can be brought online in 14 days, instead of taking months or years to construct. That may come in especially handy in Europe, where infrastructure projects are notoriously slow. Huang said the DSX Pod would also slash the amount of time compute sits idle in a data center as it will come online quicker. “This is a complete transformation,” he said.</p>
+<p>The speech, delivered at Berlin’s Tempodrom, a venue inspired by a circus tent with the lighting of a gamer’s den, veered between selling laptops and sweeping predictions, with Nvidia presented as the fundamental technology provider to every industry. At one point, two Greenpeace protesters stood up and unfurled a banner reading “Clean up your dirty business.” Huang told his security team to “Go easy” as they were marched out.</p>
+<p>Humanoid robotics will be the “next great industry,” Huang said, arguing that Europe was well-placed to lead on it due to its manufacturing heritage. But physical AI goes way beyond robotics, Huang pointed out, explaining that even telecom operators are adding Nvidia GPUs to their cell towers. He also announced partnerships with European carmakers VW and Mercedes on AVs.</p>
+<p>Nvidia is making a similar move in humanoid robotics, with Huang announcing the launch of a full-stack robotics platform to standardize configuration. It also plans to release a preconfigured reference robot, Agile One, available in the first quarter of next year, to help developers start building physical AI systems. “This is your great opportunity,” he said.</p>
+<p>On model usage, Huang predicted: “Every company in the future will use both closed models as well as open models that you customize.” He showcased Nvidia’s own open-source models as hitting frontier performance once customized on an organization’s proprietary data.</p>
+<p>He also predicted that agents would mean there will be more users of software tools than ever before, and said agents’ reasoning, iteration, and tool use are pushing token consumption and demand for computing—and Nvidia GPUs—higher.</p>
+<p>In case the 90-minute speech was too technical, it ended with an AI-generated Eurovision song summing up what Huang had just announced. The speech was easier to follow, to be fair.</p>
+<p>Introducing the app: More ways to make the most of WIRED</p>
+<p>Meta failed to catch hundreds of AI child abuse ads</p>
+<p>Big Story: The search for Silicon Valley’s most powerful woman</p>
+<p>Hackers got inside a Flock camera—its data shows how the system really works</p>
+<p>In your inbox: Go inside the world of digital security with Kernel Panic</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-43">
+                <h2>#43. WordPress PHP-Only Block Registration</h2>
+                <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/wordpress-blocks-php.jpg" alt="Ilustrasi WordPress PHP-Only Block Registration">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/wordpress-blocks-php.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>You want to build a custom WordPress block. But you don’t want to learn React, manage a build pipeline, or deal with NPM packages.</p>
+<p>Seven and half years after blocks arrived in Core, WordPress introduces a way to build blocks without any of these things. All you need is PHP.</p>
+<p>A traditional WordPress block needs to be registered twice. Once in PHP, and once in JavaScript.</p>
+<p>But WordPress 7.0 introduces a new and streamlined approach, allowing you to register a block using only PHP.</p>
+<p>Let’s use this feature to build a Hello World Block:</p>
+<p>The block is fully functional in the block editor, and fits right in with all the other blocks:</p>
+<p>The key addition is the 'autoRegister' => true flag in the supports section. When set, WordPress automatically generates the required JavaScript for your block based on the PHP registration. This includes the client-side registration, and the editor preview.</p>
+<p>Attributes let users customize the block’s appearance and behavior. In traditional block development you not only need to define the attributes, but also build out the corresponding controls in the editor interface.</p>
+<p>With PHP-only registration, all that is needed is the attributes definition during block registration:</p>
+<p>This code registers a greeting attribute as a string, with a default value. WordPress generates the corresponding input control in the block’s Settings sidebar.</p>
+<p>At first sight, there is a lot to like about PHP-only registered blocks. For any WordPress developer, it feels like the good old times when programming was simpler.</p>
+<p>You might be tempted to delay learning JavaScript block development indefinitely. But the PHP-only approach has important limitations worth understanding.</p>
+<p>The editor displays the HTML as returned by the block’s render_callback PHP function. When the block is first displayed or when the user interacts with one of its controls, the editor component requests a new PHP render from a REST API endpoint.</p>
+<p>While blocks rendered this way integrate seamlessly into the editor, they are not part of the single page JavaScript application that powers the entire editor experience.</p>
+<p>First, you cannot add any controls within the block preview. This means you are limited to the auto-generated controls in the Settings sidebar.</p>
+<p>The default interaction mode with blocks is the block preview itself. Imagine that you need a testimonial block. With a JavaScript rendered block, you would build out the testimonial design, and allow editing in place.</p>
+<p>With a PHP-rendered block you can only use the sidebar. And even here you are limited, as currently there’s no support for image uploads or multiline text.</p>
+<p>With JavaScript, you can allow editing in the block, as well as in the sidebar. Additionally you have access to all the controls that WordPress Core uses, and can even implement your own.</p>
+<p>But without JavaScript, you’ll always be limited to the options WordPress provides based on the registered attributes of your PHP-only block.</p>
+<p>Secondly you cannot attach any JavaScript to markup in the block preview. Imagine you want to develop a block that pulls five related posts, and which displays them in a slider. For that you would output the markup, and then pass a DOM node to the JavaScript library which then transforms the raw markup into the desired slider interface.</p>
+<p>This reliance on finding and manipulating DOM elements is typical for traditional JavaScript development. But with PHP-only registered blocks in the block editor, the markup is fetched asynchronously and replaced on every re-render. This makes interacting with the DOM of the block preview unreliable or impossible.</p>
+<p>While the front end render works fine with JavaScript libraries, the editor authoring experience will not work correctly. Even if you manage to attach any event listeners on first load, these will be disconnected the moment the preview re-renders.</p>
+<p>These limitations are caused by the architecture of this feature, and they will not change in the future.</p>
+<p>On the initial load of the block editor, WordPress loads the post data from the database into a client-side store managed by JavaScript. Any changes that you make in the editor update this data store on the client side. But the database isn’t updated until you save the post.</p>
+<p>PHP-only registered blocks bypass this client-side store. When a block renders, it queries the database directly. But the database might contain stale data compared to what’s currently in the editor. Even worse, the PHP-rendered block isn’t notified of changes in the client side data, so it can’t refresh when data changes.</p>
+<p>Let’s take a practical example: Imagine you are building a block that displays a header element with the post title. When the user changes the title in the editor, your block will still show the value from the database. You would need to save the post and reload the editor for the changed title to show up in the PHP-only block.</p>
+<p>This makes PHP-only blocks unsuitable for any block that displays data that the user can change in the editor like title, content, excerpt, features images, or attached terms.</p>
+<p>PHP-only registered blocks render through a REST API endpoint. So the same code renders the editor preview and the front end. But there is a critical difference: the global state.</p>
+<p>On the front end, blocks render within The Loop, which sets key global variables like $post. Template tags like the_title() or the_content() rely on these globals to know which post is displayed.</p>
+<p>But REST APIs are stateless, and don’t rely on global state. The endpoint that renders the block editor preview accepts a post ID parameter, but the editor component does not pass it through. This means that your render callback has no way to know which post is edited.</p>
+<p>This limits the functions that you can use in the block editor preview. Template tags or functions like get_post_meta() need to know about the post context.</p>
+<p>This is a significant architectural limitation as of WordPress 7.0. This could be addressed by passing the post ID to the endpoint, but there are no concrete plans to change this at the time of this writing.</p>
+<p>WordPress 7.0 supports only three attribute types: strings, numbers, and booleans. These map to four basic editor controls: text inputs, number inputs, checkboxes, and a dropdown.</p>
+<p>This screenshot shows a block that uses all available user interface elements:</p>
+<p>The dropdown element is the only advanced control, but it has a significant limitation: it does not support keyed arrays. This makes it impossible to have a label that differs from the stored value.</p>
+<p>Let’s take the example of a related posts block where users can select a category. You want to display the category names in the dropdown, but store the category IDs. This isn’t possible.</p>
+<p>Instead, you must choose between displaying names or slugs, which both are user-editable, and store that value:</p>
+<p>Using slugs not only doesn’t look good in the interface, but this implementation will also break when renaming a category. All existing blocks referencing the old slug will not be able to pull the related posts. IDs are stabler, and would only be invalid when the category is deleted.</p>
+<p>Beyond dropdowns, essential controls — like image uploads, rich text editors, or date pickers — are absent. This might change in future releases, but again, there are no plans for it as of yet.</p>
+<p>It’s easy to get discouraged looking at these limitations. It is true that PHP-only registered blocks are a poor choice for building new blocks from scratch.</p>
+<p>But I consider them to still be very valuable because there is one use case where these limitations do not matter: migrating legacy PHP code into block themes. This WordPress 7.0 feature is a real game changer when it comes to developers adopting block themes, which is still a barrier of sorts for many theme authors.</p>
+<p>In my experience, block themes are more performant, easier to maintain, and faster to build than legacy themes. Yet many developers are still relying on classic themes. And that is not by choice, but because of existing PHP-based features.</p>
+<p>Until now, migrating these features came up against nearly insurmountable barriers. First, the need to learn JavaScript block development, and set up an entirely new development workflow with dependency management and build pipelines. Second, the time needed to rewrite all this code in JavaScript.</p>
+<p>PHP-only registered blocks remove both these obstacles.</p>
+<p>In 2022, I wanted to migrate a classic theme to a block theme.</p>
+<p>The content area and the footer were straightforward to rebuild with blocks. But the header was more complex, especially with the more limited block building features of the time.</p>
+<p>So, rather than spending time rebuilding the header, I took the existing PHP-header, and wrapped it in a server-side rendered block.</p>
+<p>That said, we need to be realistic. This header block was far from perfect. The block preview was not responsive, dropdowns didn’t work in the editor, and you could not edit anything.</p>
+<p>Did it matter? Not at all. The block rendered perfectly on the front end, and the editor preview was good enough. And because of this approach, I could migrate the theme in hours instead of days.</p>
+<p>Before PHP-only registration, building such blocks still required a solid JavaScript proficiency and build tooling. But now any PHP developer can use this migration path using the skills they already have.</p>
+<p>PHP-only registered blocks are ideal for converting:</p>
+<p>The blocks you create do not need to be perfect in the editor. What counts is that they render correctly on the front end. By using existing PHP code, adaptations to block themes will be minimal.</p>
+<p>Here are a few things I’ve learned along the way as I’ve been playing with blocks registered with PHP.</p>
+<p>There might be cases in which you want to have a different block rendering depending on whether the block is displayed in the admin, or on the front end.</p>
+<p>Using the is_admin() function for this use case does not work, as it does not evaluate to true when the REST API endpoint generates the markup for the block editor preview.</p>
+<p>But there is another function that we can use: wp_is_rest_endpoint(). If it returns true, it means that WordPress is generating a REST API endpoint request. But this could be any endpoint rendering posts, so we need to ensure that we’re dealing with the Block Renderer endpoint.</p>
+<p>This shows different text and styling depending on whether the block is rendered in the editor or on the front end:</p>
+<p>We’ve seen that WordPress out of the box does not give you access to the ID of the edited post in PHP-only registered blocks. There is a workaround though.</p>
+<p>WordPress registers blocks in the init hook. This hook also runs on every admin page. When you edit a post, the ID of the edited post is passed as a GET argument in the URL, for example: https://css-tricks.com/wp-admin/post.php?post=5\&action=edit</p>
+<p>This means that at the moment of the block registration, we can retrieve this ID. To pass it to the block, we use an attribute. But we do not want WordPress to add an interface element, so we set the source of the attribute to local.</p>
+<p>This only works when editing an existing post. When a new post is created, there is no post ID passed through the URL. WordPress will create one when the post is first saved, and update the URL.</p>
+<p>But this is done through JavaScript without triggering a new page load from the server. Meaning that the PHP won’t have an opportunity to access the post ID until a full page reload is done.</p>
+<p>So, yeah, not the greatest approach. But it’s good enough to unblock you until WordPress Core adds a proper implementation to pass post data to PHP-only registered blocks.</p>
+<p>There are situations in which it is difficult to achieve a decent preview in the editor. In certain situations, it’s even impossible.</p>
+<p>Think, for example, of a newsletter form provided as a snippet of HTML and JavaScript. Due to the limitations we’ve seen, the editor preview will always look broken.</p>
+<p>In a situation like this, you can implement a placeholder in the editor. This is a strategy that WordPress Core uses as well, as we can see for the Post Content block:</p>
+<p>Users do not expect an exact preview in every case. Choose the best compromise between the time needed to achieve a proper block editor preview and the expected UX gain.</p>
+<p>You can use WordPress optimized stylesheet enqueuing, which only enqueues stylesheets on the front end for the blocks present on that specific page.</p>
+<p>The register_block_type function offers two arguments:</p>
+<p>To add a CSS stylesheet, register it using wp_register_style() Then use the handle during block registration:</p>
+<p>WordPress auto-generates a .wp-block-{namespace}-{block-name} class and adds it to the wrapper container of your block as part of get_block_wrapper_attributes().</p>
+<p>If you need to add additional classes or styles, you can pass these to get_block_wrapper_attributes() in the render callback function.</p>
+<p>It’s the best practice to use this class as the common root class for writing targeted styles. I prefer to use the Block, Element, Modifier (BEM) approach for writing block styles. It prevents my styles from clashing with styles provided by WordPress Core or other code.</p>
+<p>A common scenario is that you will have existing CSS, and restructuring this code and the markup using BEM would be too much work. In that case I recommend using a unique prefix for these legacy classes.</p>
+<p>If you are dealing with a website that uses a front-end framework like Bootstrap, avoid enqueuing any framework stylesheets. You need to only migrate the CSS instructions that the block needs, applying unique prefixes as described above.</p>
+<p>There are two ways for WordPress to integrate the post editor into the admin:</p>
+<p>WordPress started with the first approach but quickly realized that it made styling the block editor very difficult. Without an iframe, any admin styles can interfere with that styles of the block editor, including your custom blocks.</p>
+<p>In practice, this means that your blocks can look different in the editor than they do on the front end. For simplicity you want to use the same styles across both the front end and the editor preview with minimal adjustment. And the iframed post editor allows you to do that.</p>
+<p>As of WordPress 7.0, the post editor is iframed if all blocks in the post are Version 3 or higher. WordPress 7.1 will enforce the iframe approach independently of the blocks.</p>
+<p>So, to simplify building blocks and prepare for the next release, I think it’s best to ensure that all blocks on your sites use the Block API Version 3.</p>
+<p>JavaScript support for PHP-only registered blocks is limited to the front end. To add a script, you can register it, and then pass the handle to the view_script during registration:</p>
+<p>WordPress will only enqueue this script when the block is present on the current page.</p>
+<p>PHP-only registered blocks can use the Block Supports API, which allows opt-in to core features. Depending on the feature, the block editor will expose additional interface elements to the user. It will also add attributes to the block to store the user’s choices.</p>
+<p>There are features that will work independently of the theme. Others need to be enabled by the theme through its theme.json file.</p>
+<p>Here is an example enabling color customization for the text and background color:</p>
+<p>WordPress will take care of the outputting the corresponding CSS classes and inline styles using get_block_wrapper_attributes().</p>
+<p>Allowing users to customize the appearance is a good demonstration, but not something that you are likely to often use. So, let’s have a look at three useful options for PHP-only registered blocks.</p>
+<p>All register blocks appear in the inserter by default. But this does not make sense for every block. Imagine, for example, that you use a block to migrate a legacy PHP feature only used in a single template.</p>
+<p>In this scenario, you could set inserter to false to hide the block from the inserter. Hidden blocks stay fully functional.</p>
+<p>Setting multiple to false allows the block to only be inserted once into each post. An example is the core More block.</p>
+<p>Once a non-multiple block is inserted, the block’s icon is disabled in the inserter to prevent inserting a second instance.</p>
+<p>Setting align to true enables all available alignment options:</p>
+<p>The text alignments like left, center, and right are always available. Wide and full-width alignment are only enabled if the theme supports it.</p>
+<p>WordPress handles outputting the necessary classes for the block’s design to reflect the desired alignment.</p>
+<p>If you want to selectively enable alignments, you can specify them. The available options are left, center, right, wide, and full.</p>
+<p>With these tips you should be able to make the most out of PHP-only registered blocks, even with the limitations in WordPress 7.0.</p>
+<p>Remember the opening question: Was it worth waiting seven-and-a-half years for this?</p>
+<p>For building new, feature-rich blocks, the answer is no. You need JavaScript to deliver the kinds of interactive and native-feeling editing experiences that WordPress users expect. PHP-only block registration won’t replace JavaScript-powered blocks, and nor should it.</p>
+<p>Because it’s not what this feature is for.</p>
+<p>PHP-only registered blocks are the solution for thousands of WordPress sites stuck with classic themes because of the high learning curve and high cost of rebuilding with JavaScript.</p>
+<p>You can now take shortcodes, widgets, and template parts and port them to the block editor with the PHP skills you already have. No JavaScript. No build pipeline. No code duplication.</p>
+<p>And these blocks that you build do not need to be perfect. As long as you can insert them into block content, and they render correctly on the front end, that is all that is needed.</p>
+<p>That is the killer use case for this feature. And for that, the wait was worth it.</p>
+<p>But beyond this feature, PHP-only registered blocks signal an important shift: WordPress Core is finally prioritizing developer experience. Even as someone who builds JavaScript-powered blocks regularly, I’ll admit that the process involves too much boilerplate code, and too much coordination between block.json, the PHP code, and the JavaScript. Which is not to mention that time spent setting up and maintaining the build pipeline.</p>
+<p>Anything that we can do to make this process easier, or avoid it entirely, is more than welcome.</p>
+<p>So if you have projects with legacy PHP code preventing a migration to a block theme, then WordPress 7.0 has removed your biggest obstacle.</p>
+<p>Migrate these legacy features to blocks and unlock everything modern WordPress has to offer.</p>
+<p>I measured the migration speed of legacy code to modern themes using PHP-only blocks and found it to be around 30% faster than rewriting everything in JavaScript. What I’m curious about is the trade-off in performance—have you noticed any significant impact on runtime speed?</p>
+<p>Your email address will not be published. Required fields are marked *</p>
+<p>Save my name, email, and website in this browser for the next time I comment.</p>
+<p>Notify me of follow-up comments by email.</p>
+<p>Coming back really, really soon! See past issues →</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://css-tricks.com/wordpress-php-block-registration/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-44">
+                <h2>#44. A Practical Guide To Naming Things</h2>
+                <img src="https://files.smashing.media/articles/how-name-things-choose-accordion-icons/how-name-things.jpg" alt="Ilustrasi A Practical Guide To Naming Things">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://files.smashing.media/articles/how-name-things-choose-accordion-icons/how-name-things.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Vitaly Friedman loves beautiful content and doesn’t like to give in easily. When he is not writing, he’s most probably running front-end & UX …
+More about
+Vitaly ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>Naming is hard. The language we use shapes the way we think about things, but also the conversation we have about it. That’s why we have so much confusion about colors, icons, UI components, features — and that’s why we struggle to name design tokens, HTML classes, and variables.</p>
+<p>Sometimes, the names we choose are too generic, so it’s difficult to understand what exactly is meant. And sometimes they are too specific, leaving little room for flexibility and reuse. How do we choose the right names? And which naming conventions work best? Let’s take a closer look.</p>
+<p>If you’re looking for some inspiration for naming HTML classes, CSS properties, or JavaScript functions, Classnames is a wonderful resource jam-packed with ideas that get you thinking outside the box.</p>
+<p>The site provides thematically grouped lists of words perfect for naming. You’ll find terms to describe different kinds of behavior, likeness between things, order, grouping, and association, but also themed collections of words that wouldn’t instantly come to one’s mind when it comes to code, among them words from nature, art, theater, music, architecture, fashion, and publishing.</p>
+<p>How would you choose the right name for a given color? Fortunately, David Aerne maintains a tremendous repository of color names, currently with 30355 unique color names, sourced from various references and 1000s of user contributions.</p>
+<p>Of course, the repository comes with a color picker and name search and plenty of other color pickers as well. Tremendous work, which is also a fantastic reference to keep nearby.</p>
+<p>What makes a good name? Javier Cuello summarized a set of naming best practices that help you name your layers, groups, and components in a consistent and scalable way.</p>
+<p>As Javier points out, a good name has a logical structure, is short, meaningful, known by everyone, and not related to visual properties. He shares do’s and don’ts to illustrate how to achieve that and also takes a closer look at all the fine little details you need to consider when naming sizes, colors, groups, layers, and components.</p>
+<p>How to build a flexible design token taxonomy that works across different products? That was the challenge that the team at Intuit faced. The parent company of products such as Mailchimp, QuickBooks, TurboTax, and Mint developed a flexible token system that goes beyond the brand theme to serve as the foundational system for a wide array of products.</p>
+<p>Nate Baldwin wrote a case study in which he shares valuable insights into the making of Intuit’s design token taxonomy. It dives deeper into the pain points of the old taxonomy system, the criteria they defined for the new system, and how it was created. Lots of takeaways for building your own robust and flexible token taxonomy are guaranteed.</p>
+<p>Looking at what other people call similar things is a great way to start when you’re struggling with naming. And what better source could there be than other design systems? Before you end up in the design system rabbit hole, Iain Bean did the research for you and created the Component Gallery.</p>
+<p>It’s a collection that includes plenty of examples for more than 50 UI components — from accordion to visually hidden — and also lists other names that the UI components go by. A fantastic resource, and not only with regard to naming.</p>
+<p>Features often have low adoption due to poor discoverability. Feature adoption needs time — first the feature must be discovered, then understood, then tried, learned, and eventually built into existing workflow. Erin Gannon has written a helpful practical guide on how to make sure all of it happens.</p>
+<p>Good names are driven by user needs and problems. They should signal the value or outcome of a feature (the job-to-be-done), and — most importantly! — tap into the user’s own language. So ask people to explain a feature in their own words and then use the words they use.</p>
+<p>A wonderful example of naming guidelines for a complex multi-brand, multi-themed design system comes from the Vodafone UK Design System team. Their Variables Taxonomy Map breaks down the anatomy and categorization of a design token into a well-orchestrated system of collections.</p>
+<p>The map illustrates four collections required to support the system and connections between tokens — from brand and primitives to semantics and pages. It builds on top of Nathan Curtis’ work on naming design tokens and enables everyone to gather insight about where a token is used and what it represents, just from its name.</p>
+<p>If you want to explore more approaches to naming design tokens, I’ve put together a list of useful Figma kits and resources that are worth checking out.</p>
+<p>Romina Kavcic created a helpful little tool for naming design tokens — from learning how they work and how to name them well to configuring your own naming structure with components, categories, states, and roles.</p>
+<p>If you are looking for the right name for your product or service, Onym is a fantastic open-source repository that organizes tools and resources for finding names for brainstorming, vetting, guides, sprints, etymologies — all the way to cautionary tales and agencies that name things, as well as useful books to take a look at.</p>
+<p>A quick-reference list of tools and guides for naming just about… well, anything, in one place:</p>
+<p>The right name is the one that’s well-understood and used by the team and users. So much time is wasted speaking about the very same thing but in different dialects — the designer’s dialect, the developer’s dialect, the product manager’s dialect, and the user’s dialect. That’s what often causes frustration and confusion.</p>
+<p>So if you see low adoption, it might be merely because of the name. And pay attention to potential naming conflicts and put them in a backlog of things to address later. It’s one of those fine little details that can reduce frustration and confusion and help teams work together better.</p>
+<p>We hope you’ll find these wonderful projects useful — put together by wonderful creators. A friendly shout-out to everyone sharing their work with folks to use and learn from! That’s one of the reasons why we truly love the web and people building and designing it. 💚</p>
+<p>At Smashing, we love the web. That’s why we publish articles and books, run workshops and events around everything web. We love seeing what we all can do to make the web more accessible and usable. We also love organizing and attending online events — with friendly discounts for large groups (5+ attendees) and schools and students. Interested? Just send us an email and we’ll sort it out!</p>
+<p>Tips on front-end & UX, delivered weekly in your inbox. Just the things you can actually use.</p>
+<p>With practical takeaways, live sessions, video recordings and a friendly Q&A.</p>
+<p>Everything TypeScript, with code walkthroughs and examples. And other printed books.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/10/how-name-things/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+        </div>
+        <div class="pagination no-print">
+<a href="halaman_1.html">« Sebelumnya</a><a href="halaman_3.html">Berikutnya »</a>
+        </div>
+    </div>
+</body>
+</html>

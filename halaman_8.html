@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Artikel - Halaman 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header-action {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-pdf {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-pdf:hover {
+            background-color: #c0392b;
+        }
+        .article-card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            page-break-inside: avoid;
+        }
+        .article-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .article-card h2 {
+            color: #111;
+            margin-top: 0;
+        }
+        .pagination {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .pagination a {
+            padding: 8px 16px;
+            margin: 0 4px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #fff;
+            }
+            .article-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-action no-print">
+            <h1>Katalog Artikel Berita (Halaman 8 dari 15)</h1>
+            <button class="btn-pdf" onclick="window.print()">📥 Download PDF Halaman Ini</button>
+        </div>
+        <div class="article-list">
+
+            <article class="article-card" id="artikel-161">
+                <h2>#161. Timing Charts: A Blueprint For SMIL Animations</h2>
+                <img src="https:null" alt="Ilustrasi Timing Charts: A Blueprint For SMIL Animations">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https:null" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Johan is a developer still amazed that tally marks on a thigh bone have led to the Internet. He wonders whether the inventors of movable type ever imagined that …
+More about
+Johan ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>We know that everything on the web is a box by default, but you’ll find many animated <div>s pretending to be circles. But if you’ve ever met a real <circle>, you’ll know that they’ve got a lot more going for them. Dressed in SVG, they fit into a wider range of crowds than a humble <div> wearing HTML/CSS can. <img> has a strict no .html policy.</p>
+<p>The <img> tag is not as static as its name suggests. Any embedded JavaScript unfortunately won’t run if you load an SVG file with an <img> tag, but CSS animations work perfectly fine. Many of the SVG attributes do have CSS property counterparts, and the geometry properties have been supported across the major browsers since 2024. Some attributes that you might want to animate, like viewBox, don’t have equivalents yet.</p>
+<p>Besides JavaScript and CSS, there’s another way to animate SVGs: Synchronized Multimedia Integration Language (SMIL). Despite its quirks, it’s still worth learning. Like CSS animations, SMIL animations also work in <img> tags and can fully animate everything in an SVG, without JavaScript.</p>
+<p>If you’ve never heard of SMIL or need a refresher, check out Andy Clarke’s well-named article. Then we’ll look at a way to plan an animation and make SMIL markup more manageable.</p>
+<p>SMIL has a problem: it gets bloated quickly. Unlike CSS and JavaScript, where you can list multiple properties in each keyframe and easily reuse animations, each SMIL tag can only target one element and only one property of that element at a time. A property can be animated through a list of values. But it is still one tag, one element, one property. The shortest way you can write a color and opacity change that will run is the following:</p>
+<p>That’s not bad, but consider that it needs to be repeated for every element included in the animation. A SMIL animation can quickly get longer than its CSS equivalent.</p>
+<p>To make things easier when starting a new animation, let’s plan all of the elements and properties we want to animate, and create a list of descriptive IDs for each tag.</p>
+<p>Meet Smashing Workshops on front-end, design & UX, with practical takeaways, live sessions, video recordings and a friendly Q&A. With Brad Frost, Stéph Walter and so many others.</p>
+<p>I like to plan my animations using what’s called a timing chart. A timing chart is effectively a line segment; some choose horizontal lines, others prefer vertical, which is a great analogy for animation as a whole because line segments can run parallel, overlap, and follow each other with or without a gap. Just like animations.</p>
+<p>For now, we’re only interested in when animations start and stop. When drawing our charts, we’ll forget about the in-between lines and instead draw a line for each component animation, marking the beginning and end. I like to annotate timing with a circle and a bar. You can draw your chart using whatever, and it doesn’t have to be exactly to scale, as long as the relative timing between all the little animations that make up the whole is clear. Besides, adding labels for the durations is an easy cheat to get around drawing to scale.</p>
+<p>Here is a demo of how I typically set up a timing chart with more than one animation:</p>
+<p>See the Pen [colorAndOpacityChange [forked]](https://codepen.io/smashingmag/pen/01a016dc-399c-7652-b172-4cd4663746b9) by Johan Grobler.</p>
+<p>The important thing to note is that the timing chart lines are arranged according to how the animations are arranged in time. One piece of the animation follows the next piece, which is followed by a subsequent piece, and so forth. It visualizes how the animation’s parts run together and cascade over time.</p>
+<p>A big part of SMIL is synchronization. It’s even in the name, after all. And there are multiple ways to specify when an animation should start (here’s a test case to check what your browser supports). One of the most useful ways is with a syncbase value, which is a SMIL tag’s ID followed by either .begin or .end, with an optional positive or negative offset.</p>
+<p>Let’s piggyback off the previous animation example that includes changes in color and opacity. If we want the opacity animation to start 300 milliseconds before the color animation finishes, we could do arithmetic. Alternatively, the second animation can use the syncbase value colorChange.end - 300ms. This way, the relative timing between the two animations becomes explicit.</p>
+<p>Using syncbase values, the beginning of an animation is positioned in time relative to the .begin or .end of some other animation. A positive offset moves the start to the right (forwards in time), and a negative offset to the left (backwards in time).</p>
+<p>See the Pen [syncbase.end [forked]](https://codepen.io/smashingmag/pen/emgwwGJ) by Johan Grobler.</p>
+<p>Something with negative offsets is that they can specify a time before the document has loaded or when a click happens. Computers can’t predict the future (at least not yet). The best they can do is jump the animation to where it would have been had the computer peeked into the future to preemptively start the animation. The second animation only runs from start to finish if there is enough room, so to speak.</p>
+<p>See the Pen [syncbase.begin [forked]](https://codepen.io/smashingmag/pen/xbgooXq) by Johan Grobler.</p>
+<p>Syncbase values don’t only allow you to connect animations from .end to .begin. Elect a primary animation; the animation that first comes to mind is usually the best representation of the group. All secondary animations can be set with begin="primary.begin". I’ve only used the ID #primary for emphasis. That way, all the other animations begin relative to that starting point. Stacking animations like this reduces maintenance if, say, we later want the whole group to start at a different time.</p>
+<p>Let’s put the idea to work and build a loading indicator (or spinner). Then we’re going to explore how changing the relative timing between the parts changes the effect of the whole animation:</p>
+<p>Browsers have wide support for the prefers-reduced-motion media feature and Val Head explains this in depth in another article. We definitely want to respect this user preference as we consider moving things around. In fact, consider it non-negotiable.</p>
+<p>There are various approaches to adhering to a user’s prefers-reduced-motion setting when it comes to SMIL. Each with its pros and cons. Evaluating early on what’s going to work best for your use case could save you a partial rewrite down the line.</p>
+<p>For example, we could consider using a <picture> element instead of a plain <img> because <picture> supports multiple <source> elements that can be used as fallbacks in a media attribute for reduced motion preferences.</p>
+<p>Or one SVG file with an inline CSS @media query that uses display: none to swap between versions. That said, it’s an approach that might cause trouble in various environments. But browsers are continuously changing, and this might not be an issue in the future.</p>
+<p>You might also consider a CSS background-image instead because we can wrap that style in a media query — @media (prefers-reduced-motion) — that sets a static image as the fallback for reduced motion preferences.</p>
+<p>There are even more options we can turn to! For example, SVG’s <view> element can also be used to swap things out for motion preferences.</p>
+<p>Or, if we prefer everything bundled together, we can use JavaScript .matchMedia() and the handy SMIL DOM interface to control which animations start instead of completely switching out files.</p>
+<p>For this, I’m avoiding any motion and sticking to opacity animations, which tend to cause less trouble. For a non-interactive animation like this, we can load it in an <img> tag. When we add motion, we can go the <picture> route to show the most appropriate version of our animation.</p>
+<p>We’re going to do our own version of the classic three-dot spinner:</p>
+<p>See the Pen [StaticDots [forked]](https://codepen.io/smashingmag/pen/01a016e5-c44d-75b3-bbb2-3eca2f83932d) by Johan Grobler.</p>
+<p>SVG wizards might be able to do everything directly in a text editor. I recommend using a graphic editor like Inkscape if you’re having trouble visualizing how the markup will be rendered. Once again, Andy Clarke has a great article about his process for optimizing and structuring his own drawings.</p>
+<p>Note: There’s a gotcha with Inkscape. Setting what you would expect to be an element’s ID via the Layers window actually sets the value of a metadata attribute used internally by Inkscape. Use Inkscape’s object properties or XML editor window to set the true element’s ID. Your mileage may vary with a different editor. Also, in Inkscape, remember to save the file as optimized SVG when the drawing is done to strip away unneeded metadata.</p>
+<p>OK, so we’re sticking with the opacity animation idea. The dots are going to fade in and out. We’ll use separate <animate> tags for those. Six tags in total.</p>
+<p>Our naming scheme is going to be straightforward: we’ll call them #fadeIn and #fadeOut, and to differentiate between each pair of tags, we’ll postfix the tag’s ID with either Left, Middle or Right. Try to follow a convention that makes sense to you when coming up with your own IDs.</p>
+<p>The fade-in <animate> tag for the dot on the left:</p>
+<p>And the fade-out <animate> for the middle dot:</p>
+<p>We have an infinite number of ways in which we could space these six animations in time. Let’s look at a couple of choice examples alongside their timing charts to see how changing the arrangement of the parts impacts the visual effect of the whole animation.</p>
+<p>To narrow our choices a bit, all of the <animate> tags will use the same dur value, and none of the syncbase values will have offsets.</p>
+<p>For someone coming from a culture that reads from left to right, the dots appearing on screen along the same pattern would feel natural. Let’s also start with all the dots fading out together at the end:</p>
+<p>See the Pen [dotsVersion1 [forked]](https://codepen.io/smashingmag/pen/01a016ec-0b1b-731e-bf44-2dd45b7c075f) by Johan Grobler.</p>
+<p>Syncbase values stagger the fade-ins and restart the loop when the dots have disappeared:</p>
+<p>Since all the fade-outs end at the same time, it is an arbitrary choice which one we use to restart the loop. We’ll consider #fadeOutLeft as the primary animation here and also synchronize the other fade-outs to it with the syncbase value fadeOutLeft.begin. Later, if we want to move the fade-outs in time, all we do is change when #fadeOutLeft starts.</p>
+<p>Instead of a group fade-out, we could stagger them just like the fade-ins:</p>
+<p>Without adding an offset, there are a couple of points in time we could start #fadeOutLeft at. If it starts on fadeInRight.end:</p>
+<p>See the Pen [dotsVersion2 [forked]](https://codepen.io/smashingmag/pen/01a016ef-1be0-7359-a8ce-1d45194ed50a) by Johan Grobler.</p>
+<p>The visual effect is subtly changed by moving up a spot and starting #fadeOutLeft on fadeInMiddle.end instead:</p>
+<p>See the Pen [dotsVersion3 [forked]](https://codepen.io/smashingmag/pen/01a016ef-f4d9-745b-a89f-2ff35d898589) by Johan Grobler.</p>
+<p>We can see from the charts that we could try moving up a spot further to fadeInLeft.end:</p>
+<p>See the Pen [dotsVersion4 [forked]](https://codepen.io/smashingmag/pen/01a016f1-07f8-732a-966d-c295618c60d7) by Johan Grobler.</p>
+<p>How about starting the sequence with a fade-out:</p>
+<p>See the Pen [dotsVersion5 [forked]](https://codepen.io/smashingmag/pen/01a016f1-b6a5-7078-a73c-217459f53e20) by Johan Grobler.</p>
+<p>You might prefer to start with the dot in the middle:</p>
+<p>See the Pen [centerFirstDots [forked]](https://codepen.io/smashingmag/pen/01a016f2-5f78-70a2-a948-f030c147fbe3) by Johan Grobler.</p>
+<p>As you iterate on your animation, timing charts are a great way to keep track of your work, and they make visual comparison between versions possible. And by drawing a timing chart, you might even see a pattern in the timing between the parts of the animations that you might otherwise have missed.</p>
+<p>As you animate more elements and properties, it gets harder to keep track of what starts when. To see how timing charts can help you make sense of things, let’s build on the basic spinner:</p>
+<p>See the Pen [staticDotsWithClipPaths [forked]](https://codepen.io/smashingmag/pen/01a016f4-f99c-7779-b526-1265ecf5619b) by Johan Grobler.</p>
+<p>I’ve added a <rect> for each dot to the drawing. We’ll move those into to a <cilpPath> tag and remove the fill="white". As the animation runs, the rectangles are going to move over the dots for a different approach to animating the stroke than by animating stroke-dashoffset.</p>
+<p>We only need a single <clipPath> for all three dots, but it adds structure to the document, and it’s good practice to wrap it, and similar tags, in a <defs> tag:</p>
+<p>Remember to set the clip path for the <circle>s. Either with CSS or using the clip-path attribute:</p>
+<p>Because the dots now have a stroke added, to leave their size unchanged, we need to compensate by subtracting half the value of stroke-width from r:</p>
+<p>That’s all the changes the graphics need. Have a look at the animated version with its timing chart, then we’ll look in more detail at the changes that have been made to the animation:</p>
+<p>See the Pen [clipPathDots [forked]](https://codepen.io/smashingmag/pen/01a016f8-73b0-707a-b21a-7aa07fb194b2) by Johan Grobler.</p>
+<p>There’s a new animation, #moveClipPathLeft, that starts the whole sequence, and to tweak the animation’s rhythm a bit, there’s a 1s delay between when the fade-outs end and the loop restarts:</p>
+<p>You could use <animateTransform>s to move the rectangles instead, but we need to move them back to their starting positions at the end for a smooth restart of the animation. You’ll need to take into account which tags can animate and set which data types if you do decide to animate the transform attribute instead of translating the rectangles with the y attribute.</p>
+<p>To change things up, the <rect> for the middle dot moves down:</p>
+<p>We’re also using the fill-opacity property instead of the opacity property for the fade-ins, and they’ve been synchronized to start once a dot’s clipping <rect> has finished moving:</p>
+<p>The fade-outs still use the normal opacity property, so both the fill and stroke fade out together. Because this arrangement is set up to use a group fade-out at the end, there are a few places the markup could be optimized. One of them is dropping the fill="freeze" to automatically reset the dot’s opacity back to its starting value once the tag finishes running:</p>
+<p>For the <animate> tags that did use fill="freeze", we’ll use <set> tags to reset those properties back to their starting values. I’ve simplified the chart a little by lumping those tags together. Because these <set> tags don’t have a duration over which they act, on the chart I’ve drawn the start and end markers over each other.</p>
+<p>To reset the fill-opacity on the left dot:</p>
+<p>If you use fill="freeze" with the fade-outs, you’ll need an extra <set> for each dot to reset the middle dot’s opacity:</p>
+<p>The last thing we need to do is move the clipping rectangles back to their starting positions. For the right <rect>:</p>
+<p>That’s just one of the possible timing variations, and most of what you’ll need to try some of the others, as we did with the basic spinner, is already in place. You might want to have a try at coming up with a couple of your own alternate timings.</p>
+<p>To sum things up, we know that balancing the different stages of an animation can be difficult at best, and untenable at worst. Any time we get into multi-step animations that exceed one or two steps, it’s a form of orchestration. You’re almost building a Rube Goldberg machine of markup. And using a timing chart is a strategy I use that I hope will help you in your projects as well. They are outlines of what to expect and when, allowing you to map things out in a way that not only helps plan your code, but also makes future updates and maintenance a lot more bearable than going into it without a plan.</p>
+<p>While a timing chart can’t reduce the complexity of the markup, it can give a good overview of what should happen when. Timing charts are definitely not limited to SMIL animations. Unfortunately, syncbase values are, and they can still help even if you’re going to use a different approach to implementing your animation.</p>
+<p>I highly recommend checking out Andy’s other articles on Smashing Magazine. There’s even more stuff on combining CSS and SVG.</p>
+<p>Yosra Emad wrote a great article on creating animations with multiple steps in CSS, and you might want to try drawing a few timing charts as you read through it.</p>
+<p>When you’re ready to start adding those in-between lines to your timing chart, Nash Vail’s article on easing dives deep into the details of easing curves.</p>
+<p>You might also be interested in tests for your browser’s SVG implementation to see what is supported.</p>
+<p>Tips on front-end & UX, delivered weekly in your inbox. Just the things you can actually use.</p>
+<p>With practical takeaways, live sessions, video recordings and a friendly Q&A.</p>
+<p>Everything TypeScript, with code walkthroughs and examples. And other printed books.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-162">
+                <h2>#162. EmbeddingGemma 2: The Developer Guide</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/embeddinggemma-2-the-developer-gu.2e16d0ba.fill-1200x600.png" alt="Ilustrasi EmbeddingGemma 2: The Developer Guide">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/embeddinggemma-2-the-developer-gu.2e16d0ba.fill-1200x600.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Modern search and retrieval augmented generation (RAG) applications increasingly need to work across diverse content types, from technical documentation and source code to images, video clips, and audio recordings. The challenge is finding models that deliver strong retrieval accuracy while maintaining low latency across all these formats without requiring massive compute infrastructure to run and index.</p>
+<p>EmbeddingGemma 2 is designed to provide a single, compact open model released under the Apache 2.0 license, delivering exceptional multimodal performance for its size. Based on Gemma 4, this sub-1B model maps text, code, images, video, and audio into a unified 768-dimensional space. Its modular architecture lets you load only what you need, scaling from 270M parameters for text and code up to 740M parameters for all modalities.</p>
+<p>EmbeddingGemma 2 replaces chained models with modular encoders that project into a shared 768-dimensional space:</p>
+<p>Even though each modality is processed by a specialized encoder, all inputs are processed through the shared backbone and their resulting embeddings occupy the same dimensional space:</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>You can run EmbeddingGemma 2 across text, code, images, video, and audio with the sentence-transformers library (v6.1.0 or later):</p>
+<p>The full model embeds text, code, images, video, and audio:</p>
+<p>To minimize memory usage, you can omit unused modality encoders at load time by setting `vision_config` or `audio_config` to None in config_kwargs. Disabled encoders are never loaded into memory, so the savings apply to both the weights and peak allocation:</p>
+<p>EmbeddingGemma 2 is trained with short task instructions to steer representations for specific tasks. Set prompt_name in encode() to add it for you:</p>
+<p>For retrieval, encode queries and documents with different prompts:</p>
+<p>Pass media as a dictionary keyed by modality without a prompt. To embed text and media together, mark where each item goes with <|image|>, <|video|>, or <|audio|>:</p>
+<p>Despite coming from different modalities, the embeddings generated by EmbeddingGemma 2 occupy the same dimensional space and can be compared on their semantic similarity.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Pass truncate_dim (512, 256, or 128) with normalize_embeddings=True to get shorter, unit-length vectors. Queries and documents must use the same dimension:</p>
+<p>To use one dimension for every call, set it at load time instead: SentenceTransformer(MODEL_ID, truncate_dim=256). For instance, in bfloat16 precision, storing a million 768-dimensional vectors takes roughly 1.5 GB of memory, while truncating them to 128 dimensions requires just 250 MB. That 6x reduction allows you to store six times as many embeddings in the same memory budget, making it much easier to fit large indexes in memory or on-device.</p>
+<p>In sentence-transformers, all four encoder setups load from the same checkpoint, so they share one vector space: a query embedded with the 270M text-only setup can be matched directly against documents embedded with the full model.</p>
+<p>As a general guideline, load only the encoders your data needs, and truncate dimensions only when storage or search speed require it.</p>
+<p>If you start with a text-only index and later add image or audio embeddings, simply reload the model with the additional encoder enabled. Embeddings you have already computed do not need to be re-computed.</p>
+<p>All modalities share the 8,192-token context window, at fixed rates:</p>
+<p>The maximums assume a single modality with no text. Pass media as file paths (MP4 for video), URLs (images and audio), or in-memory PIL images, arrays, and tensors. Video is sampled at 1 frame per second by default, and audio should be 16 kHz mono.</p>
+<p>EmbeddingGemma 2 scores 14% higher than EmbeddingGemma 1 on MTEB (Code), adds image, video, and audio retrieval while retaining the accuracy on multilingual text of EmbeddingGemma 1</p>
+<p>Ready to explore multimodal embeddings? Take a look at the following resources to find out more:</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+<p>Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs</p>
+<p>Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-163">
+                <h2>#163. Too much RNA can starve cells of energy, scientists discover</h2>
+                <img src="https://www.sciencedaily.com/images/1920/glowing-mitochondria-cell-biology.webp" alt="Ilustrasi Too much RNA can starve cells of energy, scientists discover">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/glowing-mitochondria-cell-biology.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Scientists have uncovered a surprising way that viruses can interfere with the body's cells. When too much RNA accumulates inside a cell, it can damage the structures that produce energy, potentially leaving the cell struggling to function normally.</p>
+<p>A new study led by researchers at the Texas A&M College of Veterinary Medicine and Biomedical Sciences (VMBS) found that excess RNA produced during poxvirus infections can impair mitochondria, the tiny structures responsible for generating most of the energy cells need to survive.</p>
+<p>Published in Proceedings of the National Academy of Sciences, the research reveals an unexpected connection between RNA buildup and cellular energy production. The findings could have implications far beyond viral infections, potentially helping scientists better understand aging-related diseases and improve RNA-based medical treatments, including mRNA vaccines.</p>
+<p>"Scientists have long known that RNA degradation helps control protein production and remove defective RNA," said Dr. Zhilong Yang, a professor in VMBS' Department of Veterinary Pathobiology. "Our study reveals another important role: it helps cells maintain the energy they need to function properly."</p>
+<p>Cells constantly produce and break down RNA as part of their normal activities. This cleanup process, known as RNA degradation, helps regulate protein production, eliminate faulty RNA, and control immune responses. The new findings suggest it also performs another essential function by protecting the cell's energy supply.</p>
+<p>RNA plays several important roles in keeping cells functioning. Messenger RNA (mRNA), for example, carries genetic instructions that tell cells which proteins to produce. These proteins are needed for nearly everything cells do, from maintaining their structure to carrying out essential chemical reactions.</p>
+<p>Another type, double-stranded RNA (dsRNA), frequently appears during viral infections. Its presence can serve as a warning signal, alerting the immune system that a virus may have entered the cell.</p>
+<p>Viruses often generate large quantities of RNA as they reproduce inside infected cells. Ordinarily, cellular cleanup systems help prevent RNA from accumulating to harmful levels. However, when RNA production exceeds the cell's ability to break it down, the excess material can interfere with mitochondria and reduce energy production.</p>
+<p>Scientists already understood that excessive double-stranded RNA could provoke potentially harmful immune responses. What surprised the researchers was discovering that too much ordinary messenger RNA could also damage mitochondria.</p>
+<p>"MRNA is a normal component of our cells, but it seems like with many good things, if we get too much, that can become a problem for the cell," Yang said. "When too much RNA builds up, including mRNA, it can damage the mitochondria and interfere with the cell's ability to produce energy."</p>
+<p>This creates an unusual challenge for viruses. Although viruses depend entirely on the cells they infect to supply energy and manufacture proteins, producing excessive amounts of viral RNA can damage the very machinery they need to reproduce.</p>
+<p>According to Yang, poxviruses, a group that includes the viruses responsible for smallpox and mpox, appear to have ways of managing this problem. They use RNA cleanup mechanisms to remove excess RNA, helping infected cells remain functional long enough for viral replication to continue.</p>
+<p>"If the cell is not healthy, the virus would not replicate well," Yang said. "The virus needs to keep RNA levels balanced inside the cell."</p>
+<p>Scientists Discover RNA Can Directly Damage Mitochondria</p>
+<p>One of the study's most unexpected findings emerged when researchers investigated exactly how excess RNA affects mitochondria.</p>
+<p>Initially, the team suspected that RNA buildup was damaging these cellular powerhouses indirectly by activating the immune system. Certain types of RNA are known to trigger defensive responses, which can place additional stress on infected cells.</p>
+<p>However, experiments revealed that the damage did not require an immune response.</p>
+<p>"When we isolated only the mitochondria and added RNA, we still saw mitochondrial damage," said Dr. Djamal Brahim Belhaouari, the study's first author. "That was the moment we realized this could be a previously unknown cellular response to RNA."</p>
+<p>The researchers also observed that mitochondrial problems developed before substantial immune activation occurred. Furthermore, the damage did not depend on the immune pathways normally activated during infection.</p>
+<p>Together, these results indicate that excess RNA itself can interfere with mitochondrial function, rather than simply causing damage through the body's response to a virus.</p>
+<p>The precise mechanism remains unclear, but the researchers have proposed a possible explanation involving electrical charges.</p>
+<p>Mitochondria produce energy by maintaining an electrical and chemical difference across their inner membranes. This difference helps drive the production of ATP, the molecule cells use as their primary energy source.</p>
+<p>RNA carries a negative electrical charge. The researchers suspect that when unusually large amounts accumulate near mitochondria, they may disturb the electrical conditions required for efficient energy production.</p>
+<p>"We think the negatively charged RNA may accumulate around mitochondria and disrupt the electrical balance needed for energy production, although how it happens is unknown," Yang said. "This is a new concept that we are continuing to explore."</p>
+<p>What the Discovery Could Mean for Aging and Disease</p>
+<p>Although the experiments focused on viral infections, the findings raise questions about whether RNA buildup might contribute to other health problems.</p>
+<p>Abnormal RNA accumulation has been observed in several conditions, including certain cancers, neurodegenerative diseases, and disorders associated with aging. Neurodegenerative diseases involve the progressive deterioration of nerve cells, as occurs in conditions such as Alzheimer's and Parkinson's disease.</p>
+<p>Because mitochondria are essential for maintaining healthy cells, disruptions to their energy production could potentially contribute to cellular dysfunction in some of these conditions.</p>
+<p>The researchers suggest that excess RNA may represent one previously unrecognized source of mitochondrial stress. However, further studies are needed to determine how broadly this mechanism operates and whether it directly contributes to these diseases.</p>
+<p>"We think this has quite broad translational implications," Brahim Belhaouari said. "Too much double-stranded RNA or mRNA that cannot be degraded effectively may contribute to disease processes in some contexts."</p>
+<p>Potential Implications for mRNA Vaccines and Future Treatments</p>
+<p>The discovery could also provide useful information for scientists developing medicines that rely on RNA.</p>
+<p>RNA-based therapies, including mRNA vaccines, work by introducing RNA instructions into cells to produce specific proteins. Understanding how cells respond to RNA, process it, and eventually break it down is important for designing these treatments.</p>
+<p>By identifying another way excessive RNA can affect cellular health, the findings may help researchers optimize future RNA-based therapies and vaccines. The study does not establish that existing mRNA vaccines cause mitochondrial damage in people.</p>
+<p>"Understanding this mechanism could help researchers design and optimize future RNA-based therapeutics and vaccines by better understanding how cells respond to large amounts of RNA," Yang said.</p>
+<p>More broadly, the research suggests that controlling RNA levels is important for more than maintaining accurate protein production or managing immune activity. It may also be essential for keeping mitochondria functioning and ensuring cells have enough energy.</p>
+<p>For the scientists, the most striking result was that even a molecule cells depend on every day can become harmful when it accumulates beyond normal levels.</p>
+<p>"Scientists already knew that too much double-stranded RNA can be harmful," Yang said. "What surprised us was finding out that too much mRNA -- something cells normally need every day -- can also damage mitochondria and interfere with the cell's ability to produce energy."</p>
+<p>Research reported in this study was supported, in part, by the National Institute of Allergy and Infectious Diseases (R01AI143709 to Z.Y.) and Texas A&M University. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH.</p>
+<p>Materials provided by Texas A&M University. Original written by Camryn Haines. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261020085023.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-165">
+                <h2>#165. TextNow’s $150 Yello Phone Is Customized for Kids and Pairs Up With a $20 Monthly Plan</h2>
+                <img src="https://www.cnet.com/wp-content/uploads/sites/2/Yello-TextNow-box-and-phone-compressed.jpg" alt="Ilustrasi TextNow’s $150 Yello Phone Is Customized for Kids and Pairs Up With a $20 Monthly Plan">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.cnet.com/wp-content/uploads/sites/2/Yello-TextNow-box-and-phone-compressed.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Our gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.</p>
+<p>Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may earn a commission.</p>
+<p>The lower-cost phone has a parent portal for managing calls and texts, checking the phone’s location, and enabling games.</p>
+<p>Low-cost carrier TextNow launched its first child-friendly phone on Tuesday, pairing a heavily discounted Motorola handset with a software portal that lets parents control who their kid can call or text.</p>
+<p>Yello is a customized Moto G Play that costs $150 — $100 less than the standard model’s current retail price — and comes with a $20 monthly plan, with no other required contracts or service commitments.</p>
+<p>The Android phone restricts access to Google’s Play Store and doesn’t allow users to install additional apps or services. It’s designed primarily for calls and texts with parent-approved contacts, which parents can manage through a web-based portal that also lets them check the phone’s GPS location. Kids can call or text those contacts from a menu of large icons reminiscent of Netflix’s profile selection screen.</p>
+<p>Other software available on the phone includes access to the cameras — a 32-megapixel main camera and an 8-megapixel front-facing camera — along with the calculator, clock and a weather app. Seven preloaded games can be enabled, which include phone classics such as Snake, Mines and Tic-Tac-Toe. Photos taken on the phone can only be shared with parents.</p>
+<p>This more restrictive approach should let kids stay in touch with approved friends and coordinate pickups with parents while limiting distractions and access to content inappropriate for young children.</p>
+<p>The 2026 Moto G Play is a good choice for Yello’s software approach. When I reviewed the phone last year, I liked its larger 5,200-mAh battery because it could easily get through two days of use. But its less-powerful processor, 64GB of storage and 4GB of memory made it challenging to use as a media machine. Since Yello’s software deliberately avoids that use, the Moto G Play should be more than sufficient for calls and texts.</p>
+<p>Despite the name, the Yello phone is available in just one color: the same soft blue on every 2026 Moto G Play that Motorola calls “pantone tapestry.”</p>
+<p>Most US carriers offer their own versions of child-friendly devices such as Yello. AT&T, for instance, has repurposed the Samsung Galaxy A16 into the AmiGo Jr with similar parental controls. There are also a number of child-friendly smartwatches, which may be a better option depending on your family’s needs for connectivity. But Yello does offer a lot of flexibility, since it doesn’t require a more expensive unlimited data plan or a minimum service commitment.</p>
+<p>The Yello phone is now available on TextNow’s website.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.cnet.com/tech/mobile/textnows-150-moto-g-play-is-customized-for-kids-and-pairs-up-with-a-20-monthly-plan/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-166">
+                <h2>#166. Can AI Write Accessible Code?</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Auditing_Git_Hub_Copilot_ed981ef2ad.png" alt="Ilustrasi Can AI Write Accessible Code?">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Auditing_Git_Hub_Copilot_ed981ef2ad.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>GitHub Copilot can write accessible code, but only when you ask it to, and almost never for the WCAG 2.2 criteria that matter most in modern UIs. Left to its defaults, it reproduces the same patterns it learned from millions of public repositories, and a large share of those repositories are inaccessible.</p>
+<p>That matters because AI-generated code now ships to production every day. If a code assistant suggests a <div onclick> instead of a <button>, that suggestion gets accepted, reviewed by a human who is skimming, and merged. Multiply that by every developer on a team and accessibility debt grows faster than any audit can catch it.</p>
+<p>In this article, we’ll audit Copilot’s output for five common front-end components against WCAG 2.2 Level AA. For each one, you’ll see a typical first suggestion, what fails and why, and a corrected version you can drop into your own project. We’ll finish with a practical playbook for steering Copilot toward accessible output by default.</p>
+<p>Note: Copilot’s output changes with model versions, context and prompt wording. The examples below represent common patterns rather than a fixed benchmark. Run the methodology yourself on your own codebase; that is the point of the exercise.</p>
+<p>WCAG 2.2 became a W3C Recommendation in October 2023. It keeps every WCAG 2.1 success criterion except 4.1.1 Parsing, which was removed as obsolete, and adds nine new ones. Six of them are Level A or AA, which puts them in scope for most legal and procurement requirements.</p>
+<p>Our audit targets WCAG 2.2 Level AA overall, so it covers both the long-standing criteria (1.1.1 Non-text Content, 1.3.1 Info and Relationships, 2.1.1 Keyboard, 4.1.2 Name, Role, Value) and the new AA criteria above. The new ones are especially interesting for AI assistants because they are recent. Far less public code demonstrates them, so a model trained on that code has had fewer good examples to learn from.</p>
+<p>A fair audit tests what developers actually do, so every component is generated twice: once with a plain, everyday prompt and once with an accessibility-aware prompt. The difference between the two is the real finding.</p>
+<p>Step 4 is not optional. Automated tools reliably catch only a portion of WCAG issues; focus order, focus loss, meaningful names and most of the new 2.2 criteria need a human. Here is the minimal automated harness used for each component:</p>
+<p>The wcag22aa tag enables axe’s WCAG 2.2 rules, such as its target-size check. Keep in mind that a passing axe run means “no detectable violations”, not “accessible”.</p>
+<p>Icon-only buttons are the single most common accessibility failure in AI-generated UI code. With a neutral prompt (// close button with X icon), a typical Copilot suggestion looks like this:</p>
+<p>With an accessibility-aware prompt, Copilot usually switches to a <button> and adds an aria-label, but it rarely fixes the target size and often leaves the SVG exposed to assistive technology. Here is the corrected version:</p>
+<p>A native <button> gives you focus, keyboard activation and the correct role for free. aria-hidden="true" stops the SVG from being announced twice, and focusable="false" prevents an extra tab stop in older browsers.</p>
+<p>Forms reveal how well an assistant understands the relationships between elements, not just the elements themselves. The neutral prompt was // shipping address form with validation:</p>
+<p>The corrected version uses a small reusable field component so labels, hints and errors are always wired together:</p>
+<p>For 3.3.7 Redundant Entry, the billing step should offer the shipping data back to the user rather than asking again:</p>
+<p>Error messages should also say how to fix the problem, for example “Enter an email address like name@example.com” rather than “Invalid email”. That satisfies 3.3.3 Error Suggestion (AA), which Copilot’s generic messages rarely do.</p>
+<p>Modals are where the gap between “looks right” and “works right” is widest. The neutral prompt // modal component with overlay typically produces something like this:</p>
+<p>With an accessibility-aware prompt, Copilot often adds role="dialog" and aria-modal="true" and sometimes a hand-written focus trap. Hand-written traps are fragile. The most robust fix is to use the native <dialog> element, which handles the top layer, inertness of the background and Escape for you:</p>
+<p>The onClose event fires for both the Close button and the Escape key, so focus is always restored. If your team must support a custom modal instead, test it against the ARIA Authoring Practices Guide dialog pattern with a real screen reader before shipping.</p>
+<p>This audit groups three of the new WCAG 2.2 AA criteria, because they share one trait: they are about layout and interaction rather than markup, so they are almost invisible in a code suggestion.</p>
+<p>Ask Copilot for // sticky header with nav and you’ll get a correct-looking position: sticky header. Nothing in that suggestion is wrong on its own. The failure appears later, when a keyboard user tabs down the page and each focused link scrolls underneath the header. The fix is one line of CSS that Copilot almost never offers unprompted:</p>
+<p>Pagination, tag chips and table row actions are frequent offenders. Copilot tends to suggest compact styles copied from dense dashboard UIs, such as padding: 2px 6px with a 12px font. Set a minimum on the interactive element, not on the icon inside it:</p>
+<p>Ask for // sortable list with drag and drop and Copilot will reliably produce a working HTML5 drag-and-drop or library-based list. It will almost never provide a non-dragging alternative. Users with tremors, switch devices or head pointers need one. The simplest fix is a pair of move buttons per item:</p>
+<p>Pair this with a polite live region that announces “Blue sneakers moved to position 2 of 5” so screen reader users get confirmation of the change.</p>
+<p>3.3.8 Accessible Authentication (Minimum) is the newest criterion most teams have not yet absorbed, and AI assistants reflect that. The neutral prompt // login form with password and one-time code often produces something like this:</p>
+<p>The corrected version is shorter, not longer:</p>
+<p>A single code field lets users paste the full code and lets mobile browsers offer it from SMS automatically. If your design requires segmented boxes, keep them as a visual treatment over a single real input. Better still, offer passkeys or email magic links, which remove the cognitive test entirely.</p>
+<p>Across the five components, an accessibility-aware prompt reliably fixed markup-level issues but left the new WCAG 2.2 criteria mostly unaddressed.</p>
+<p>The verdict: AI can write accessible code, but it cannot be trusted to do so on its own. It is a fast junior developer with uneven accessibility training, and it needs the same guardrails you’d give one.</p>
+<p>You don’t need to write perfect prompts every time. Put three layers of guardrails around the assistant instead: instructions it reads, linting at the keyboard, and tests in CI.</p>
+<p>Copilot reads a .github/copilot-instructions.md file in your repository and applies it to chat and agent requests. Use it to encode your accessibility standards once, for the whole team:</p>
+<p>When you prompt directly, name the behavior, not just the goal. “Make it accessible” is vague. Compare these:</p>
+<p>It also helps to ask Copilot Chat to review its own output against a named criterion, for example: “Review this component against WCAG 2.2 success criteria 2.4.11, 2.5.7 and 2.5.8 and list any failures.” Self-review catches some issues, but treat its answer as a lead to verify, not a verdict.</p>
+<p>Catch what slips through before it merges. eslint-plugin-jsx-a11y flags many markup issues as you type:</p>
+<p>Then run axe against rendered pages in your end-to-end tests with @axe-core/playwright:</p>
+<p>The second test shows that some WCAG 2.2 criteria can be checked with a few lines of custom code even when no rule engine covers them. It is a simplified check; elements inside the header itself would need to be excluded in a real suite.</p>
+<p>Finally, keep a human in the loop. Add a short accessibility checklist to your pull request template and schedule regular screen reader and keyboard testing. No combination of AI and automation replaces it.</p>
+<p>So, can AI write accessible code? Yes, but only as accessible as the context, instructions and checks you surround it with. GitHub Copilot speeds up the markup layer of accessibility, but it consistently misses behavior, focus management and the newer WCAG 2.2 criteria unless someone who understands them is steering.</p>
+<p>That makes accessibility expertise more valuable in an AI-assisted team, not less. The developer who knows that a sticky header can hide focus, or that blocking paste breaks password managers, is the one who turns Copilot from a source of accessibility debt into a way to pay it down.</p>
+<p>Run this audit on your own codebase and share your results. The more teams publish what AI gets right and wrong about accessibility, the faster these tools, and the people using them, will improve.</p>
+<p>About the author: Ashok Kumar Yadav is an Accessibility Architect and Senior Software Engineer with more than 20 years of experience in web and mobile accessibility. He is an IEEE Senior Member, a published author on web accessibility, and the creator of Tab Order Visualizer. Connect with him on LinkedIn.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/can-ai-write-accessible-code/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-167">
+                <h2>#167. Ulta Promo Codes: Up to 20% Off in October 2026</h2>
+                <img src="https://media.wired.com/photos/67b63b9283a9f95e0ab9b215/191:100/w_1280,c_limit/WIRED-Coupons-R2_3.png" alt="Ilustrasi Ulta Promo Codes: Up to 20% Off in October 2026">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/67b63b9283a9f95e0ab9b215/191:100/w_1280,c_limit/WIRED-Coupons-R2_3.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>At Ulta Beauty, you can stock up on skin care, makeup, and haircare, then head to the salon for brows shaped, hair styled, and ears pierced, all in one visit. You’ll find brands like Dior, Estée Lauder, and Gucci alongside more affordable favorites and drugstore staples. Many locations feature a Benefit Cosmetics BrowBar, so you can sample products and book an in-store brow service in the same visit. Ulta’s return policy is very forgiving, allowing you to return “gently used” products within 30 days for a full refund. Add in its weekly sales, the 21+ Days of Beauty Event, and stackable Ulta coupons, and you’ll rarely pay full price.</p>
+<p>I’ve tested a wide range of beauty products sold at Ulta, from hair tools and red-light therapy devices for hair growth to LED devices, pimple patches, and lip balms. Here’s how to shop smarter, with the best Ulta promo codes and Ulta coupons to keep on your radar.</p>
+<p>One of the best ways to save regularly on both small, everyday purchases and bigger beauty tech and tools is to shop Ulta’s weekly and daily sales. With Ulta’s Daily & Weekly Beauty Steals, you’ll find up to 50% off everything from perfume to facial cleansers to makeup essentials. You can save big on brands like Ralph Lauren, Murad, Bumble & Bumble, and more.</p>
+<p>If you already shop at Ulta often, downloading and using the Ulta app is one of the best ways to save money on purchases you were planning to make. All you need to do is download the Ulta app (for free) by texting "Beauty" to 95637. From there, you’ll receive an Ulta promo code, APP15, for 15% off your next purchase. Plus, with the Ulta app, you’ll be able to virtually try on thousands of beauty products with GLAMlab, use the Ulta Foundation Matcher to match your skin tone and find your best shade, and get an AI-powered skin analysis for customized skin care recommendations.</p>
+<p>Plus, Ulta app members get exclusive in-app features, offers, and deals. You’ll also be able to monitor your membership rewards status and points, and get notified of app-exclusive deals, discounts, brand offers, and more. And with the handy barcode scanner, shopping has never been easier—you can scan any product’s barcode to see information on ingredients and product reviews. When you’re an Ulta member, you’ll get 1 point for every $1 spent and birthday perks.</p>
+<p>You can instantly get 10% off your order when you sign up for text alerts. Text “ULTA” to 95637 to receive a one-time-use discount code for online purchases only. There are a couple of brand exclusions, such as Chanel, and you can’t use the discount on Black Friday deals, so be sure to read the fine print.</p>
+<p>The Ulta Beauty Rewards program is free to join and offers many perks with minimal effort. First, you earn points for every dollar you spend. The program has multiple tiers: standard members earn 1 point per dollar; platinum members earn 1.25 points; and diamond members earn 1.5 points. To qualify for platinum status, you need to spend $500 per year, and diamond members must spend $1,200 annually.</p>
+<p>These points can be redeemed for discounts, and the best part is that they do not expire. (To activate your rewards, you need to download the Ulta Beauty app.) Here's how the points translate into savings: 100 points give you $3 off, 250 points offer an $8 discount, 500 points save you $17.50, and 750 points grant you $30 off.</p>
+<p>During your birthday month, you get even more special perks. These include earning extra points on every qualifying purchase, a free gift, and a $10 coupon exclusively for platinum and diamond members. Other benefits include exclusive beauty deals, early access to sales, and full-size gifts for diamond members. Diamond members also get a $25 discount on beauty services and free shipping on orders over $25.</p>
+<p>All online customers qualify for free standard shipping on purchases of $35 or more. It's easy to reach that amount at Ulta, even with all the discounts.</p>
+<p>We’ve been doing this for a while, and we’ve become pretty good at tracking and identifying the best offers available and bringing them to you, of course. We check Ulta often, testing the Ulta coupon codes ourselves and bringing them to you here weekly (if not more often). These are often deals for things like 20% off certain beloved brands or beauty categories, as well as BOGO deals.</p>
+<p>One of my favorite gifts to give (to myself or others) is an Ulta Beauty advent calendar. It’s a super fun gift, especially if you aren’t sure which brands or products the beauty guru in your life usually buys. These sets often come in themes, by product type, brand, and more. It’s a fun way to discover new products and brands and possibly find your next must-have.</p>
+<p>Take Up to 25% Off Custom Prints with VistaPrint Promo Code</p>
+<p>Take 10% Off Legal Services with This LegalZoom Promo Code</p>
+<p>Save up to $420/year when you bundle AT&T Fiber® internet and wireless</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/ulta-coupon/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-168">
+                <h2>#168. Public Resistance Puts US Prediction Markets Under Pressure</h2>
+                <img src="https://readwrite.com/wp-content/uploads/2026/10/public-resistance-us-prediction-markets-pressure.webp" alt="Ilustrasi Public Resistance Puts US Prediction Markets Under Pressure">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://readwrite.com/wp-content/uploads/2026/10/public-resistance-us-prediction-markets-pressure.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI,…</p>
+<p>Six in 10 Americans oppose using prediction markets to wager on election results, a Reuters/Ipsos poll found, adding a public-opinion challenge as officials debate how to regulate the industry.</p>
+<p>The online survey covered 4,506 US adults nationwide from September 30 to October 5, with a margin of error of about two percentage points. Opposition crossed party lines: 69% of Democrats and 61% of Republicans opposed election betting.</p>
+<p>The poll also found that 65% opposed betting on US military actions and 63% opposed wagers on government policy announcements or decisions. Support was low for both categories, at 8% for military-action markets and 9% for policy markets.</p>
+<p>Polymarket and Kalshi offer markets on elections and other real-world events, alongside sports. The companies say they have safeguards against misconduct and work with authorities, including referring accounts they consider suspicious.</p>
+<p>The survey found that 93% of Democrats and 89% of Republicans considered it inappropriate for members of Congress or their staff to bet on political events. In April, the Senate barred senators, staff and other officers from using prediction markets, while Democratic lawmakers have introduced bills to restrict the industry. Those efforts reflect concerns that political-event markets could create opportunities for insider trading or manipulation, and that trading around government affairs could raise national-security risks. Lawmakers have also called for tighter prediction-market safeguards.</p>
+<p>Views were less opposed, but still divided, on professional sports: 43% opposed prediction-market sports betting and 29% supported it. Three-quarters of respondents said wagering on real-world events through prediction markets is a form of gambling; 8% disagreed.</p>
+<p>Polymarket has argued that its markets can provide information about events and said more than 90% of visits to its platform are to view markets rather than trade. The poll measures public sentiment, not whether the contracts are legally gambling or whether any particular market should be allowed.</p>
+<p>The poll arrives as the Trump administration pursues federal rules for the industry and states challenge that approach. The CFTC asserts jurisdiction over the contracts as financial products, while state regulators argue that prediction markets facilitate gambling and should face state gaming laws.</p>
+<p>The dispute over which framework applies could reach the Supreme Court, according to legal experts cited by Reuters. Until then, the poll adds a political measure of public resistance to a debate that will shape how operators such as Kalshi and Polymarket can offer event contracts in the US.</p>
+<p>The ReadWrite Editorial policy involves closely monitoring the gambling and blockchain industries for major developments, new product and brand launches, game releases and other newsworthy events. Editors assign relevant stories to in-house staff writers with expertise in each particular topic area. Before publication, articles go through a rigorous round of editing for accuracy, clarity, and to ensure adherence to ReadWrite's style guidelines.</p>
+<p>ReadWrite's editorial staff consists of journalists, editors, and experts across iGaming & Technology. Over 20 years of combined experience and the latest in technology, AI, and research tooling backstop this team and help us inform the next generation.</p>
+<p>The Louisiana Gaming Control Board has unanimously granted DraftKings a conditional four-month license extension while it examines the company’s use of artificial intelligence in customer practices and delays a decision...</p>
+<p>Online gambling laws vary by jurisdiction. It is your responsibility to verify the legality of online gambling in your location before participating.ReadWrite assumes no liability for any actions taken based on the information provided.Gambling can be addictive, please play responsibly.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://readwrite.com/election-betting-poll-opposition/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-169">
+                <h2>#169. Compact Analog Signal Generators for Fast RF Testing</h2>
+                <img src="https://content.knowledgehub.wiley.com/wp-content/uploads/2026/10/Electro-Rent_Keysight-Anapico_IEEE-White-Paper-500x133.jpg" alt="Ilustrasi Compact Analog Signal Generators for Fast RF Testing">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://content.knowledgehub.wiley.com/wp-content/uploads/2026/10/Electro-Rent_Keysight-Anapico_IEEE-White-Paper-500x133.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Not registered yet? Click here to register now.</p>
+<p>Already registered? Click here to log in to the hub.</p>
+<p>First register your details to create a user profile for the hub, then login to access all content within the hub.</p>
+<p>Already registered? Click here to log in to the hub.</p>
+<p>RF and microwave systems increasingly depend on amplifiers and receivers that perform reliably across wide frequency ranges and demanding signal conditions. Confirming this performance calls for signal sources with wide output power range, low phase noise, and fast switching speed. Amplifier characterization relies on accurately measuring gain, compression, and intermodulation distortion, while receiver verification often involves simulating blockers, calibrating power accuracy, and substituting for local oscillator and clock circuitry during early design stages. This guide walks through these test applications step by step, showing how engineers and technicians can validate RF and microwave hardware across research, development, and manufacturing environments.</p>
+<p>First register your details to create a user profile for the hub, then login to access all content within the hub.</p>
+<p>Already registered? Click here to log in to the hub.</p>
+<p>As an authorized Keysight distributor, Electro Rent gives you fast, flexible access to the RF test equipment your program needs—so you can characterize amplifier performance, validate signal quality, and scale your test setup without overinvesting in equipment you may only need at specific stages of development or production.</p>
+<p>IEEE Spectrum Magazine, the flagship publication of the IEEE, explores the development, applications and implications of new technologies. It anticipates trends in engineering, science, and technology, and provides a forum for understanding, discussion and leadership in these areas.</p>
+<p>1. Same tier 3 topics + same sponsor [0], 3. Any topic + same sponsor [0], 2. Same tags + same sponsor [0], 3. Same sponsor [1],</p>
+<p>1. Same tier 3 topics + same partner [3],</p>
+<p>Do you have a query about the content on the hub or are having issues with access? Contact us here: [email protected]</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://content.knowledgehub.wiley.com/fast-rf-device-testing-with-analog-sources-a-practical-guide-to-amplifier-and-receiver-characterization/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-171">
+                <h2>#171. Data Centers Are Burning Fossil Fuels. It’s Destroying Big Tech’s Climate Goals</h2>
+                <img src="https://www.cnet.com/wp-content/uploads/sites/2/image-2-4.png" alt="Ilustrasi Data Centers Are Burning Fossil Fuels. It’s Destroying Big Tech’s Climate Goals">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.cnet.com/wp-content/uploads/sites/2/image-2-4.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Our gifting experts are obsessively searching for holiday gifts that are unique, thoughtful and suitable for any budget.</p>
+<p>Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may earn a commission.</p>
+<p>In his new book, Paris Marx explores how global anti-data center movements are fighting Big Tech’s power over us.</p>
+<p>From Ashburn, Virginia, to South Dublin, Ireland, the data centers that journalist Paris Marx visited all looked remarkably similar: large industrial facilities with loud air-conditioning units running to keep racks upon racks of servers cool. But it was the security measures around the data centers that struck Marx more than anything.</p>
+<p>Tall fences. Security cameras everywhere. Locks on every door that required one of the few full-time employees to unlock with a badge. And in one memorable instance, standing on an Irish public curb outside a cluster of Microsoft-owned centers, there was an eerie feeling of being watched by men on lawn mowers, trimming grass that clearly didn’t need to be cut.</p>
+<p>“It was just really staggering to me that it was at that level that it was so hard to move through these spaces,” Marx told me.</p>
+<p>The intense security should give you an idea of just how serious Big Tech is about its data centers. These facilities are the key to the artificial intelligence programs at OpenAI, Meta, Google, Amazon and elsewhere, creating vast amounts of compute and sucking up equally staggering amounts of electricity and water.</p>
+<p>There is no stronger metaphor for the manifestation of Big Tech’s power than the increasing sprawl of data centers. Amazon, Microsoft and Google alone control 59% of hyperscale data center capacity. In his new book available now, Hyperscale: The Ambition and Excess of Big Tech’s Data Empires, Marx, host of the Tech Won’t Save Us podcast, highlights how global data center protests are one of many ways that communities are pushing back against Big Tech’s power over us.</p>
+<p>Data centers existed long before generative AI; we called them server farms, and they’re what keep us online. But in this AI era, we have hyperscale data centers.</p>
+<p>Before, a large data center might require around 50 megawatts of power to keep everything running. Now, hyperscale data centers can require triple that amount of power. Newer ones, like Meta’s Louisiana data center, may require 4,500 megawatts (4.5 gigawatts) — staggering demand that officials say is four times more than all of the electricity used in New Orleans on its hottest day in 2025. It’s more than the two gigawatts the Hoover Dam produces.</p>
+<p>Hyperscale data centers are also housing more advanced tech. Chips like GPUs are key to creating compute, and newer chips built for AI data centers can run hotter. That makes it even harder to cool facilities, so in addition to air conditioning, facilities are using water systems to avoid servers overheating. It’s an additional environmental toll. A hyperscale center can suck up 1 million to 5 million gallons of water every day, equivalent to a town of more than 10,000 residents, according to a 2025 estimate.</p>
+<p>So how do you keep these facilities running? The process to get approved and connected to a town’s electrical grid can take years. So tech companies have started building their own power plants right next to data centers for the sole purpose of keeping them on — perfect for burning massive amounts of fossil fuels, the main contributor to the climate crisis.</p>
+<p>In the 2010s, Amazon, Microsoft, Google and many others pledged some version of becoming carbon neutral (or negative) in the next few decades — meaning they would offset the emissions they created with at least as much emission-reducing actions.</p>
+<p>Sustainability reports from that time show that, overall, tech companies were measurably decreasing their environmental footprint. “And then ChatGPT comes along, and all of a sudden, that’s out the window,” Marx told me.</p>
+<p>Tech leaders have been candid about allowing generative AI to override their climate goals. Google reported a 50% increase in its greenhouse gas emissions in 2024 to support its generative AI. Microsoft’s pledge to be carbon negative by 2030 “was before the explosion in artificial intelligence,” Brad Smith, the company’s president, told Bloomberg in 2023, saying the carbon goal was “five times as far away as it was in 2020” because of AI.</p>
+<p>Modern data centers and their power plants burn fossil fuels for power, requiring gas turbines, huge tanks of diesel fuel kept on-site in case of a power outage or good old-fashioned coal. This has devastating environmental and health consequences, both immediately for local communities and in the long term for the entire world.</p>
+<p>Communities that neighbor data centers have reported brown or unsafe drinking water, unending noise, and in one lawsuit against Elon Musk’s xAI centers in Memphis, extreme health risks; Memphis residents “are feeling it in their lungs because of the fossil fuels that are being burned,” Marx said.</p>
+<p>Tennessee state representative Justin Pearson speaks at a rally in opposition to Elon Musk’s data center in Memphis on April 25, 2025.</p>
+<p>And as decades of climate research prove, burning additional fossil fuels is only going to exacerbate the effects of climate change. That’ll lead to even more extreme weather, health risks and natural disasters. As Marx put it in his book, “The world will suffer through the worsening natural disasters fueled by the quest for computation by some of the most powerful people on the planet.”</p>
+<p>With data centers and their fossil fuels, we’re fundamentally reshaping the planet for AI. So anti-data center movements are asking: Is it worth it?</p>
+<p>“How much computation do we really need here?” Marx asked in our conversation. “How many resources are we willing to dedicate to this vision of the future? And is this technology really delivering in such a way that expending all those resources is justified?”</p>
+<p>The answer — for many data center neighbors in Memphis, Oregon, Chile, Ireland and thousands of other communities across the globe — is an unflinching no.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.cnet.com/tech/services-and-software/data-centers-ai-climate-change-hyperscale/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-172">
+                <h2>#172. A train was delayed by a solar storm. But something didn't add up.</h2>
+                <img src="https://www.sciencedaily.com/images/1920/1800s-train-spectacular-aurora.webp" alt="Ilustrasi A train was delayed by a solar storm. But something didn't add up.">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/1800s-train-spectacular-aurora.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>A mysterious train delay nearly 180 years ago has led scientists to uncover a surprising mistake in the history of space weather. An international research team has solved a 178-year-old mystery involving one of the earliest documented cases of solar activity interfering with electrical technology.</p>
+<p>The incident dates back to the 1840s, when electric telegraph networks were beginning to transform long-distance communication. As these early systems expanded, operators occasionally encountered strange electrical disturbances that could disrupt their equipment. Scientists now understand that some of these problems were caused by changes in Earth's magnetic field triggered by activity on the Sun.</p>
+<p>Researchers led by Lancaster University have revisited a historical account of a train delayed in Exeter, England, when solar activity interfered with the railway's telegraph system. The investigation involved scientists from RMIT University, the British Geological Survey, Natural Resources Canada, Baylor University, and the UK's national space laboratory, RAL Space.</p>
+<p>By piecing together historical documents and scientific observations, the team uncovered an error that changes the timeline of the earliest known technological disruptions caused by space weather.</p>
+<p>How Solar Storms First Disrupted Technology</p>
+<p>One of history's most dramatic examples of space weather affecting technology occurred in 1859. Known as the Carrington Event, the powerful solar storm involved a massive solar flare and a coronal mass ejection, an enormous eruption of charged particles and magnetic fields from the Sun.</p>
+<p>The resulting disturbances produced spectacular auroras, commonly known as the northern lights, that appeared as far south as Hawaii and Central America. In some locations, the sky glowed brightly enough for people to read newspapers at night. The unusual illumination even fooled gold miners into thinking morning had arrived, prompting them to prepare breakfast shortly after midnight.</p>
+<p>The storm also wreaked havoc on telegraph networks around the world. Electrical surges caused equipment failures, sent sparks flying from wires, shocked operators, and even started fires. In some cases, the electrical currents generated by the disturbance were so powerful that telegraph systems continued operating without batteries.</p>
+<p>Although the Carrington Event remains the most famous example from this period, evidence of solar activity interfering with electrical systems stretches back even further.</p>
+<p>In 1871, an anonymous author published an account in the scientific journal Nature describing a "very intense magnetic disturbance" that supposedly occurred on October 18, 1841. According to the report, the disturbance interfered with railway signals in Exeter and delayed the scheduled 10:05 p.m. train departure by 16 minutes.</p>
+<p>If the date had been correct, the event would have represented the earliest known instance of space weather disrupting human technology.</p>
+<p>However, a new investigation published in the American Geophysical Union journal Space Weather has revealed that the original account contained a significant historical error.</p>
+<p>The Railway Mystery That Changed Solar Storm History</p>
+<p>Associate Professor Brett Carter, a space weather researcher at RMIT University, helped investigate the historical records. During the investigation, the team noticed a problem that immediately called the original timeline into question.</p>
+<p>The Exeter-to-Starcross railway line mentioned in the report did not open until 1846, almost five years after the event supposedly occurred.</p>
+<p>"In this study, we effectively investigated what had to be a typo in a Nature paper from 1871. We know it was a typo because the Exeter-to-Starcross train line mentioned in that paper didn't exist until 1846, which is 5 years afterwards," he said.</p>
+<p>To establish when the train delay actually happened, the researchers examined a wide range of historical evidence. They compared railway timetables and newspaper reports with observations of solar activity, accounts of auroras, and digitized measurements of Earth's magnetic field.</p>
+<p>Together, these records pointed to a different date: October 18, 1848, exactly seven years later than originally reported.</p>
+<p>The revised timeline resolves the apparent contradiction and places the incident during an important period in technological history, when electrical communication systems were becoming increasingly widespread.</p>
+<p>Carter explained that the 1840s marked a turning point in humanity's relationship with space weather. Solar disturbances had always occurred, but the emergence of electrical technology meant that their effects could now interfere directly with everyday human activities.</p>
+<p>"Understanding this historical event is important because the 1840s mark the intersection between the rise of our technological age and space weather, which has always been around," Carter says.</p>
+<p>"Since this line was crossed, humans have not looked back."</p>
+<p>The findings also change the incident's place in the historical record. Although the Exeter disruption remains one of the earliest credible examples of space weather affecting technology, it can no longer be considered the first.</p>
+<p>That distinction now belongs to an earlier documented incident involving telegraph interference on Britain's Midland Railway in March 1847.</p>
+<p>Professor Jim Wild of Lancaster University, who led the study, said the findings demonstrate that the dangers associated with space weather began affecting society long before the development of modern power grids, satellites, and electronic communication networks.</p>
+<p>"What this research highlights is that space weather is not a new threat but a long-standing natural hazard. Society has been experiencing the effects of space weather on technology for almost as long as electrical technologies have existed," Wild said.</p>
+<p>The Exeter incident is especially significant because it occurred when electrical technology was still in its infancy. Early railway operators were beginning to rely on telegraph systems, creating new opportunities for solar disturbances to interfere with essential infrastructure.</p>
+<p>"The Exeter train delay is a fascinating story because it sits right at the point where emerging technologies first began to encounter the realities of the space environment. By combining historical archives with scientific observations, we've been able to show that the event almost certainly happened in 1848 rather than 1841.</p>
+<p>"Although this means it is not the earliest recorded space weather impact, it remains one of the first clear examples of solar activity disrupting critical infrastructure," he said.</p>
+<p>The investigation also shows how historical scientific records can be used alongside newspapers and other archival materials to reconstruct events that occurred long before modern monitoring instruments became available.</p>
+<p>"It also demonstrates the value of combining scientific records with contemporary newspaper reports and archival documents when reconstructing historic space weather events."</p>
+<p>Dr. Mike Hapgood, a Visiting Scientist and space weather expert at the UK's national space laboratory, RAL Space, described the research process as something resembling a detective investigation.</p>
+<p>"It highlights the importance of preserving these older records, which give us the evidence base we need to interpret past events and strengthen future predictions," he said.</p>
+<p>Modern Technology Still Faces the Threat of Solar Storms</p>
+<p>Almost two centuries after the Exeter train delay, solar storms continue to pose risks to railways and other essential infrastructure. The technologies involved have changed dramatically, but they remain susceptible to disturbances originating from the Sun.</p>
+<p>Today, space weather can interfere with electrical power systems, railway signaling equipment, satellite navigation, and communication networks. Powerful solar events can disturb Earth's magnetic field, potentially generating unwanted electrical currents in infrastructure and affecting systems that depend on reliable satellite signals.</p>
+<p>Scientists now have far more sophisticated instruments and forecasting methods than were available in the 19th century. However, Hapgood emphasized that modern society's growing dependence on interconnected electrical and space technologies also creates new vulnerabilities.</p>
+<p>Understanding how past solar storms affected infrastructure can help researchers assess the dangers posed by future events and develop better ways to reduce potential disruptions.</p>
+<p>"Deepening our understanding of these events is essential for preparing for, and mitigating, the impacts of space weather - especially as we look forward to a decade of exciting space developments that will face the challenge of a new solar cycle in the 2030s," he said.</p>
+<p>Materials provided by RMIT University. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261020085021.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-173">
+                <h2>#173. Bring multimodal semantic search to the edge with EmbeddingGemma 2</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_amiggaamig.2e16d0ba.fill-1200x600.jpg" alt="Ilustrasi Bring multimodal semantic search to the edge with EmbeddingGemma 2">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_amiggaamig.2e16d0ba.fill-1200x600.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Today, Google DeepMind launched EmbeddingGemma 2, a best-in-class for its size, open-weight, multimodal embedding model that natively maps text, images, video frames, and audio into a single, unified vector space. For developers building local search and media retrieval experiences, it reduces the latency and memory overhead of chaining separate image captioning, speech-to-text, and text-embedding models. Designed specifically for local, privacy-first applications, EmbeddingGemma 2 covers text, vision, and audio modalities in a compact 740M parameter footprint, offering modular encoders that can run on as little as ~191MB active RAM for text-only weights and ~567MB for the full multimodal model on a Google Pixel 11 Pro. Most notably, EmbeddingGemma 2 can act as an ultra-low-latency on-device decision engine. Without requiring any training data or fine-tuning, it matches user inputs directly against classification labels and descriptions, delivering instant, zero-shot intent routing in a matter of milliseconds. For an overview of the model architecture and evals including multimodal embedding capabilities, check out the Google DeepMind blog.</p>
+<p>In this post, we’ll share how you can experience the power of EmbeddingGemma 2 right away through Google AI Edge’s interactive showcases, Google AI Edge Gallery on mobile and Google AI Edge Foresight on Mac, and how you can leverage the model to build your own private, on-device semantic search, visual keyframe retrieval, and condition-trigger workflows. In the coming weeks, we will also make this model available as a service on Android, accessible through ML Kit, including using NPU acceleration to further optimize performance across a broad range of devices.</p>
+<p>Google AI Edge Gallery is a cross-platform showcase application designed to allow users and developers to experience and evaluate on-device AI models and their capabilities in practical settings. Today, we are adding two interactive showcases powered by EmbeddingGemma 2 to the Google AI Edge Gallery app: Instant Media Search and Video Moments Finder.</p>
+<p>Instant Media Search allows users to find specific images or videos in their local media using natural language or example images. By converting both input query and the media into on-device embedding vectors - with the latter stored in a local SQLite database - the system retrieves relevant content by returning those with the largest cosine similarity. This enables an instant, interactive search experience as the user types.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Video Moments Finder demonstrates another example of how EmbeddingGemma 2's cross-modal representations can be applied, enabling users to locate specific visual moments across local video recordings without transcribing audio or generating intermediate text captions.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Download the latest version of Google AI Edge Gallery app from Google Play Store or Apple App Store to try these new demos. Check-out the Github repo to learn how it’s implemented and start building your own experiences using EmbeddingGemma 2.</p>
+<p>We are excited to announce the launch of Google AI Edge Foresight for Mac, an experimental app that brings a context-aware meeting companion directly to your device. Powered by fully local AI processing, Foresight seamlessly assists with note-taking, indexing, and recalling your conversation transcripts and private files. By integrating directly with your system audio and microphone, it works out-of-the-box with any meeting platform, even completely offline.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Powered by EmbeddingGemma 2 and Gemma 4 models, Foresight delivers:</p>
+<p>By mapping text, audio, and visual data into a single vector space, Foresight runs local, secure searches across your personal knowledge library. The details you need are always at your fingertips, whether you are answering live questions mid-meeting or drafting thorough notes, while your sensitive data never leaves your device.</p>
+<p>Download the Google AI Edge Foresight Mac app today, and bring an intelligent, local companion to all your meetings.</p>
+<p>For developers building for the Android ecosystem, EmbeddingGemma 2 is a lightweight, task-specific model perfectly suited for on-device execution. We are bringing these unified search capabilities to ML Kit in the coming weeks, providing a standardized, platform-integrated path for production Android apps in the future. By integrating with ML Kit developers can get production-grade quality for EmbeddingGemma out of the box without having to manage the model or worrying about APK bloat. ML Kit will feature blazing fast performance through NPU acceleration (when available) and automatic model updates.</p>
+<p>Building For X-Platform with MediaPipe Tasks</p>
+<p>Integrating local search features, similar to those in Google AI Edge Gallery and Foresight above, usually requires developers to handle low-level media pre-processing for the data to be fed into the embedding model. To simplify this, MediaPipe Tasks is adding support for EmbeddingGemma 2 to the existing Embedder and Semantic Retriever; the new interface to our current RAG SDK.</p>
+<p>Whether you are targeting iOS, macOS, Windows, Linux or Web, MediaPipe Tasks provide a unified developer experience to write once and deploy across all platforms. Instead of developers manually managing pre-processing and data transformations, the Embedder and Semantic Retriever Tasks provide a turnkey solution that completely abstracts these steps.</p>
+<p>EmbeddingGemma 2 can also be used as a multimodal, real-time decision engine with the MediaPipe Decision Task. This allows developers to effortlessly classify image, text or audio inputs without the need for fine-tuning and make instant decisions on-device, enabling use cases like routing or action prediction. The example below shows the MediaPipe Decision task running with less than 100ms response time to evaluate 500 options each turn in the chess game, showcasing the efficiency of EmbeddingGemma 2 as the decision engine fully on-device.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>While MediaPipe Tasks offers turnkey simplicity, cross-platform applications requiring fine-grained control over processing and acceleration can be built directly on LiteRT, the proven engine powering ML Kit, MediaPipe Tasks, Google AI Edge Gallery, and Foresight. Powered by unified acceleration across CPUs, GPUs, and NPUs, deployment is greatly simplified with exceptional portability: a single .litertlm file runs out of the box on both CPU and GPU across all supported edge platforms.On Android, ML Kit APIs (coming soon) leverage LiteRT to provide optimized implementation for the platform, giving you both performance and simplicity without having to worry about model lifecycle management.</p>
+<p>To provide the best inference speed for EmbeddingGemma 2, we implemented targeted optimizations for compute-intensive workloads like vision encoding. This unlocks highly responsive, real-time AI experiences, as “search-as-you-type” in the Google AI Edge Gallery app, with visual embeddings taking as little as 37.3 ms (26.9 images per sec) on a MacBook M5 Pro GPU. See table for additional measurements.</p>
+<p>Achieving high-performance execution for EmbeddingGemma 2 on memory-constrained edge devices is enabled by the following optimizations:</p>
+<p>LiteRT delivers robust, cross-platform performance across a broad spectrum of edge devices and web (WASM). For a complete list of supported hardware platforms and the latest performance benchmarks, see our Hugging Face model card. You can try the LiteRT benchmark tool with more physical devices on Google Cloud or check out our zero-setup web demo for an instant, browser-based playground.</p>
+<p>EmbeddingGemma 2 and Google AI Edge provide the building blocks to bring fast, private, and offline multimodal retrieval directly into your applications. Whether you’re experimenting with instant image search, visual keyframe retrieval, or ambient condition triggers, all the tools you need are available today.</p>
+<p>We'd like to extend a special thanks to our significant contributors for their work on this project:</p>
+<p>Abhishek Jatram, Aditya Srivastava, Akshat Sharma, Alexander Kanaukou, Alice Zheng, Ami Kubota, Ander Dobo, Andrew Zhang, Brad Lassey, Chanchal Raj, Chandramouli Amarnath, Charlie Xu, Chenchen Tang, Chintan Parikh, Chirag Gupta, Cormac Brick, David Chou, Debapriya Maji, Denis Daletski, Fengwu Yao, Florian Kübler, Geonsun Lee, Gregory Karpiak, Henrique Schechter Vera, Himangshu Roy, Hriday Chhabria, Ian Ballantyne, Ivan Llanos, Jae Yoo, Jenn Lee, Jianing Wei, Jing Jin, Jingjiang Li, Jingtao Zhou, Jingxiao Zheng, Juhyun Lee, Julius Kammerl, Karthik Thirumalai, Kat Black, Kristen Quan, Kristen Wright, Lu Wang, Lutz Justen, Malini PV, Marissa Ikonomidis, Matt Kreileder, Matthew Chan, Matthew Soulanille, Matthias Grundmann, Mogan Shieh, Na Li, Naina Singla, Olivier Lacombe, Priya Patel, Qidong Zhao, Queenie Zhang, Renjie Wu, Rishika Sinha, Rishubh Khurana, Ronald Wotzlaw, Sachin Kotwani, Sahil Dua, Sandeep Bandaru, Sandeep Patil, Sebastian Russo, Sebastian Schmidt, Shengyi Lin, Shuangfeng Li, Somdatta Banerjee, Steven Toribio, Suril Shah, Sylvain Vignaud, Tenghui Zhu, Vinod Mamillapalli, Vladimir Kirilyuk, Wai Hon Law, Weiyi Wang, Xiaoming Hu, Xinan Cheng, Xu Chen, Yang Zhang, Yi-Chun Kuo, Yishuang Pang, Yu-hui Chen.</p>
+<p>Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</p>
+<p>Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-174">
+                <h2>#174. New EU Guidelines For AI Labelling</h2>
+                <img src="https://files.smashing.media/articles/eu-guidelines-ai-labelling/eu-guidelines-ai-labelling.jpg" alt="Ilustrasi New EU Guidelines For AI Labelling">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://files.smashing.media/articles/eu-guidelines-ai-labelling/eu-guidelines-ai-labelling.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Vitaly Friedman loves beautiful content and doesn’t like to give in easily. When he is not writing, he’s most probably running front-end & UX …
+More about
+Vitaly ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>There’s been a lot of confusion and panic this week about “huge fines”, “drastic measures” and “sweeping new AI rules” in the EU. In reality, it’s a lot more narrow — and a lot more sensible. And mostly it’s about making AI more obvious when it actually needs to be obvious — especially for AI-generated content.</p>
+<p>Starting from Aug 2, 2026, AI labelling is a legal requirement for any company that serves EU citizens. And similar to European Accessibility Act, it’s not limited to EU companies. It affects any company worldwide with EU operations as long as their AI output is used by people in the EU. Let’s see what exactly it means for us.</p>
+<p>The goal of AI labelling is to help everyone exposed to AI content to recognize, in a clear and distinguishable way, that the content has been artificially generated or manipulated.</p>
+<p>According to Article 50(4) of the AI Act, AI labelling applies to:</p>
+<p>Both providers (who build or supply the AI system) and deployers (who use it) carry legal obligations. Similar to GDPR and EAA, a company doesn’t escape Article 50 just because it licensed an external AI tool from a third party.</p>
+<p>However, it doesn’t mean that all AI-generated content must be explicitly labelled.</p>
+<p>Beyond the use cases above, pretty much everything else — the vast majority of AI-assisted work — simply isn’t covered by new transparency rules. Most notably, the disclosure obligation does not apply where the AI-generated text has been reviewed and edited by a human, with a named person or entity taking editorial responsibility for it.</p>
+<p>Some confusion circles around what exactly “public interest” means, where it starts and where it ends. On its own, it refers to health, safety, environment, economy, finances, politics, science, or culture. If AI-generated product claims touch upon them, the disclosure rule applies.</p>
+<p>Some law firms recommend labelling realistic AI-generated illustrations or photos as a precaution for advertising, marketing and other commercial content. AI-generated product illustrations, photos, or posters do need a disclosure, as long as they resemble a real person, place, object, or event.</p>
+<p>But at which point does edited AI content stop being AI content? When a form is pre-filled with AI, but then a user edits it, is it still AI? EU Commission’s guidance is a little fuzzy. Small assistive edits — spellcheck, grammar, formatting, cropping, colour correction, and AI-generated translation — don’t count as AI generation.</p>
+<p>AI-generated summaries, composite imagery, substantive rewrites, or adding and removing elements from a photo are considered AI generation. In practice, fine-tuning a sentence a person wrote is fine, but generating the sentence on its own requires a disclosure.</p>
+<p>“A human skimmed it before publishing” doesn’t qualify as editorial review. The Commission is explicit that it needs to be substantive, with a named person responsible for the editorial control.</p>
+<p>In other words, the fine line lies between intentional manual intervention and automated generation. The latter always has to be disclosed (exception: closed B2B environments).</p>
+<p>As part of the Code of Practice, the European Commission has published an EU AI icon set. It’s a specific “AI” mark (similar to the AI label in Carbon Design System) — not the generic ✨ sparkle that many products use to signal AI. The signal must be “clear and distinguishable”.</p>
+<p>The sparkle might be too ambiguous to signal AI clearly. Mostly because it’s often used to mean “AI-powered feature”, rather than “this specific content was generated by AI”. That’s the kind of signal EU guidelines are trying to rule out.</p>
+<p>The Commission is explicit: using an icon “does not establish legal compliance by itself.” A barely visible icon, a note buried in the footer, or a label that flashes for a second are all not compliant.</p>
+<p>The icon should be clearly visible, with a plain language label and accessible to assistive technologies. A safe bet is to pair any icon with plain text (“AI-generated”) — and it needs to persist when being reshared or downloaded.</p>
+<p>In fact, the EU Commission also published Code of Practice on marking and labelling of AI content.</p>
+<p>It might feel like a yet another regulation coming from the EU, but in reality there are plenty of other similar regulations that emerged recently worldwide:</p>
+<p>All of these are signs of upcoming AI regulation that looks more like a pattern, rather than a coincidence. So if you’re shipping anything AI this year, it’s probably a good idea to have a conversation about what exactly is going to be AI-labelled, and what not.</p>
+<p>One final note is that new EU AI transparency rules are much broader than US laws on AI disclosure, where certain state laws require disclosures for synthetic human performers, political advertising or specific AI applications.</p>
+<p>None of this really deserves panic or confusion. It’s about a fairly simple idea that has been emerging worldwide at almost the same time:</p>
+<p>If anything, it will help people distinguish between AI slop and not AI — and everybody can only benefit from that.</p>
+<p>Meet Design Patterns For AI Interfaces, Vitaly’s new video course with practical examples from real-life products — with a live UX training happening soon. Jump to a free preview.</p>
+<p>Meet Design Patterns For AI Interfaces, Vitaly’s video course on interface design & UX.
+Video + UX TrainingVideo onlyVideo + UX Training$ 450.00 $ 799.00
+Get Video + UX Training30 video lessons (10h) + Live UX Training.100 days money-back-guarantee.Video only$ 275.00$ 395.00Get the video course30 video lessons (10h). Updated yearly.Also available as a UX Bundle with 3 video courses.</p>
+<p>30 video lessons (10h) + Live UX Training.100 days money-back-guarantee.</p>
+<p>30 video lessons (10h). Updated yearly.Also available as a UX Bundle with 3 video courses.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-175">
+                <h2>#175. Ampere PMU Profiler: A Guide to Microarchitecture Profiling</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Ampere_PMU_Profiler_A_Guide_to_Microarchitecture_Profiling_e5ae17d2dc.webp" alt="Ilustrasi Ampere PMU Profiler: A Guide to Microarchitecture Profiling">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Ampere_PMU_Profiler_A_Guide_to_Microarchitecture_Profiling_e5ae17d2dc.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>The Ampere® PMU Profiler (APP) is a Python-based tool designed to provide deep insight into the microarchitectural behavior of applications running on Ampere CPUs (e.g., Ampere® Altra® and AmpereOne®). Unlike standard profilers that identify where time is spent (for example, which functions consume CPU time), the PMU Profiler explains why time is being spent by measuring low-level hardware events associated with the CPU pipeline and execution behavior.</p>
+<p>A key outcome of APP is that it enables performance engineers to move from coarse symptoms to actionable causes. For example, while application-level profiling can show an expensive code path, APP can help identify whether the expense stems from inefficient instruction fetching, data cache misses, or other microarchitectural factors that are difficult or impossible to isolate using application-level tools alone. The document outlines a top-down performance analysis methodology and positions APP as an essential final step for expert-level tuning, particularly on Ampere platforms, where you must understand hardware-level bottlenecks and then apply targeted code optimizations.</p>
+<p>APP is intended to complement system-level analysis rather than replace it. System-level profilers are useful for identifying high-level bottlenecks such as resource saturation or contention, but APP is focused on microarchitecture-level analysis by collecting hardware events. This makes APP especially valuable after system bottlenecks have been eliminated or ruled out, leaving "microarchitecture inefficiency" as the remaining likely cause of slowdowns.</p>
+<p>The Ampere PMU Profiler uses the Linux perf utility with validated PMUs and metrics on Ampere CPUs. Its purpose is to capture microarchitectural performance indicators through hardware event measurement. In practice, this means APP collects events measured by perf stat that relate to the CPU pipeline and execution mechanisms, allowing engineers to determine not only what is slow, but the underlying microarchitectural reason.</p>
+<p>A central distinction between APP and application profiling tools is the level of visibility. Tools that sample stack traces (or count function invocations) typically answer: "Which functions are active during the slow period?" APP answers a more hardware-specific question: "Which microarchitectural mechanisms are consuming cycles, and what stalls or inefficiencies are present?"</p>
+<p>The APP workflow assumes that developers can form a hypothesis about where the bottleneck likely originates, such as a particular loop or data access pattern, and then rely on PMU event measurements to confirm or refute those hypotheses at the microarchitectural level.</p>
+<p>Performance problems are frequently multi-layered. Even after system-level bottlenecks are addressed (for example, ensuring that the CPU is not idling due to I/O, ensuring there is sufficient memory, and verifying resource utilization), some workloads still perform poorly because the CPU spends cycles in inefficient pipeline states.</p>
+<p>APP helps solve this class of problems by measuring hardware-level behavior. For example, APP can identify microarchitectural bottlenecks such as:</p>
+<p>This capability is important because microarchitectural causes often do not map cleanly to application symptoms. Code can appear "hot" in a profiler, but the reason it is slow might be due to how it interacts with cache hierarchies, how it causes translation or fetch inefficiencies, or how the processor recovers from pipeline disruptions. Those details are what PMU-based measurement aims to expose.</p>
+<p>APP also links investigation to unlocking the full performance potential of the hardware. By understanding CPU-level bottlenecks, engineers can choose targeted optimizations that application-level tools alone cannot determine with confidence. This ultimately leads to more efficient software and better utilization of Ampere hardware for competitive workloads.</p>
+<p>Performance tuning is a process of systematic investigation, moving from a broad, system-wide view down to the specific interactions between code and hardware.</p>
+<p>Performance optimization is as much art as it is science. The APEX framework uses tools and methodologies to add structure and rigor to the process and can bridge the gap between creative intuition and empirical fact.</p>
+<p>We propose applying the APEX (Adaptive Profiling and Execution) methodology to enable root cause analysis for solving performance problems. Follow the funnel above from top to bottom to effectively use the procedure.</p>
+<p>The methodology recommends starting with assessing platform health as a first step to ensure that the platform used for performance analysis is set up well. An unhealthy platform may mislead the performance analysis.</p>
+<p>Consider capturing initial performance metrics before tuning any system or application settings. This establishes a clear understanding of the current workload and identifies key scalability knobs. We recommend using Ampere's PerfKit Benchmarker (APB), which supports many open-source applications, to create a reliable baseline for further analysis and tuning.</p>
+<p>Next is to assess system performance and any hardware or system bottlenecks while the code runs — this is where the Ampere System Profiler (ASP) is useful to eliminate any system or resource bottlenecks. ASP can also be used to right-size the instance shape and ensure that the compute resources are efficiently consumed by the workload.</p>
+<p>One method which may be used is to leverage APB's automated benchmarking framework to start and stop ASP's collectors during the run phase of a given APB benchmark. This ensures that the profile is collected while critical code paths are executed and a clear profile report is generated.</p>
+<p>Once system and resource bottlenecks are eliminated, if the performance issue persists and points to CPU cycles not being used efficiently, we propose going to the next step in the pyramid and using the Ampere PMU Profiler to root-cause the issue further.</p>
+<p>Finally, system benchmarking should be done after all bottlenecks are resolved or analyzed to effectively measure the system's performance for the workload.</p>
+<p>Following this systematic APEX methodology ensures that we eliminate possible issues as part of a structured process to efficiently conduct root cause analysis.</p>
+<p>At the microarchitecture level, performance is shaped by how the CPU pipeline handles instruction delivery, execution, and memory access. APP leverages PMU measurements to identify pipeline behavior and stall sources.</p>
+<p>APP emphasizes the performance significance of the memory hierarchy. As data access moves from registers to L1 cache, then L2 cache, then L3 cache, and finally DRAM, access becomes exponentially slower. Because of this, cache misses are a primary cause of performance loss. This provides a conceptual foundation for many APP investigations: if a workload touches large working sets or accesses data in a non-contiguous pattern, it may trigger cache misses that increase effective latency and reduce throughput.</p>
+<p>APP can be used at the microarchitecture level to understand where stalls might be in the pipeline. The APP role is to collect hardware events related to pipeline stall behavior and to use those events to characterize the workload's execution profile. This capability matters because pipeline stalls and inefficiencies can dominate runtime even when application-level profiling points to a "hot" function without explaining the root cause.</p>
+<p>APP is structured around answering questions that cannot be fully resolved with application-level profiling alone. Based on the described APP workflow and report interpretation strategy, APP can help you answer:</p>
+<p>The above example command attempts to collect:</p>
+<p>APP enables PMU hardware event measurement to provide microarchitecture-level performance insight on Ampere CPUs. It is designed to answer the "why" behind performance problems by identifying microarchitectural causes such as inefficient instruction fetching and data cache misses, which are difficult to detect through application-level profiling alone.</p>
+<p>The APP workflow is top-down and hypothesis-driven: form a hypothesis from the hot function, measure with APP profiles, then analyze using the APP HTML report with TDA sunburst charts to characterize where cycles are being spent (instruction retirement, frontend bound, backend bound). APP is most valuable when system-level bottlenecks have been characterized or ruled out and microarchitecture-level explanation is required for expert tuning.</p>
+<p>Bhakti H. is a Director of Engineering at Ampere, specializing in semiconductors, ML hardware-software co-design, and data center infrastructure.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/ampere-pmu-profiler-microarchitecture-guide/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-176">
+                <h2>#176. LG Promo Codes and Coupons for October 2026</h2>
+                <img src="https://media.wired.com/photos/67b63b985a505b018b67ed90/191:100/w_1280,c_limit/WIRED-Coupons-R2_17.png" alt="Ilustrasi LG Promo Codes and Coupons for October 2026">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/67b63b985a505b018b67ed90/191:100/w_1280,c_limit/WIRED-Coupons-R2_17.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>LG makes many of the best TVs you can buy. Its C-series TVs are our top pick for the best OLED TV and have been for quite some time. Pair it with one of the brand’s great soundbars, and you have a top-tier home theater setup that will last for years. While WIRED loves LG mostly for its TVs, the brand is an electronics giant that makes excellent computer monitors and very competitive home appliances like smart refrigerators. These are all big-ticket items, though, so here’s where to find LG promo codes and other ways to save on LG discounts for these often big-ticket items.</p>
+<p>If you’re looking to save on LG gear today, you can get up to 20% back on your first order with select eligible products when you sign up for LG Rewards with your email address. Simply go to the My LG Rewards page, follow the instructions to sign up, and save.</p>
+<p>If you’re ready to check out one of those TVs mentioned above, LG’s C4 and the ultra-bright step-up model G4 are both eligible right now in 77-inch sizes. Otherwise, there are plenty of other products currently on sale that you can stack with My LG Rewards for 5% back and points on every purchase.</p>
+<p>Winter is around the corner, which means staying inside to avoid the cold and curling up to watch some football. Just in time for the season, you can get a $200 NFL Shop e-gift card and free installation when you purchase select LG OLED and QNED Mini LED TVs, including an LG OLED evo 4K TV and an LG Micro RGB evo AI 4K Smart TV. To claim your NFL Shop reward, buy a qualifying LG TV between September 14 and October 4, submit your claim within 30 days of purchase, and once your claim is approved, you’ll receive your reward within 45 days.</p>
+<p>We love LG products, and we know you do too. This tech is often the priciest investment you’ll make for your household. So we snagged an LG secret coupon for you that gives 5% off your next purchase. Although it doesn’t sound like much, on a big appliance purchase like a laundry set or a range stove, this can add up to hundreds of dollars in savings. All you need to do is sign up to become a member, and you’ll get 5% off your purchase—but act quickly, because the offer is only good for 24 hours.</p>
+<p>One of the most sought-after appliances from the brand is the LG refrigerator. While we don’t have any set LG promo codes and discounts for refrigerators right now, be sure to check back often and track price changes on these sought-after powerhouse appliances. The Counter-Depth French Door Refrigerator is a sleek, three-door stainless-steel machine with a built-in ice maker and a luxe mirror finish. The Side-By-Side InstaView Refrigerator is the fridge of the future, with a translucent door that lets you see what’s inside without opening it. The simple Single Door Refrigerator features a clean, compact design and easy-to-reach organization.</p>
+<p>Looking for more discounts? If you’re a teacher, student, or first responder, you could receive an additional LG Promo Code for extra savings. To check your eligibility, click the LG Appreciation Program link and follow the instructions to register your account. Exclusive discounts include free installation for refrigerators, cooking ranges, and washer/dryers, as well as select LG Studio and LG Signature appliances. You could also get year-round savings on LG products, with a minimum guaranteed discount of 10% compared to sale prices on their website.</p>
+<p>If you’re an active member of the military or a veteran, you can also get 10% off with the LG military discount. All you need to do is verify your status at ID.me. Once your status is verified, you’ll register your LG account to start shopping for exclusive discounts and the latest offers. Plus, registered LG members will get additional benefits like free shipping, flexible payment options, exclusive discounts, free installation, and best price guarantees.</p>
+<p>With MyLG Rewards, you can get up to 20% back in rewards, plus exclusive deals, extended warranties, and free installation. Eligible rewards members can get an additional 5% off LG products by referring a friend or loved one through the LG Referral program when they make an eligible purchase of $200 or more. They’ll get 5% off, and you’ll earn 5,000 MyLG Rewards points, so it’s a win-win. This coupon is stackable with other promotions, so you can still take advantage of the many other featured discounts.</p>
+<p>Take Up to 25% Off Custom Prints with VistaPrint Promo Code</p>
+<p>Take 10% Off Legal Services with This LegalZoom Promo Code</p>
+<p>Save up to $420/year when you bundle AT&T Fiber® internet and wireless</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/lg-promo-code/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-178">
+                <h2>#178. Samsung releases ‘Re-Newed’ Galaxy phones on Amazon starting under $500</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2025/02/Galaxy-S24-and-S25-Ultra-cameras-close-up.jpg?quality=82&#038;strip=all&#038;w=1600" alt="Ilustrasi Samsung releases ‘Re-Newed’ Galaxy phones on Amazon starting under $500">
+                <div class="article-body">
+                    
+            
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p><div class="feat-image"><img src="https://9to5google.com/wp-content/uploads/sites/4/2025/02/Galaxy-S24-and-S25-Ultra-cameras-close-up.jpg?quality=82&#038;strip=all&#038;w=1600" /></div><p class="wp-block-paragraph">Samsung is now selling its “Re-Newed Galaxy phones via Amazon, with over a dozen models now available starting under $500.</p>
+
+
+
+ <a class="more-link" href="https://9to5google.com/2026/10/21/samsung-re-newed-refurbished-galaxy-phones-amazon/#more-734273">more…</a></p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/21/samsung-re-newed-refurbished-galaxy-phones-amazon/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-180">
+                <h2>#180. IEEE Continues Preparations for the Realignment of Its Regions</h2>
+                <img src="https://spectrum.ieee.org/media-library/2d-world-map-with-countries-colored-according-to-their-designated-ieee-region.jpg?id=68429251&width=1200&height=600&coordinates=0%2C255%2C0%2C255" alt="Ilustrasi IEEE Continues Preparations for the Realignment of Its Regions">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://spectrum.ieee.org/media-library/2d-world-map-with-countries-colored-according-to-their-designated-ieee-region.jpg?id=68429251&width=1200&height=600&coordinates=0%2C255%2C0%2C255" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>The redrawn IEEE region map that will become effective in 2028.</p>
+<p>Progress continues in restructuring IEEE’s geographic regions, as outlined in The Institute’s February 2023 article “IEEE Is Realigning Its Geographic Regions.”</p>
+<p>The restructuring is defined in the image of the redrawn map in this article.</p>
+<p>Although the new regional alignment will not officially take place until 1 January 2028, several activities have begun within IEEE Member and Geographic Activities (MGA) and across other IEEE organizational units. Within MGA, volunteers and staff have been actively addressing system enhancements, director/director-elect elections, governance updates, communications, and regional finances and offerings.</p>
+<p>Work will continue from now until the effective date of realignment in 2028. The change will not affect your IEEE membership, nor will it change either your local IEEE section or chapter.</p>
+<p>If you have any questions regarding the realignment, contact Reg-Realignment@ieee.org.</p>
+<p>IEEE Member and Geographic Activities oversees IEEE membership and the activities of its geographic units worldwide.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://spectrum.ieee.org/realignment-ieee-regions" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-181">
+                <h2>#181. Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/header_2_UVrdPMU.2e16d0ba.fill-1200x600.jpg" alt="Ilustrasi Accelerating Spatio-Temporal Attention for Video Diffusion on TPUs">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/header_2_UVrdPMU.2e16d0ba.fill-1200x600.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Video diffusion models are typically slow at generating videos for two reasons: a large number of denoising steps, and high cost for each individual denoising step. At large video sequence lengths, self-attention can become one of the dominant contributors to the latency of an individual denoising step. The sequence length for just 81 frames of 720p video ranges from 50K to 400K for popular open source video generation models today.</p>
+<p>As an example, scaling from 720p (HD) to 1440p (2K) can quadruple the sequence length. Because full attention scales quadratically with sequence length, its share of per-layer latency can grow from 55.5% to 88.2%.</p>
+<p>Since attention is the single greatest driver of latency within a single step, any aggressive inference optimization would need to target attention first. Fortunately, attention in video diffusion is highly structured: many query-key interactions carry little attention mass, so a large fraction of the pairwise computation can often be skipped. Dense attention computes every interaction regardless of its importance, while sparse attention uses a mask to retain only the most important interactions and discard the rest. An example of an attention matrix from a video diffusion model is shown below to illustrate how tightly concentrated attention mass can be.</p>
+<p>However, the pattern of attention varies across heads and layers, and even across steps. Sparse VideoGen (SVG) is a formative work that recognizes and exploits one pattern of attention: different heads are often characterizable as either spatial heads or temporal heads. Importantly for implementation, these are not arbitrary sparse patterns, and both have highly regular geometric structure. Within a spatial head, a patch attends mostly to other patches within the same or close-by frames; within a temporal head, a patch attends to a small spatial region across a large number of frames. In the image below, the attention mass corresponding to a single query is shown for a spatial head (first row) and a temporal head (second row). In the spatial head, the query diffusely attends to all the tokens in its own frame and to adjacent frames. In the temporal head, its attention is limited to a narrower spatial region but across a larger number of frames.</p>
+<p>Based on this structure, SVG dynamically profiles attention heads at inference time and routes each head to either a spatial or temporal mask. It does so by sampling a small number of queries, computing their attention outputs under dense, spatial, and temporal attention, and selecting the sparse mask whose output deviates least from the dense baseline. This allows SVG to preserve higher quality at a given sparsity level. We refer readers to the SVG paper for details of the profiling and routing algorithm. As shown in Figure 3 below, both masks also retain full attention to the first frame (F00)—acting as an attention sink to anchor global scene appearance—alongside a local band for frame-to-frame interactions.</p>
+<p>The table below summarizes the custom JAX and Pallas Splash Attention kernel implementations we compare. All timings use synthetic BF16 inputs on a single TPU v6e device, with 75.6K tokens, 10 heads, and a head dimension of 128. The reference query and key/value tile sizes are 3328 and 1536. Sparse variants retain approximately 38.87% of query-key pairs. These are isolated attention-kernel timings; routing, token permutation, and communication between devices are outside this measurement.</p>
+<p>Although SVG has a clever approach to select an attention mask, this theoretical sparsity needs to be converted into a speedup on real hardware. Modern attention implementations don’t materialize the entire attention matrix multiplication Q · Kᵀ; rather, they divide it into tiles such as Q[i₁:i₂] · K[j₁:j₂]ᵀ and accumulate necessary statistics across these tiles to compute the attention output SoftMax(QKᵀ / √d)V. Within a visited tile, scores for excluded query-key pairs are set to negative infinity before the softmax so that they contribute zero attention weight. This enforces the mask, but does not avoid computing those scores in the first place.</p>
+<p>The mask divides tiles into three types. Full tiles contain only retained query-key pairs and need no intra-tile mask. Boundary tiles contain both retained and excluded pairs, so their scores need elementwise masking. Empty tiles (labeled Skipped tiles in the diagram) contain no retained pairs and can be skipped entirely. Logical sparsity counts excluded pairs, but the hardware savings depend on which tiles we can skip and how much work remains inside those we visit.</p>
+<p>Splash attention already supports sparse masks and can skip empty tiles. However, this alone does not guarantee a speedup: how the kernel handles the tiles it visits also matters. In our initial sparse prototype (B1: naive block traversal), the mask retains 39% of query-key pairs, or about 61% logical sparsity. But the kernel visits 44% of outer tiles because boundary tiles also contain pairs that will be masked out. It skips the remaining tiles, but still evaluates the exact mask inside every visited tile. This implementation takes 96.37 ms compared to 78.70 ms for dense Splash: 22% higher latency despite skipping more than half the tiles.</p>
+<p>Evaluating the exact mask requires determining which query-key coordinates are valid and applying that predicate to the attention scores. On TPUs, performing this elementwise mask evaluation on every visited tile bottlenecks the Vector Processing Unit (VPU) and stalls the Matrix Multiply Unit (MXU), even when every pair in a tile is valid. We can avoid that unnecessary work by identifying full and boundary tiles before executing attention and giving them separate paths.</p>
+<p>To fix this, our second iteration (B2: full/boundary tile specialization) gives full tiles a completely mask-free fast path, executing exact coordinate masking only on boundary tiles. Both paths contribute to the same attention output, with their partial results combined using the corresponding softmax normalization statistics. The retained query-key pairs are unchanged. Latency drops from 96.37 ms down to 54.12 ms—a 44% reduction compared to the naive sparse traversal (B1) and 31% faster than dense Splash. This comparison shows the benefit of specializing tile execution while preserving the exact sparse mask.</p>
+<p>Smaller tiles can follow the mask boundary more closely, reducing the fraction of tiles requiring intra-tile masking. However, tile size also changes how the kernel groups computation and data movement, so minimizing boundary work does not necessarily minimize latency.</p>
+<p>To illustrate this tradeoff, we vary the query tile size (BQ) while keeping the key/value tile size (BKV) fixed at 1536. Every configuration already uses separate full and boundary paths. At BQ = 1024, only 16.95% of executed tiles require internal masking, but latency is 66.88 ms. Increasing BQ to 3328 raises that fraction to 27.55% while reducing latency to 54.12 ms. Increasing BQ further to 4864 raises latency again, to 58.62 ms. The plot shows this tradeoff: the configuration with the least masking work is not the fastest. These percentages describe work/tiles requiring internal masking, not time spent evaluating the mask.</p>
+<p>We can reduce boundary masking further by aligning the SVG mask with the tiles the kernel executes. Rounding a boundary outward includes some previously excluded pairs; rounding it inward removes some previously retained pairs. Balancing these choices slightly modifies the mask while approximately preserving the query-key pair budget. Unlike the previous optimization, this changes which interactions contribute to the output.</p>
+<p>Rounding removes the need to enforce the exact SVG boundary within each visited tile. Because 75,600 tokens is not an exact multiple of the 3328 × 1536 tile dimensions, the edge tiles extending beyond the real sequence length still contain padding, and padded positions must contribute exactly zero attention weight. We therefore reuse the full/boundary distinction, with masking now needed only for tiles containing padding.</p>
+<p>In our final configuration (B3: tile-aligned sparse traversal), this reduces the fraction of tiles requiring masking from 27.55% down to just 2.22%. Restricting masking strictly to boundary padding brings latency down to 32.76 ms—achieving a 2.40× speedup over dense Splash attention.</p>
+<p>Together, these results show why sparse attention needs both a suitable mask and an efficient execution strategy: skip empty tiles, avoid masking full tiles, and align the overall mask with the tiles the hardware computes.</p>
+<p>We now have a faster sparse attention kernel, but integrating it into distributed inference requires dealing with dynamic token layouts and different masks for different heads.</p>
+<p>The routing step returns a Boolean flag for each head to select spatial or temporal attention. These flags choose between the original and permuted token layouts while keeping the tensor dimensions fixed. Unlike dynamically splitting heads into variable-sized spatial and temporal subsets, changing a head’s assignment at runtime does not alter tensor shapes or trigger costly XLA recompilations. The same flags restore temporal heads to the original token order after attention, so downstream layers receive the ordering that they expect. Spatial heads retain their original ordering.</p>
+<p>Permuting tokens from frame-major (F, H, W) to temporal order (H, W, F) places tokens at the same spatial position across frames next to each other—transforming the scattered diagonal stripes of the temporal mask (seen earlier in Figure 3, right) into a single contiguous band that the tiled sparse kernel can traverse efficiently. We tried avoiding this permutation and handling temporal access inside the kernel instead, but latency increased from 44.40 to 74.14 ms in our temporal-head benchmark, even though the faster path included additional overheads of permutation and restoration. This is in line with extra indexing and data rearrangement inside the kernel, although we did not measure those costs separately.</p>
+<p>Where we perform this permutation matters in distributed inference. With 40 heads distributed across four devices, each device initially holds all 40 heads for one-quarter of the sequence. An all-to-all exchange redistributes this into 10 heads per device, each with the complete sequence. We call this the head-local layout.</p>
+<p>Permuting tokens before that exchange can require additional communication because a head’s sequence is still spread across devices. After the exchange, every token needed to reorder a device’s local heads is already available there. We therefore apply the permutation after the input head exchange, execute sparse attention, and recover the original token order before the return exchange. Routing is computed before the exchange, and each head carries its routing flag with it.</p>
+<p>In a matched TPU v6e experiment on one captured step and layer, moving token reordering into the head-local region reduced total attention latency from 75.64 ms to 46.81 ms, a 38% reduction. This includes routing, permutation, communication, and the sparse kernel. It shows why the placement of layout transformations matters alongside the sparse kernel itself.</p>
+<p>Having optimized both the sparse kernel and its surrounding overheads, we now measure how these improvements translate into faster denoising. We evaluate 720p video generation with 81 frames, 40 denoising steps, and eight TPU v6e chips. The table compares three schedules that retain progressively fewer attention pairs, using the same prompt and seed and a local dense control for each configuration. Denoising times are medians of three warm runs, with speedup computed as dense time divided by SVG time. FFmpeg PSNR measures similarity between the encoded SVG and dense videos; higher values indicate closer outputs.</p>
+<p>The aggressive schedule reduces denoising time from 153.50 s to 119.86 s, a 1.28× speedup and 22% lower latency. These results reflect the combined implementation with separately tuned dense and sparse configurations, including their distributed layouts. Gains are smaller than the isolated kernel speedups because denoising also includes work outside sparse attention.</p>
+<p>Because self-attention accounts for an increasingly large share of transformer-block latency as sequence length grows—rising from 55.5% at 720p to 72.5% at 1080p and 88.2% at 1440p (2K)—end-to-end speedups from sparse attention scale substantially with resolution. Evaluating the aggressive schedule across resolutions shows how these savings compound on longer sequences:</p>
+<p>At 1080p (171K tokens), the aggressive schedule reduces denoising time from 683 s to 457 s (a 1.49× speedup at 24.66 dB PSNR). At 1440p (302K tokens, four times the sequence length of 720p), denoising time drops from 2,471 s to 1,461 s—achieving a 1.69× end-to-end speedup and saving over 16 minutes per generated video while maintaining 24.05 dB PSNR.</p>
+<p>Sorry, your browser doesn't support playback for this video</p>
+<p>Key Takeaway: Efficient sparse attention on TPUs depends on how much work the hardware can avoid, not just how many attention pairs the mask removes. Skipping empty tiles, limiting intra-tile masking, and arranging tokens for efficient access helped us turn algorithmic sparsity into actual end-to-end generation speedups.</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+<p>Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/accelerating-spatio-temporal-attention-for-video-diffusion-on-tpus/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-183">
+                <h2>#183. React useEffect Cleanup Patterns for Timers, Listeners, and Fetch Races</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_8095bc990d.png" alt="Ilustrasi React useEffect Cleanup Patterns for Timers, Listeners, and Fetch Races">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_8095bc990d.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>Code examples require React 18+. StrictMode double-invocation behavior was introduced in React 18.</p>
+<p>Missed cleanup functions in React useEffect are among the most common sources of memory leaks, stale-state bugs, and race conditions. Typical beginner tutorials demonstrate the happy path: fetch data, set state, render. They rarely address what happens when a component unmounts mid-flight, when a dependency changes faster than an async operation resolves, or when event listeners silently pile up across re-renders. This article provides a unified mental model for useEffect cleanup across three categories (timers, listeners, and fetch races), a reference table mapping setup to cleanup to pitfall, and a copy-paste PR review checklist that development teams can adopt immediately.</p>
+<p>The mental model is simple: React runs the setup function when the component mounts, runs the cleanup function when the component unmounts, and on every dependency change, runs cleanup for the previous render's effect before running setup for the current render's effect. This cleanup-then-setup cycle on dependency change is the part most developers either overlook or misunderstand. It means that every effect invocation is paired with a corresponding teardown, and React guarantees that ordering. The setup function acquires resources; the cleanup return releases them. The dependency array declares which values, when changed, trigger that cycle again.</p>
+<p>React 18's StrictMode intentionally runs each component's effect twice in development by simulating an unmount and remount: setup → cleanup → setup. Your setup function executes twice on the initial render in development. This double invocation exists specifically to surface missing cleanup logic. If a component registers an event listener in setup but never removes it in cleanup, StrictMode will produce two listeners after the simulated remount, making the bug immediately visible during development. As documented in the React docs on StrictMode (https://react.dev/reference/react/StrictMode), this behavior only occurs in development mode and does not affect production builds. However, the bugs it exposes are entirely real. A component that behaves incorrectly under StrictMode's double-mount has a latent cleanup bug that will manifest in production whenever the component remounts due to navigation, conditional rendering, or parent re-renders.</p>
+<p>A component that behaves incorrectly under StrictMode's double-mount has a latent cleanup bug that will manifest in production whenever the component remounts due to navigation, conditional rendering, or parent re-renders.</p>
+<p>When a setInterval starts inside a useEffect that depends on a prop or state value, every time that dependency changes, React re-runs the effect. Without cleanup, the previous interval continues running. A second interval starts. Then a third. The observable symptom depends on what the interval does: a counter increments N times per tick (where N is the number of orphaned intervals), a polling callback fires multiple times per tick, or a UI animation speeds up erratically. Each orphaned interval holds a closure over stale state, compounding the problem. Under StrictMode's double-mount in development, this bug surfaces immediately as two intervals running from the very first render.</p>
+<p>The correct pattern creates the interval in setup and clears it in cleanup. When the dependency changes, React clears the old interval before starting a new one with the updated value. This guarantees exactly one active interval at any point in time.</p>
+<p>The same principle applies to setTimeout. Replace setInterval with setTimeout and clearInterval with clearTimeout. Store the timer ID returned by the scheduling function, then clear it in the cleanup return.</p>
+<p>Adding an event listener to window, document, or any DOM node outside the component's own render tree requires manual cleanup. Without a matching removeEventListener in the cleanup return, every re-render (or StrictMode double-mount) attaches an additional handler. The handlers accumulate. A resize listener that updates state will trigger setState multiple times per resize event, once for each orphaned listener. This degrades performance and can cause subtle state corruption when multiple handlers race to update the same state variable.</p>
+<p>The critical detail is that removeEventListener must receive the exact same function reference passed to addEventListener. An inline arrow function created inside the effect body produces a new reference on every invocation, so calling removeEventListener with a different inline arrow does nothing. The listener is never removed. Declare the handler as a named function (or a variable holding the function) inside the effect, then pass that same variable to both addEventListener and removeEventListener.</p>
+<p>The critical detail is that removeEventListener must receive the exact same function reference passed to addEventListener.</p>
+<p>If the handler depends on a prop or state value and is defined outside the effect (for example, with useCallback), that handler must appear in the dependency array. When the reference changes, React cleans up the old listener and attaches the new one. Note that re-adding the listener on each dependency change is correct behavior: the old handler (with stale closure) is removed and the new handler (with fresh values) is attached.</p>
+<p>Consider a search component where the user types quickly. Each keystroke triggers a new fetch. The request for "rea" might take 300ms while the request for "react" takes 50ms. The "react" response arrives first, and the UI shows the correct results. Then the "rea" response arrives, and because nothing prevented it from calling setState, it overwrites the UI with stale, incorrect results. This is a classic race condition. The slower response wins not because it is more recent, but because it resolves later. Without cancellation, there is no mechanism to tell the browser to discard an in-flight request whose results are no longer relevant.</p>
+<p>The modern solution is AbortController. Each effect invocation creates a new controller instance. The controller's signal property is passed to fetch as an option. When the cleanup function runs (because the dependency changed or the component unmounted), it calls controller.abort(), which cancels the in-flight request. The fetch promise rejects with an AbortError. Browsers generally attempt to cancel the underlying network request as well, though the behavior varies by engine (see the Fetch spec on AbortSignal and MDN's browser compatibility tables). This guarantees that only the most recent request can successfully set state.</p>
+<p>Calling abort() rejects the promise. This is normal, not an error condition. The catch block must distinguish AbortError from genuine network failures. Without this guard, the UI would flash an error for every intentional cancellation, or the rejection would trigger error-logging infrastructure. The standard check inspects the error's name property: if it equals 'AbortError', the catch block returns early without updating state or surfacing an error.</p>
+<p>Note that the effect function itself is not async. An inner async function is declared and called immediately. This matters because useEffect expects its return value to be either undefined or a cleanup function. React ignores a returned promise and never registers a cleanup function from it.</p>
+<p>The following table captures the universal pattern across the most common side effects in React applications. Each row shows the same structure: acquire a resource in setup, release it in cleanup, and understand the specific failure mode when cleanup is missing.</p>
+<p>WebSocket and Firebase patterns appear here for reference; see MDN's WebSocket API docs and Firebase documentation for full implementation details.</p>
+<p>The pattern is always the same: acquire resource, release resource, declare dependencies honestly. If setup creates something, cleanup destroys it. If setup connects, cleanup disconnects. Memorize this symmetry and every new side effect becomes a direct application of the same principle.</p>
+<p>This checklist is designed to be dropped directly into a team's contributing guidelines or used as a mental walkthrough during code review. Every question targets a specific category of cleanup bug.</p>
+<p>A PR that passes all seven checks covers the most frequently reported categories of cleanup-related bugs before they reach production.</p>
+<p>The react-hooks/exhaustive-deps ESLint rule exists to catch missing dependencies that cause stale closures. Disabling the rule hides the bug instead of fixing it. The effect closes over a stale value and never re-runs in response to that value changing, producing a stale closure that is difficult to reproduce and debug. When the rule flags a dependency, add it. If that causes unwanted re-runs, restructure the effect: extract logic, split into multiple effects, or stabilize references with useCallback or useMemo. Suppression should be a last resort, always paired with a comment explaining why the omission is intentional and safe.</p>
+<p>Marking the effect callback as async is a common trap. An async function implicitly returns a promise. React expects the return value to be either undefined or a synchronous cleanup function. React ignores a returned promise and never registers a cleanup function, so nothing runs on unmount or dependency change. The fix is always the same: define an inner async function inside the effect and invoke it immediately, keeping the outer effect function synchronous so that the return statement provides a proper cleanup function.</p>
+<p>React ignores a returned promise and never registers a cleanup function, so nothing runs on unmount or dependency change.</p>
+<p>Sharing our passion for building incredible internet things.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/react-useeffect-cleanup-patterns/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-184">
+                <h2>#184. Astronauts’ hearts just passed a surprising test for Mars</h2>
+                <img src="https://www.sciencedaily.com/images/1920/nasa-astronaut-tired-sitting-mars.webp" alt="Ilustrasi Astronauts’ hearts just passed a surprising test for Mars">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/nasa-astronaut-tired-sitting-mars.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>A journey to Mars may be less challenging for the human heart than scientists once feared. A new study suggests that astronauts can adapt remarkably well to months of weightlessness, offering encouraging evidence that humans could endure the long trip to the Red Planet and function under its weaker gravity.</p>
+<p>Researchers from Northwestern Medicine, UT Southwestern, and UT Houston monitored the hearts of 13 astronauts who spent approximately six months aboard the International Space Station. Their findings showed that although spaceflight initially affected heart performance, the astronauts gradually adapted, with intensive daily exercise playing an important role in maintaining their cardiovascular health.</p>
+<p>One of NASA's major concerns about sending humans to Mars is how astronauts' hearts and circulatory systems will respond when they leave the weightless conditions of spaceflight (known as microgravity) and encounter Martian gravity, which is only about one-third as strong as Earth's.</p>
+<p>Encouragingly, the researchers found that the astronauts showed no significant signs of cardiovascular strain when exposed to simulated Martian gravity after returning to Earth.</p>
+<p>"With our findings, there is now reason to think that we would be able to traverse to Mars, get there and actually work on the surface of Mars," said study senior author Dr. James Thomas, professor of medicine in the division of cardiology at Northwestern University Feinberg School of Medicine.</p>
+<p>The study, published last month in the journal Circulation, is the first to investigate how the heart responds to simulated Martian gravity following an extended period in space.</p>
+<p>How Daily Exercise Protects Astronauts' Hearts in Space</p>
+<p>Living without gravity creates unusual challenges for the human body. On Earth, the heart constantly works against gravity to circulate blood, while muscles must support the body's weight. In space, those demands decrease substantially, allowing muscles and even the heart itself to shrink over time.</p>
+<p>Returning to a gravitational environment can also be difficult. Astronauts on previous missions have frequently experienced dizziness or lightheadedness when standing after landing. This happens because gravity pulls blood toward the lower body, sometimes causing blood pressure to drop suddenly. The condition is called orthostatic hypotension. (If you've seen Sandra Bullock crawling after returning to Earth in "Gravity," you get the idea.)</p>
+<p>However, the astronauts involved in the new study generally handled this transition well, potentially because they had maintained demanding exercise schedules throughout their missions.</p>
+<p>As part of NASA's Exercise Countermeasures program, astronauts exercised for up to two hours each day. Their routines included 30 to 45 minutes of endurance training, which strengthens the cardiovascular system, along with 60 to 75 minutes of resistance training to help preserve muscle mass and strength.</p>
+<p>"You lose muscle mass and cardiac mass when you're in a weightless environment because you are working less up there," explained Thomas, who also is a Northwestern Medicine cardiologist. "You're floating around in the air, and you give a little tap with your foot, and you can sail over to say hello to your buddy."</p>
+<p>"To counter that, exercise is crucial when you're in space," Thomas added.</p>
+<p>Heart Scans Reveal How the Body Adapts to Weightlessness</p>
+<p>To understand what happens to the heart during prolonged spaceflight, the researchers collected echocardiograms before, during, and after each astronaut's mission. These ultrasound scans use sound waves to produce moving images of the heart, allowing doctors to examine its structure and measure how effectively it pumps blood.</p>
+<p>While aboard the International Space Station, astronauts were trained to perform these scans on one another every few weeks. The recordings were transmitted to Earth, where researchers could monitor changes in heart function throughout the missions.</p>
+<p>Thomas worked alongside Dr. Benjamin Levine of UT Southwestern Medical Center and Dr. Michael Bungo of the McGovern Medical School at UTHealth Houston.</p>
+<p>"It would be typically about 3 a.m. for me because the space station runs on Greenwich Mean Time," Thomas said. "I would watch the recordings come in live and coach the astronauts in real time to improve the images."</p>
+<p>The scans revealed that the astronauts' hearts initially struggled to adjust to their new environment. During the first two weeks in space, researchers observed declines in cardiac filling, stroke volume, and several other measures of cardiovascular performance.</p>
+<p>Cardiac filling refers to how much blood enters the heart between beats, while stroke volume describes the amount of blood pumped out with each contraction. Both measurements decreased early in the missions, indicating that the astronauts' hearts were temporarily moving less blood with each beat.</p>
+<p>As the astronauts spent more time in space, their cardiovascular systems adapted. Cardiac filling and stroke volume gradually improved, approaching the levels recorded before launch.</p>
+<p>These results suggest that the heart can adjust to prolonged weightlessness more effectively than early measurements might indicate, particularly when astronauts maintain regular physical activity.</p>
+<p>Astronauts' Hearts Pass a Simulated Mars Gravity Test</p>
+<p>The researchers also wanted to answer a particularly important question for future Mars missions: What happens when an astronaut who has spent months in weightlessness suddenly encounters gravity again?</p>
+<p>Mars has roughly 38% of Earth's surface gravity. Although this is considerably weaker than what people experience on Earth, it would still force astronauts' hearts to work differently after months of floating in space.</p>
+<p>To reproduce some of these effects, the researchers conducted a simulated Martian gravity test after the astronauts returned to Earth.</p>
+<p>Each astronaut was tilted upward by 22 degrees from a lying position. This posture caused blood to shift toward the lower body, approximating the circulatory effects of Martian gravity.</p>
+<p>The results were encouraging. After spending about six months in space, the astronauts' hearts performed just as well under simulated Martian gravity as they had when standing upright on Earth before their missions.</p>
+<p>This suggests that astronauts who maintain their cardiovascular fitness during spaceflight may be capable of transitioning to the weaker gravity of Mars without experiencing major cardiovascular difficulties.</p>
+<p>Although the findings come from a relatively small group of astronauts and a simulation rather than an actual Mars landing, they provide valuable evidence for planning future missions.</p>
+<p>Combined with the benefits of daily exercise, the heart's ability to adapt to weightlessness and respond well to simulated Martian gravity offers another reason to be optimistic about sending humans to the Red Planet.</p>
+<p>The study is titled "Impact of Prolonged Spaceflight on Cardiac Structure and Function: An Exploratory Longitudinal Observational Study." Funding was provided by the National Space Biomedical Research Institute (grant NCC9-58), NASA (grant NNJ04HH01A), the IDP Foundation, Sandra Helton, and the National Heart Foundation of Australia.</p>
+<p>Materials provided by Northwestern University. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261020085016.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-185">
+                <h2>#185. Turn your REST APIs into MCP tools with Google Cloud API Gateway</h2>
+                <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_d4kjkdd4kj.2e16d0ba.fill-1200x600.jpg" alt="Ilustrasi Turn your REST APIs into MCP tools with Google Cloud API Gateway">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_d4kjkdd4kj.2e16d0ba.fill-1200x600.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Most enterprise capability sits behind REST APIs that agents cannot see. To make one callable by an agent today, teams typically stand up and operate a separate MCP server that re-implements the routing, authentication, and quota logic their gateway already handles. The Model Context Protocol (MCP) has become the standard way for agents to discover and invoke tools, and frameworks like the Agent Development Kit (ADK) and Gemini Enterprise speak it natively.</p>
+<p>Google Cloud API Gateway now closes that gap. In Public Preview, API Gateway can act as a remote MCP server: annotate the OpenAPI spec you already deploy, deploy it, and your existing REST operations are available as agent-ready MCP tools — with no separate server to build, host, or maintain.</p>
+<p>API Gateway is the lightweight on-ramp in Google Cloud's gateway lineup. If you have a service on Cloud Run and you want its API secured, managed, and exposed to agents in minutes, this is the fast path. For a full enterprise API and MCP platform — lifecycle management, advanced traffic policies, monetization — use Apigee. To govern what your agents call on the way out, including MCP servers like this one, use Agent Gateway. Model routing, which gives you one stable endpoint for outbound LLM calls, is the companion capability for the other direction of AI traffic.</p>
+<p>API Gateway accepts standard MCP JSON-RPC requests on a single endpoint, transcodes each tools/call into the corresponding REST request, applies your existing policies, and translates the response back. Because the transcoded request is indistinguishable from a normal REST call, the JWT or API-key authentication, quota, and logging you already configured for that operation keep working unchanged — MCP and REST traffic share exactly one policy path, and a given operation draws on one quota allocation however it is invoked.</p>
+<p>A tool's description is the primary signal an LLM uses to decide when to call it, so write when and why to use the tool, not just what it returns.</p>
+<p>2. Deploy the gateway. Deploy the API config as usual. API Gateway generates an MCP-aware configuration and begins serving MCP on the /mcp base path, with no extra infrastructure to provision.</p>
+<p>3. Decide who can discover your tools. By default tools/list is unauthenticated, which is convenient for development but publishes your tool names and input schemas to anyone who asks. For production, require a JWT — note that API keys cannot secure this method:</p>
+<p>tools/call always enforces whatever authentication the underlying REST operation requires, whether or not you secure discovery.</p>
+<p>4. Connect your agent. Point any MCP client at the gateway's /mcp endpoint. In ADK, that is the toolset plus the credential your gateway already expects:</p>
+<p>The gateway maps the tool's arguments back onto the REST path, query, body, and headers of your operation, runs the request through your existing policies, and returns the backend's response as an MCP result. To inspect that on the wire:</p>
+<p>The Public Preview covers REST and OpenAPI 3.x backends with your current authentication. MCP resources and prompts, response streaming, and Model Armor payload inspection are on the roadmap. A few limits are worth knowing up front: operations returning empty bodies such as HTTP 204 are not exposed, deeply nested object schemas may not render fully in tools/list, a gateway serves up to 1,000 tools, and MCP and model routing cannot be enabled in the same API config. See the documentation for the current scope.</p>
+<p>MCP support is available now in Public Preview. Check out the documentation and turn your first API into an agent-ready tool today.</p>
+<p>Unifying Edge AI: How Coral NPU’s open standard brings portable, energy-viable intelligence from model to silicon</p>
+<p>Integrating TorchTPU into TorchTitan and Optimizing Models for TPU</p>
+<p>Bringing Visual Graph Debugging to Custom Edge Compilers with Model Explorer</p>
+<p>Powering the Agent Development Lifecycle with any framework, from ADK to LangChain and beyond</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://developers.googleblog.com/turn-your-rest-apis-into-mcp-tools-with-google-cloud-api-gateway/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+        </div>
+        <div class="pagination no-print">
+<a href="halaman_7.html">« Sebelumnya</a><a href="halaman_9.html">Berikutnya »</a>
+        </div>
+    </div>
+</body>
+</html>

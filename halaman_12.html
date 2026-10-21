@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Artikel - Halaman 12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header-action {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-pdf {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-pdf:hover {
+            background-color: #c0392b;
+        }
+        .article-card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            page-break-inside: avoid;
+        }
+        .article-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .article-card h2 {
+            color: #111;
+            margin-top: 0;
+        }
+        .pagination {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .pagination a {
+            padding: 8px 16px;
+            margin: 0 4px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: #fff;
+            }
+            .article-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-action no-print">
+            <h1>Katalog Artikel Berita (Halaman 12 dari 15)</h1>
+            <button class="btn-pdf" onclick="window.print()">📥 Download PDF Halaman Ini</button>
+        </div>
+        <div class="article-list">
+
+            <article class="article-card" id="artikel-270">
+                <h2>#270. Modern CSS Grid: Build Responsive Layouts With Less Complexity</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Modern_CSS_Grid_Workspace_Infographic_3b04d4e95a.png" alt="Ilustrasi Modern CSS Grid: Build Responsive Layouts With Less Complexity">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Modern_CSS_Grid_Workspace_Infographic_3b04d4e95a.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>Creating responsive website layouts is a fundamental part of modern front-end development. Developers need interfaces that work across mobile phones, tablets, laptops, and large desktop displays without requiring separate markup for every screen size.</p>
+<p>CSS Grid provides a powerful way to organize content into rows and columns. Unlike older layout techniques that often require additional wrappers or complicated positioning, Grid allows developers to define two-dimensional layouts directly in CSS.</p>
+<p>When combined with flexible sizing functions, intrinsic layout techniques, and a small number of carefully chosen media queries, CSS Grid can make responsive interfaces easier to build and maintain.</p>
+<p>This article explores practical CSS Grid techniques for creating flexible layouts, avoiding common mistakes, and writing cleaner responsive stylesheets.</p>
+<p>CSS Grid begins by defining a grid container. Its direct children become grid items, which can be positioned within the resulting layout.</p>
+<p>The layout can be defined with a few CSS declarations:</p>
+<p>The display: grid declaration establishes the grid formatting context. The grid-template-columns property creates three equal-width columns, while gap controls the spacing between grid items.</p>
+<p>This works well when the available space can accommodate three columns. On a narrow screen, however, the columns may become too small. Responsive sizing can solve this without requiring a separate rule for every device.</p>
+<p>One useful CSS Grid technique is combining repeat(), auto-fit, and minmax().</p>
+<p>This declaration allows the browser to create as many columns as comfortably fit within the available space.</p>
+<p>The expression has three important parts:</p>
+<p>auto-fit fits available tracks into the grid and collapses empty repeated tracks when appropriate.</p>
+<p>minmax() establishes a flexible range for each column.</p>
+<p>The nested min(100%, 16rem) also helps prevent the minimum column size from exceeding the container's available width on narrow screens.</p>
+<p>As the container grows, more columns can fit. As it shrinks, items naturally move onto additional rows.</p>
+<p>This technique is especially useful for product listings, article cards, image galleries, and resource directories.</p>
+<p>It does not eliminate the need for testing. Content length, available space, and the desired visual hierarchy may still require additional layout rules.</p>
+<p>The auto-fit and auto-fill keywords look similar, but they handle empty repeated grid tracks differently.</p>
+<p>With auto-fill, the browser preserves the space for tracks that can fit within the grid, even when there are not enough items to occupy them.</p>
+<p>With auto-fit, empty repeated tracks collapse after placement, allowing occupied tracks to expand into the available space.</p>
+<p>This can be a good choice for a gallery where a small number of images should expand to fill the available row.</p>
+<p>If the design needs to preserve the expected track arrangement even when some positions are empty, auto-fill may be more appropriate.</p>
+<p>Neither option is universally better. The choice depends on whether the layout should expand existing items or preserve space for potential additional items.</p>
+<p>CSS Grid is also useful for larger page layouts that contain a header, navigation, main content, a sidebar, and a footer.</p>
+<p>Grid template areas allow developers to describe this arrangement using named regions.</p>
+<p>The corresponding CSS might look like this:</p>
+<p>The named areas make the intended layout easier to understand than a collection of unexplained numeric positions.</p>
+<p>The minmax(0, 2fr) declaration also helps the main column shrink below its intrinsic content size when necessary, rather than allowing long content to force the entire layout wider.</p>
+<p>On smaller screens, the areas can be rearranged:</p>
+<p>The same HTML now supports a single-column layout on narrow screens.</p>
+<p>One common CSS Grid problem occurs when content forces a column to become wider than expected.</p>
+<p>Grid items can have automatic minimum sizes influenced by their content. Long URLs, unbroken strings, wide images, and large code examples may therefore cause overflow.</p>
+<p>A practical solution is to allow grid items to shrink:</p>
+<p>The zero minimum in minmax(0, ...) gives the tracks more flexibility, while min-width: 0 helps individual grid items shrink when their content would otherwise create an unwanted minimum width.</p>
+<p>For code blocks, horizontal scrolling may be preferable to forcing long lines to wrap and changing their formatting.</p>
+<p>These techniques address common overflow problems, but the best solution depends on the type of content and how users are expected to interact with it.</p>
+<p>Responsive layouts do not always need explicit breakpoints. CSS Grid can often determine a suitable arrangement from the available space and the intrinsic dimensions of its content.</p>
+<p>This creates flexible columns with a preferred minimum size of approximately 20rem, unless the container is narrower.</p>
+<p>For a card collection, this may be enough to provide a responsive layout without a collection of device-specific media queries.</p>
+<p>However, some designs require more deliberate changes. A navigation bar might need to become a menu button, or a sidebar may need to move below the primary content. These are behavioral or structural decisions that intrinsic sizing alone cannot make.</p>
+<p>A useful approach is to let Grid handle flexible dimensions and use media queries when the design genuinely needs a different arrangement.</p>
+<p>CSS Grid is powerful, but it is not always the simplest tool for the job.</p>
+<p>Flexbox is often a better fit for a one-dimensional layout, such as aligning a group of buttons in a row or arranging an icon beside a label.</p>
+<p>Grid is generally useful when relationships between rows and columns matter, while Flexbox is particularly effective when content flows primarily along one axis.</p>
+<p>Both systems can work together. A page can use Grid for its overall structure and Flexbox for individual components.</p>
+<p>The best layout method is the one that expresses the design clearly without introducing unnecessary rules.</p>
+<p>A grid that works with three short placeholder headings may behave differently when real content is introduced.</p>
+<p>Before shipping a responsive layout, developers should test:</p>
+<p>Empty or partially populated card collections.</p>
+<p>Intermediate widths where columns begin to feel cramped.</p>
+<p>Browser developer tools make it easy to inspect grid tracks and experiment with container dimensions.</p>
+<p>It is also useful to test the actual content rather than relying exclusively on idealized examples. Realistic content exposes sizing problems that placeholder text often hides.</p>
+<p>CSS Grid provides a flexible foundation for responsive web layouts. Features such as minmax(), auto-fit, named grid areas, and intrinsic sizing allow developers to create adaptable interfaces with relatively little CSS.</p>
+<p>The most effective layouts combine these features thoughtfully. Let Grid manage two-dimensional structure, use Flexbox for simpler one-dimensional arrangements, and introduce media queries when the design requires a meaningful change.</p>
+<p>By accounting for intrinsic content sizes, preventing overflow, and testing realistic scenarios, developers can build responsive interfaces that are easier to understand and maintain.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/modern-css-grid-build-responsive-layouts-with-less-complexity/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-271">
+                <h2>#271. The wide folds are coming; foldable display shipments to increase by 44% in 2026, analysts say</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2026/07/galaxy-z-fold-8-review-32.jpg?quality=82&strip=all&resize=1200,628" alt="Ilustrasi The wide folds are coming; foldable display shipments to increase by 44% in 2026, analysts say">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://9to5google.com/wp-content/uploads/sites/4/2026/07/galaxy-z-fold-8-review-32.jpg?quality=82&strip=all&resize=1200,628" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Samsung is expected to play a major role in what analysts predict will be a 44% increase in foldable display shipments in 2026, thanks to the popularity of wider foldables.</p>
+<p>Samsung provides display panels for both the Galaxy Z Fold 8 and iPhone Duo, both of which have gained a massive amount of attention in the last couple of months. That’s credited to the form factor – a refreshing change from the tall and narrow Galaxy Z Fold 8 Ultra, or the devices that emulate the same experience.</p>
+<p>Analysts at Omdia reported their forecast for 2026 in the wake of renewed interest in foldables, driven by Samsung and Apple. The report states that foldable AMOLED display shipments are expected to increase by 44% year-over-year. That includes shipments for any foldable displays, but it’s signaled by the surge of wide foldables released or rumored this year.</p>
+<p>That increase would be driven by Samsung, if the prediction plays out perfectly. Samsung currently holds a majority lead in foldable display shipments, but it’s possible its slice grows to 66% in 2026. Omdia predicts that current Chinese manufacturers with high shipments will see a decline as demand from Apple and Samsung grows.</p>
+<p>It’s unlikely we’ll see Samsung and Apple dominate the wide fold market. Motorola is expected to launch a similar foldable, and more will chase the size and shape Apple landed on for its first foldable iPhone.</p>
+<p>FTC: We use income earning auto affiliate links. More.</p>
+<p>Check out 9to5Google on YouTube for more news:</p>
+<p>Samsung is a technology conglomerate based out o…</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/21/wide-foldable-popularity-sparks-display-shipment-increase-prediction/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-272">
+                <h2>#272. No, People Don’t Want More AI In Their Life</h2>
+                <img src="https://files.smashing.media/articles/people-dont-want-more-ai/people-dont-want-more-ai.jpg" alt="Ilustrasi No, People Don’t Want More AI In Their Life">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://files.smashing.media/articles/people-dont-want-more-ai/people-dont-want-more-ai.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Vitaly Friedman loves beautiful content and doesn’t like to give in easily. When he is not writing, he’s most probably running front-end & UX …
+More about
+Vitaly ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>Many companies silently assume that everybody wants more AI in their lives. That people are craving new AI features, new AI products, new AI workflows — that would all magically replace all existing outdated practices and broken ways of working.</p>
+<p>But in reality, it seems like people don’t want more AI at all — at least not in the way most AI leaders envision it. Unsurprisingly, many AI features have low adoption and retention — at a very high cost of delivery, and a high risk of reputation damage.</p>
+<p>It’s remarkably difficult to make a strong argument with senior leadership, but AI is not a value proposition. New AI features don’t magically make for happy or excited customers. Because AI features are often bolt-ons and separate tools for employees to use, they typically take people out of their regular way of working.</p>
+<p>AI is pretty good at amplifying shortcuts and shortcomings in organizations — from data quality to decision making. It can’t magically fix years of accumulated quick patches, technical debt, broken culture and internal politics. If anything, they become more visible with AI as inconsistencies or conflicting priorities and get handed directly to users, who are then left to make sense of the mess themselves.</p>
+<p>Because in most organizations, work typically requires hopping on and off between plenty of disconnected and fragmented systems, with a new AI tool, they now have yet another system that they also need to hop on and off. Often it produces more work, and typically it’s not particularly rewarding work either.</p>
+<p>On top of that, people are very much aware of the cost of finding and fixing AI hallucinations. Asking AI to generate a response might feel easier than writing from scratch, but it has a cost:</p>
+<p>For many people, AI isn’t something they can proactively choose and explore on their own — it arrives uninvited, at someone else’s pace. On top of that, plenty of messages amplify fears and worries about AI replacing work — so it’s hardly surprising that the perception of AI isn’t excitement. It’s resistance to change and deep anxiety about one’s place in a world that seems to be changing without them.</p>
+<p>At best, AI features might be silently accepted or nodded away. At worst, AI raises concerns, doubts, caution — and calls for a healthy dose of skepticism. And sometimes it’s perceived as a threat or liability — because unlike other features, AI is neither predictable nor reliable.</p>
+<p>People don’t dream of AI art museums or AI fridges or AI hotel reception or AI-narrated children’s books. They don’t want their children to have romantic AI partners. Most people don’t want to actively manage (and clean up after) a swarm of AI agents roaming in their bank accounts and acting on their behalf in the real world. And most notably, people don’t really want a magical box to speak to or type into all the time.</p>
+<p>I’m always puzzled by the comparison of AI features with how unreliable humans are. But people don’t compare software with other people. They compare features with features — and if one feature in one product is unreliable, while a similar feature works flawlessly in another, they choose the latter. It’s not about AI or not AI, but rather what works consistently and reliably, and what doesn’t.</p>
+<p>Many conversations about AI are conversations about the speed of delivery. But to many people, there is little value in increasing the speed of delivery. They want to do things well, with enough time to think and make good decisions. They also want to enjoy the time they spend working on things, rather than just ship faster. There is an enormous feeling of reward and achievement that slowly disappears, one vibe-coded change at a time.</p>
+<p>People don’t change much. And after all these years, they (still) want features that are fast, accessible, reliable, predictable and useful — every single time. And ideally not the ones that replace their entire workflow, but that augment their way of working — and that take over the most mundane, annoying, and boring tasks that they find no pleasure in.</p>
+<p>Many jobs are exposed to AI automation, but in many of them there is a rewarding, unique, creative part that requires taste, point of view, and perhaps even human intuition. And if AI automates boring parts of it, that’s an advantage for everyone. That’s also what enhances productivity and brings more joy in daily life.</p>
+<p>When AI automates tedious and mentally exhausting tasks, its value is much easier to grasp. But for that, AI shouldn’t feel like a bolt-on. It should be deeply integrated into people’s existing workflows. It must also match existing mental models that they have developed and fine-tuned for years or decades. AI should adapt to how people think and make decisions, not the other way around.</p>
+<p>And it doesn’t really matter if these features are branded as “AI”, “smart” or “automation”. However, they must work well for people using them. And that means that people must be aware of use cases where it actually helps them, and be inspired to find more use cases on their own.</p>
+<p>Ironically, tools that work well there aren’t “AI-first” — they are “AI-second”. Subtle, humble, calm, ambient, taking a supportive role in the background for work that otherwise is remarkably dull and unnecessary.</p>
+<p>Perhaps I’m missing a bigger picture, and perhaps I’m just old school — but I really do like people. Their stories, their thinking, their emotions, their enthusiasm, their laughing. AI can be remarkably helpful in many situations, but so are people. And between the two, I would favor spending time with a human — however imperfect they are — every single time.</p>
+<p>No, people don’t need more AI in their lives — they need AI to automate all the boring stuff they have to deal with every day, so they have more time and headspace to do things that they actually love and enjoy doing. That doesn’t mean spending more time with AI — but spending more time with people they love.</p>
+<p>Meet Design Patterns For AI Interfaces, Vitaly’s new video course with practical examples from real-life products — with a live UX training happening soon. Jump to a free preview.</p>
+<p>Meet Design Patterns For AI Interfaces, Vitaly’s video course on interface design & UX.
+Video + UX TrainingVideo onlyVideo + UX Training$ 450.00 $ 799.00
+Get Video + UX Training30 video lessons (10h) + Live UX Training.100 days money-back-guarantee.Video only$ 275.00$ 395.00Get the video course30 video lessons (10h). Updated yearly.Also available as a UX Bundle with 3 video courses.</p>
+<p>30 video lessons (10h) + Live UX Training.100 days money-back-guarantee.</p>
+<p>30 video lessons (10h). Updated yearly.Also available as a UX Bundle with 3 video courses.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/07/people-dont-want-more-ai/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-273">
+                <h2>#273. Google Pixel’s solution to using Face Unlock in the dark seems to be just blinding you</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2024/11/Face-Unlock-screen-on-Pixel-9.jpg?quality=82&#038;strip=all&#038;w=1600" alt="Ilustrasi Google Pixel’s solution to using Face Unlock in the dark seems to be just blinding you">
+                <div class="article-body">
+                    
+            
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p><div class="feat-image"><img src="https://9to5google.com/wp-content/uploads/sites/4/2024/11/Face-Unlock-screen-on-Pixel-9.jpg?quality=82&#038;strip=all&#038;w=1600" /></div><p class="wp-block-paragraph">Google’s Face Unlock feature on Pixel phones works really well, until the lights go out. The company appears to be building out a new upgrade to this with “active illumination” which is… just turning up the screen brightness.</p>
+
+
+
+ <a class="more-link" href="https://9to5google.com/2026/10/21/google-pixel-face-unlock-illumination-code-leaks/#more-734152">more…</a></p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/21/google-pixel-face-unlock-illumination-code-leaks/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-276">
+                <h2>#276. Building Accessible Web Interfaces With Modern HTML and CSS</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Web_Accessibility_for_Everyone_35b40e55bc.png" alt="Ilustrasi Building Accessible Web Interfaces With Modern HTML and CSS">
+                <div class="article-body">
+                    
+            
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p><a href="https://www.sitepoint.com/building-accessible-web-interfaces-with-modern-html-and-css/?utm_source=rss" rel="nofollow" title="Building Accessible Web Interfaces With Modern HTML and CSS">
+          <img alt="Building Accessible Web Interfaces With Modern HTML and CSS" class="webfeedsFeaturedVisual" src="https://uploads.sitepoint.com/wp-content/uploads/medium_Web_Accessibility_for_Everyone_35b40e55bc.png" style="display: block; margin: auto; margin-bottom: 5px;" />
+        </a>
+        
+        <p>null</p>
+        <p>
+          Continue reading
+          <a href="https://www.sitepoint.com/building-accessible-web-interfaces-with-modern-html-and-css/?utm_source=rss" rel="nofollow">Building Accessible Web Interfaces With Modern HTML and CSS</a>
+          on <a href="https://www.sitepoint.com" rel="nofollow">SitePoint</a>.
+        </p></p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/building-accessible-web-interfaces-with-modern-html-and-css/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-277">
+                <h2>#277. Engineering Multipole Resonances in Dielectric Metasurfaces for Transmission, Reflection, and Absorption Control</h2>
+                <img src="https://spectrum.ieee.org/media-library/gray-comsol-logo-with-stylized-text-and-rounded-rectangular-emblem-on-left.png?id=68001893&amp;width=980" alt="Ilustrasi Engineering Multipole Resonances in Dielectric Metasurfaces for Transmission, Reflection, and Absorption Control">
+                <div class="article-body">
+                    
+            
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p><img src="https://spectrum.ieee.org/media-library/gray-comsol-logo-with-stylized-text-and-rounded-rectangular-emblem-on-left.png?id=68001893&amp;width=980" /><br /><br /><p>Dielectric metasurfaces have moved to the forefront of nanophotonics, offering flat, low-loss alternatives to conventional bulk optical elements for controlling the amplitude, phase, and polarization of light. These structures are of growing interest to researchers and engineers working on sensing, energy harvesting, and flat optics, as their performance hinges on precisely engineered optical resonances. Full-wave finite element simulation, combined with semianalytical multipole decomposition in the COMSOL Multiphysics® software, gives us a way to not only predict these resonances but also uncover their underlying physical origins.</p><p>In this webinar, Dr. Pavel Terekhov, postdoctoral researcher at National Institute of Standards and Technology, will trace how a single quadrumer meta-atom, originally studied for its magnetic octupole response, evolves into two distinct light manipulation regimes. He will first revisit the foundational single-particle results that motivated this work, then show how arranging quadrumers into a periodic crystalline silicon metasurface produces anomalous absorption enhancement, governed by two independent multipole mechanisms coexisting in the same structure. Building on this, he will then introduce ongoing work on a gallium nitride metasurface, where the complex interplay of four different multipoles is used to sculpt reflection and transmission spectra including the quasi-bound-states-in-the-continuum (q-BIC) manipulation.</p><p>Attendees will see how COMSOL Multiphysics® and multipole decomposition connect full-wave simulation and analytical insight, turning abstract resonance behavior into physically interpretable design rules. The broader takeaway is that multipole-based simulation is not just a diagnostic tool but a design strategy: It enables the on-demand tailoring of absorption, reflection, and transmission in dielectric metasurfaces, with direct relevance to sensing, energy harvesting, and future optical device applications.</p><p><strong><span>Key Takeaways:</span></strong></p><ul><li>Learn about modeling multipole resonances in dielectric metasurfaces using full-wave finite element simulation and semianalytical multipole decomposition in COMSOL Multiphysics®.</li><li>See how multipole-based simulation can be used to understand and control absorption, reflection, and transmission in silicon and gallium nitride metasurfaces.</li><li>Explore how different multipole mechanisms, including quasi-bound states in the continuum (q-BICs), can be engineered to tailor optical responses for sensing, energy harvesting, and flat optics.</li><li>Gain insights into how simulation and multipole decomposition can help researchers and engineers turn complex resonance behavior into practical design strategies for future optical devices.</li></ul><div><a href="https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE" target="_blank">Register now for this free webinar!</a></div></p>
+                <p style="margin-top: 25px;">
+                    <a href="https://event.on24.com/wcc/r/5510255/64A1C3695631E727E756BFCA0490437A?utm_source=IEEE" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-278">
+                <h2>#278. Google gives Pixel 9 another year of free Satellite SOS connectivity</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2024/08/Pixel-9-Satellite-SOS-how-to-6.jpg?quality=82&#038;strip=all&#038;w=1600" alt="Ilustrasi Google gives Pixel 9 another year of free Satellite SOS connectivity">
+                <div class="article-body">
+                    
+            
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p><div class="feat-image"><img src="https://9to5google.com/wp-content/uploads/sites/4/2024/08/Pixel-9-Satellite-SOS-how-to-6.jpg?quality=82&#038;strip=all&#038;w=1600" /></div><p class="wp-block-paragraph">Google won’t start charging for the Satellite SOS feature on its Pixel 9 series phones just yet, despite the timer having run out.</p>
+
+
+
+ <a class="more-link" href="https://9to5google.com/2026/10/21/google-gives-pixel-9-another-year-of-free-satellite-sos-connectivity/#more-734149">more…</a></p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/21/google-gives-pixel-9-another-year-of-free-satellite-sos-connectivity/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-280">
+                <h2>#280. Scientists find a way to fight Alzheimer’s brain damage without removing toxic tau</h2>
+                <img src="https://www.sciencedaily.com/images/1920/tau-tangles-amyloid-beta-neuron-cells-in-brain-alzheimers-dementia.webp" alt="Ilustrasi Scientists find a way to fight Alzheimer’s brain damage without removing toxic tau">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/tau-tangles-amyloid-beta-neuron-cells-in-brain-alzheimers-dementia.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Protecting brain cells from destruction remains one of the biggest challenges in treating Alzheimer's disease and related neurodegenerative conditions. These disorders, known as tauopathies, involve the buildup of abnormal tangles of a protein called tau inside the brain. As the tangles accumulate, nearby neurons begin to die. However, growing evidence suggests that tau itself may not be responsible for most of the damage. Instead, the immune system's reaction to the protein appears to play a major role in the loss of brain cells, memory, and independence.</p>
+<p>Scientists at Washington University School of Medicine in St. Louis have now identified a promising strategy for interrupting this damaging immune response. In mice with tau accumulation similar to that seen in Alzheimer's, researchers used an antibody to block a protein called CXCR3, which helps immune cells known as T cells enter the brain. After several months of treatment, the number of T cells inside the brain had fallen by approximately half.</p>
+<p>The results were striking. Compared with untreated mice, animals receiving the antibody retained roughly 40% more tissue in brain regions involved in memory and performed better on a memory test. These improvements occurred even though the amount of accumulated tau remained unchanged.</p>
+<p>The findings were published September 28 in the journal Neuron.</p>
+<p>"In tauopathies, including Alzheimer's disease, there's no treatment right now that actually decreases neurodegeneration," said David M. Holtzman, MD, senior author of the study and the Barbara Burton and Reuben M. Morriss III Distinguished Professor in the Department of Neurology at WashU Medicine. "If we can show that we're really decreasing brain cell death, it's certainly worth trying to pursue that pathway to prevent the most devastating consequences of these diseases."</p>
+<p>Why Immune Cells May Be a Key to Alzheimer's Brain Damage</p>
+<p>Current Alzheimer's treatments primarily focus on removing amyloid, another protein associated with the disease. Two approved medications, lecanemab and donanemab, target amyloid plaques that develop between brain cells during the early stages of Alzheimer's. These deposits interfere with communication between neurons, contribute to the formation of tau tangles inside cells, and ultimately lead to neuronal death.</p>
+<p>Although these medications can slow cognitive decline, they have not been shown to prevent brain cells from dying. They also offer no treatment for primary tauopathies, conditions in which tau accumulates without the presence of amyloid. Alzheimer's is classified as a secondary tauopathy because both abnormal amyloid and tau are present.</p>
+<p>Holtzman's laboratory has been investigating whether the immune system offers another way to address these diseases. In a 2023 study published in Nature, the researchers discovered that T cells enter the brains of mice with abnormal tau accumulation, concentrating in regions containing the most tau and contributing to neurodegeneration.</p>
+<p>A related study published earlier this month in Nature Neuroscience provided another important clue. It showed that the signals directing these T cells originate in lymph nodes located outside the brain.</p>
+<p>"For this therapeutic approach, if it is safe, you wouldn't have to design the drug to get into the brain -- which is a big deal since most molecules don't cross the blood-brain barrier well -- and you don't have to get rid of the tau to get this therapeutic effect."</p>
+<p>Scientists Identify the Pathway That Guides Immune Cells Into the Brain</p>
+<p>Despite these earlier discoveries, researchers still needed to understand how activated T cells found their way into the brain.</p>
+<p>T cells navigate through the body by following chemical signals known as chemokines. Earlier experiments in Holtzman's laboratory had identified unusually high levels of one such signal, CXCL10, in mice with tau accumulation. Other researchers had also reported elevated CXCL10 levels in people with Alzheimer's disease.</p>
+<p>Activated T cells carry a surface receptor called CXCR3 that recognizes CXCL10, allowing the cells to follow its chemical signals. This relationship suggested that the CXCL10 and CXCR3 pathway might be responsible for guiding harmful T cells into the brain.</p>
+<p>To investigate, the researchers studied mice that developed abnormal tau deposits resembling those associated with Alzheimer's. The team included co-senior author Jason Ulrich, PhD, a professor of neurology at WashU Medicine, and first author Joshua T. Emmerson, PhD, a postdoctoral researcher in Holtzman's laboratory.</p>
+<p>The experiments revealed that T cells could not infiltrate the brain when mice lacked either CXCL10 or its matching receptor, CXCR3, on T cells. This protection persisted even when the scientists deliberately triggered inflammation to stimulate an immune response.</p>
+<p>Experimental Treatment Preserves Brain Tissue and Memory</p>
+<p>With the pathway identified, the team tested whether blocking CXCR3 with an antibody could reduce brain damage.</p>
+<p>The researchers selected young mice that already had tau deposits in their brains but had not yet experienced substantial loss of brain cells. They administered the antibody once every five days for three and a half months.</p>
+<p>By the end of the experiment, treated mice had approximately half as many T cells in their brains as untreated animals. They also showed less evidence of neuronal injury and retained substantially more brain tissue, including roughly 40% more tissue in memory-related regions. Their performance on a memory test was also better.</p>
+<p>Importantly, these protective effects occurred without any detectable reduction in tau tangles. The treated and untreated mice had similar amounts of abnormal tau, suggesting that limiting the immune response could reduce neurodegeneration even when the underlying protein deposits remain.</p>
+<p>Another finding could have major implications for future drug development. The antibody reached the boundary of the brain but did not enter the brain tissue itself.</p>
+<p>This suggests that it may be possible to reduce neurodegeneration by targeting immune activity from outside the brain. Such an approach could avoid one of the major difficulties in developing neurological treatments: getting drugs across the blood-brain barrier, which prevents many substances from entering brain tissue.</p>
+<p>A Potential New Direction for Alzheimer's Treatment</p>
+<p>Although the results are encouraging, the treatment has so far been tested only in mice. Additional research will be needed to determine whether the approach is safe and effective enough to evaluate in people.</p>
+<p>Holtzman suggested that medications already used to control T cells in other diseases could provide a starting point. Certain treatments for multiple sclerosis and other autoimmune conditions, in which the immune system mistakenly attacks healthy tissue, might be worth investigating for their potential to reduce Alzheimer's-related brain damage.</p>
+<p>This would represent a significant shift in treatment strategy. Rather than concentrating exclusively on the abnormal proteins associated with neurodegeneration, researchers could also target the immune responses that contribute to the destruction of neurons.</p>
+<p>"Tauopathies aren't thought of as autoimmune disorders, so they haven't been treated the same way, but this study shows for the first time in an animal model that these diseases respond to a specific T-cell therapy," said Holtzman, who also directs WashU's Hope Center for Neurological Disorders and the Knight Alzheimer Disease Research Center at WashU Medicine.</p>
+<p>"For this therapeutic approach, if it is safe, you wouldn't have to design the drug to get into the brain -- which is a big deal since most molecules don't cross the blood-brain barrier well -- and you don't have to get rid of the tau to get this therapeutic effect."</p>
+<p>The findings raise the possibility that protecting the brain from harmful immune activity, rather than removing tau itself, could become an important strategy for treating Alzheimer's and other tauopathies.</p>
+<p>The research received support from a BrightFocus Postdoctoral Fellowship, National Institutes of Health/National Institute on Aging grants R01AG082328 and R01AG085374, the GHR Foundation, the Carol and Gene Ludwig Initiative in Neuroimmunology Research, a gift from Ronald Schaich, a gift from John Ludwig, a gift from Cindy and Evan Goldberg, and the Freedom Together Foundation. The study's content is the responsibility of its authors and does not necessarily reflect the official views of the NIH.</p>
+<p>Disclosures: DMH co-founded C2N Diagnostics and serves on its scientific advisory board. DMH also serves on the scientific advisory boards of Denali, Genentech, and Switch; provides consulting services to Pfizer, Roche, Novartis, Annexon, and Acta; and serves on the advisory boards of Neuron and Cell.</p>
+<p>Materials provided by Washington University in St. Louis. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261019093355.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-281">
+                <h2>#281. Electricity Theft Is Rampant, but Delhi Found a Fix</h2>
+                <img src="https://spectrum.ieee.org/media-library/image.jpg?id=67857147&width=1200&height=600&coordinates=0%2C240%2C0%2C240" alt="Ilustrasi Electricity Theft Is Rampant, but Delhi Found a Fix">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://spectrum.ieee.org/media-library/image.jpg?id=67857147&width=1200&height=600&coordinates=0%2C240%2C0%2C240" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Could the city’s approach be replicated elsewhere?</p>
+<p>Emily Waltz is the power and energy editor at IEEE Spectrum.</p>
+<p>It’s disheartening how much power gets generated and then promptly lost as it travels through grid networks. This leaking of electricity happens when it vanishes as heat as well as when it is pilfered by thieves and nonpaying customers.</p>
+<p>More than half of the countries that track these metrics lost at least 10 percent of their electricity in 2023, according to the World Bank. Losses topped 20 percent for 24 of those nations. Two countries lost more than half of what they generated.</p>
+<p>With numbers this high, cutting down on losses makes sense. Electricity demand is rising beyond what many grid operators can supply; reducing waste would help meet some of that demand without having to build new power plants. Plus, when the power comes from fossil fuels, any loss means emitting even more greenhouse gases into the atmosphere. And electric losses hit the bottom lines of power providers, which ultimately pass those costs on to everyone else.</p>
+<p>The trouble is, reducing electricity losses is a hard and expensive process that takes a long time. Typically, the less maintained the grid infrastructure, the more electricity that’s lost. And the more fragile the region’s law enforcement and government, the more prevalent the power theft. Natural disasters and war make things worse.</p>
+<p>Fixing a power grid requires a systemic approach across many sectors. There’s no one technology that will solve the problem. At the outset, the obstacles to success may feel insurmountable. Equipment across entire grid networks must be updated. Multiple arms of government must agree to reforms and coordinate to ensure power providers are set up to succeed. Regulations must be written or revised, investments made, cultures changed.</p>
+<p>The city of Delhi did all those things. Over the past 25 years, it cut its electricity losses from about 50 to 5 percent. How the city pulled off that impressive feat is the focus of “The Epic Comeback of Delhi’s Power Grid” by Mini Shaji Thomas, an electrical engineer at the university Jamia Millia Islamia who has lived in Delhi since the 1990s. She gives us a view from the inside—as a resident and a power systems expert.</p>
+<p>Delhi is a shining example, but some other regions have significantly lowered electricity losses over the last quarter century too. The country of Georgia went from losses of over 16 percent in 2002 to about 8 percent in 2023. In Singapore, losses dropped from 6.6 percent to a nearly nonexistent 0.2 percent over the same time period.</p>
+<p>But there are many parts of the world where electricity losses remain a problem or have gotten worse. In Jamaica, where power theft is rampant, losses have hovered between 21 and 28 percent for years. Argentina’s losses nearly doubled between 2015 and 2023, going from an all-time low of about 12 percent to an all-time high of nearly 24 percent. The main problem: Transmission and distribution companies lacked the capital to maintain and upgrade their networks, which left equipment operating under stress. A delay in the installation of smart meters has allowed thieves to more easily siphon power and tamper with meters.</p>
+<p>Thomas says she hopes her account of Delhi’s grid comeback will serve as a blueprint for others. It’s possible to replicate the sweeping changes Delhi made, she says. But it “requires a concerted effort from all stakeholders, customers, the utility, the government, and their employees.”</p>
+<p>Emily Waltz is the power and energy editor at Spectrum. Prior to joining the staff in January 2024, Emily spent 18 years as a freelance journalist covering biotechnology, primarily for the Nature research journals and Spectrum. Her work has also appeared in Scientific American, Discover, Outside, and the New York Times. Emily has a master's degree from Columbia University Graduate School of Journalism and an undergraduate degree from Vanderbilt University. With every word she writes, Emily strives to say something true and useful. She posts on Twitter/X @EmWaltz and her portfolio can be found on her website.</p>
+<p>What a great example of many players working together across a complex system. It seemed like Nigeria was suffering from many of the same ailments as Delhi when I reported a story there: https://spectrum.ieee.org/nigeria-power-grid. I'd love to hear from Nigerian engineers what of Delhi's solutions are applicable to their problems.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://spectrum.ieee.org/electricity-theft" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-282">
+                <h2>#282. Samsung is rolling out Android 17 updates for some of its most popular Galaxy phones</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2026/03/galaxy-a37-1.webp?resize=1200,628" alt="Ilustrasi Samsung is rolling out Android 17 updates for some of its most popular Galaxy phones">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://9to5google.com/wp-content/uploads/sites/4/2026/03/galaxy-a37-1.webp?resize=1200,628" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Samsung continues its One UI 9 rollout, bringing Android 17 updates to a flurry of Galaxy devices including some of its most popular mid-rangers and last-gen flagships including Galaxy S23, Galaxy A36, and many more.</p>
+<p>The rollout of One UI 9 has delivered updates for dozens of Galaxy smartphones at this point, and it continues to expand. Alongside bringing the update to Galaxy devices in new regions, Samsung is also bringing the update to older Galaxy devices.</p>
+<p>This includes the Galaxy S23 series, the latest last-gen Samsung flagships being updated.</p>
+<p>The stable update landed in South Korea about a week ago, and is now available in Europe as well. It should land in the US and other markets any day now. Similarly, Samsung is rolling out updates to the Galaxy Z Fold 5 and Galaxy Z Flip 5 in South Korea and Europe, with more regions set to follow.</p>
+<p>There are also a bunch of One UI 9 updates now rolling out to Samsung’s most popular smartphones, Galaxy A series devices. These include several models as SamMobile has been detailing:</p>
+<p>And this is all while beta updates continue to roll out. The Galaxy A16, for example, is nearing the likely end of its One UI 9 beta program, meaning its stable Android 17 update is perhaps only weeks from release.</p>
+<p>We’re keeping track of every stable Android 17 update Samsung has released, so stay tuned as the rollout continues to expand!</p>
+<p>Has your phone been updated yet? Let us know in the comments below.</p>
+<p>Follow Ben: Twitter/X, Threads, Bluesky, and Instagram</p>
+<p>FTC: We use income earning auto affiliate links. More.</p>
+<p>Check out 9to5Google on YouTube for more news:</p>
+<p>Samsung is a technology conglomerate based out o…</p>
+<p>Find him on Twitter @NexusBen. Send tips to schoon@9to5g.com or encrypted to benschoon@protonmail.com.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/21/samsung-android-17-update-galaxy-a-s23-more/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-283">
+                <h2>#283. Organic Mattress Sale: 20 Percent Off Essentia Beds</h2>
+                <img src="https://media.wired.com/photos/6ad674bb43f8fc6e5c00cffe/191:100/w_1280,c_limit/My%20Favorite%20Organic%20Mattress%20Is%20Discounted%20Right%20Now%20102026%20top%20art%20SOURCE%20Essentia.jpg" alt="Ilustrasi Organic Mattress Sale: 20 Percent Off Essentia Beds">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/6ad674bb43f8fc6e5c00cffe/191:100/w_1280,c_limit/My%20Favorite%20Organic%20Mattress%20Is%20Discounted%20Right%20Now%20102026%20top%20art%20SOURCE%20Essentia.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>We’re big fans of sleeping on an organic mattress here on the WIRED Reviews team, and for good reason. You spend a third of your life sleeping on your bed, so it should be the healthiest sleep you can get.</p>
+<p>An organic mattress is typically made from wool, natural latex, and cotton, using chemical-free construction practices. When testing organic mattresses, we look for a GOTS certification (Global Organic Textile Standard), which uses third parties to independently verify that standards are met and that the cotton is grown and processed sustainably and organically. The latex certification is GOLS (Global Organic Latex Standard) and is essentially the same as GOTS, but for latex instead of cotton, with the entire supply chain held to rigorous organic standards (not just the final bed).</p>
+<p>Essentia—my favorite organic mattress brand I’ve tested—uses a high-density organic latex core without springs, wool, or fiber batting to reduce dust mites and lessen allergy symptoms. Plus, the Tatami mattress style I slept on uses breathable organic latex foam to improve natural airflow, unlike traditional memory foam, which can be quite dense and retain body heat.</p>
+<p>During Essentia’s Fall Sale, you’ll get 20 percent off Essentia’s organic mattresses, which can add up to hundreds, if not a thousand, dollars in savings. Like Essentia’s other organic latex models, the WIRED-tested Tatami is GOLS Certified Organic, meets Beyond Organic standards, has a GOTS-certified removable cover, and is naturally allergy-friendly (because it uses no animal byproducts).</p>
+<p>When testing, I liked that Essentia’s mattresses use a continuous semi-firm latex layer, so there’s no pillow-top or quilted batting that can form soft spots over time, and no place for allergens and dust mites to burrow. Plus, because it’s just one latex surface, there are no coils or springs, which helps isolate motion and reduces motion transfer when sleeping with a partner or pet. The GOTS-certified organic cotton cover protects the organic mattress beneath and is removable for easier cleaning, and the entire mattress is covered by an ultra-tough Kevlar fabric, which is one of the few nontoxic, allergy-free, fire-retardant options available today.</p>
+<p>While I only tested the Tatami model above, these organic certifications apply to other models throughout Essentia’s organic mattress line. They are also available at 20 percent off, so be sure to check Essentia’s lineup to determine which healthy, organic bed model is best for you.</p>
+<p>Take Up to 25% Off Custom Prints with VistaPrint Promo Code</p>
+<p>Take 10% Off Legal Services with This LegalZoom Promo Code</p>
+<p>Save up to $420/year when you bundle AT&T Fiber® internet and wireless</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/essentia-sale-october-2026/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-284">
+                <h2>#284. Scientists discover a way to kill dangerous gut bacteria without killing the good</h2>
+                <img src="https://www.sciencedaily.com/images/1920/escherichia-coli-bacterium-infecting-human-intestine.webp" alt="Ilustrasi Scientists discover a way to kill dangerous gut bacteria without killing the good">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/escherichia-coli-bacterium-infecting-human-intestine.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>A dangerous intestinal infection may soon have a more targeted treatment option. Scientists have identified a natural compound that can kill the bacteria responsible for severe gut infections while leaving much of the beneficial gut microbiome unharmed.</p>
+<p>The bacterium Clostridioides difficile (C. difficile) is naturally found in the intestines of many people and generally causes no problems when present in small amounts. However, antibiotics that target a wide range of bacteria can upset the delicate balance of microorganisms in the gut. This disruption allows C. difficile to multiply rapidly, potentially causing severe intestinal inflammation that can become chronic.</p>
+<p>C. difficile infections (CDI) are among the leading causes of diarrhea associated with antibiotic treatment. The bacteria produce toxins that can trigger dangerous and sometimes life-threatening inflammation in the intestines. Because these infections frequently return after treatment, scientists are searching for more effective ways to eliminate the pathogen without causing additional damage to the gut microbiome.</p>
+<p>A team led by Prof. Rolf Müller, department head and scientific director at HIPS, has now identified a promising drug candidate that specifically targets C. difficile while preserving much of the gut's beneficial microbial community. HIPS is a site of the Helmholtz Centre for Infection Research (HZI) that operates in collaboration with Saarland University.</p>
+<p>Natural Compound Targets Dangerous Gut Bacteria</p>
+<p>The researchers found that argyrin B, a naturally occurring antibacterial substance, was highly effective against C. difficile in laboratory tests and experiments involving infected mice. Importantly, the compound showed little activity against the beneficial microorganisms that help maintain a healthy digestive system.</p>
+<p>"We were able to show that the natural compound argyrin B is highly effective against CDI: both in laboratory experiments and in a mouse model of the infection, where it significantly reduces the bacterial load," says Dr. Jennifer Herrmann, senior scientist in the department "Microbial Natural Products" at HIPS. "An antibacterial target of the argyrins had previously been identified and characterized in the notorious hospital-acquired pathogen Pseudomonas aeruginosa. Now we have been able to show that argyrin B also acts on this target in C. difficile and exhibits particularly high efficacy in doing so. In contrast, the argyrins have virtually no effect on the beneficial microorganisms in our digestive tract. The gut microbiome could therefore be spared during treatment with argyrin and restored to a healthy state more quickly."</p>
+<p>A Bacteria-Killing Substance Found in Soil</p>
+<p>Argyrins were originally discovered in myxobacteria, microorganisms that inhabit soil. These bacteria produce natural substances that help them attack other microbes and use them as a source of food.</p>
+<p>Although argyrin B has demonstrated promising antibacterial activity, researchers must also determine whether its pharmaceutical properties make it suitable for use as a medicine. That includes understanding how the compound behaves inside the body and whether it could cause unwanted effects.</p>
+<p>One particularly encouraging finding emerged when the team examined what happens after mice receive argyrin B orally. Very little of the compound entered their bloodstream. Instead, most of it remained in the large intestine, where C. difficile infections occur.</p>
+<p>By concentrating in the gut rather than circulating throughout the body, argyrin B could potentially reduce the risk of side effects affecting other organs. Together with its selective activity against C. difficile, this characteristic makes the compound a promising candidate for a treatment that may be better tolerated.</p>
+<p>Could It Help Prevent Recurring Gut Infections?</p>
+<p>One of the biggest challenges in treating C. difficile is its tendency to return. Patients who experience multiple relapses are often treated using fecal microbiota transfer (commonly known as a stool transplant). This procedure aims to restore a healthier balance of gut microorganisms, but it can be complicated to perform and unpleasant for patients.</p>
+<p>A medication developed from argyrin could eventually provide another treatment option. By eliminating the harmful bacteria without extensively disrupting the rest of the microbiome, such a therapy might reduce the likelihood of further infections and relapses. That could also help some patients avoid the need for stool transplants.</p>
+<p>More research is needed before argyrin B can be considered for clinical use. The scientists plan to investigate which dosage produces the strongest antibacterial effect and use additional experimental models to determine whether the compound can also combat recurring C. difficile infections.</p>
+<p>Materials provided by Helmholtz Centre for Infection Research. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261019093353.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-285">
+                <h2>#285. Modern JavaScript Modules: A Practical Guide to Writing Maintainable Code</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Modern_Java_Script_Modules_Infographic_a0d9531d4e.png" alt="Ilustrasi Modern JavaScript Modules: A Practical Guide to Writing Maintainable Code">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_Modern_Java_Script_Modules_Infographic_a0d9531d4e.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>As web applications grow, JavaScript code can quickly become difficult to manage. What begins as a few functions in a single file may eventually include API requests, user interface logic, validation, data processing, and reusable utilities. Keeping all this functionality in one place makes code harder to understand, test, and maintain.</p>
+<p>JavaScript modules provide a structured way to divide an application into smaller, independent files. Each module can expose specific functionality while keeping its internal implementation separate from the rest of the application.</p>
+<p>Modern JavaScript supports native modules through import and export, allowing developers to organize code without relying on global variables or manually combining scripts.</p>
+<p>This guide explains how JavaScript modules work, how to structure them effectively, and how to avoid common problems when building maintainable web applications.</p>
+<p>A JavaScript module is a file that can import functionality from other modules and export its own functions, objects, or values.</p>
+<p>Consider a utility function that calculates the total price of a shopping cart. Without a modular structure, this logic might be placed directly inside a large application file.</p>
+<p>Instead, create a separate file named cart.js:</p>
+<p>The export keyword makes the function available to other modules.</p>
+<p>The calculation now exists in one dedicated location. If another part of the application needs the same functionality, it can import the function rather than duplicate the implementation.</p>
+<p>This separation also makes the calculation easier to test independently.</p>
+<p>JavaScript supports two common export styles: named exports and default exports.</p>
+<p>Named exports allow a module to expose multiple explicitly named values.</p>
+<p>Another module can import one or both functions:</p>
+<p>Named exports are useful for utility files that contain related functions.</p>
+<p>A default export represents the module's primary exported value:</p>
+<p>It can be imported using a locally chosen name:</p>
+<p>Neither export style is universally better. Named exports can make dependencies explicit, while default exports can be convenient when a module has one clear primary purpose.</p>
+<p>For a consistent codebase, teams should establish conventions and apply them throughout the project.</p>
+<p>Splitting a large file into many smaller files does not automatically improve maintainability. A useful module should have a clear responsibility and a reasonably understandable interface.</p>
+<p>For example, an online store might use the following structure:</p>
+<p>products.js handles communication with the product API.</p>
+<p>cart.js contains shopping-cart operations.</p>
+<p>renderProducts.js updates the product interface.</p>
+<p>formatCurrency.js formats monetary values.</p>
+<p>This structure makes it easier to locate functionality and understand how different parts of the application interact.</p>
+<p>The exact organization depends on the project's size. A small website may need only a few modules, while a larger application may benefit from grouping files by feature rather than creating a separate directory for every technical category.</p>
+<p>The objective is clarity, not the maximum possible number of files.</p>
+<p>A common source of complexity is mixing network requests, data transformation, and DOM updates in a single function.</p>
+<p>A more maintainable approach is to place API communication in its own module.</p>
+<p>The function checks the HTTP response before attempting to use its data. This matters because fetch() does not automatically reject its promise for HTTP error responses such as 404 or 500.</p>
+<p>The interface module can then use the API function:</p>
+<p>This example keeps the network request separate from the application entry point.</p>
+<p>In a production application, developers would typically add suitable loading states, user-facing error messages, response validation, and any required authentication or caching logic.</p>
+<p>It is also important to remember that a separate API module does not replace server-side authorization or input validation.</p>
+<p>Static imports are appropriate for dependencies that an application needs as part of its normal execution. However, some functionality is only required after a user performs a particular action.</p>
+<p>Dynamic imports allow modules to be loaded when needed.</p>
+<p>The report module is requested when the button is clicked rather than being loaded through a static import at the beginning of the application.</p>
+<p>This can be useful for analytics dashboards, advanced editors, charts, and other features that are not immediately necessary.</p>
+<p>Dynamic imports return promises, so the application should account for loading failures and the delay before the feature becomes available.</p>
+<p>For larger applications, bundlers can also use dynamic imports as code-splitting boundaries. This may reduce the amount of JavaScript required for the initial page, although the actual benefit depends on the application's dependency graph and build configuration.</p>
+<p>Circular dependencies occur when modules depend on each other, directly or indirectly.</p>
+<p>For example, user.js might import a function from permissions.js, while permissions.js also imports something from user.js.</p>
+<p>Some circular dependencies can work, but they can make initialization order and module behavior harder to understand. Problems are especially likely when modules access imported bindings before the relevant values have been initialized.</p>
+<p>A better design is often to extract shared functionality into a third module.</p>
+<p>Instead of importing from each other, the two modules depend on a common utility module.</p>
+<p>This approach can reduce coupling and make the dependency structure easier to follow. It is not necessary to eliminate every cycle blindly, but unexpected circular dependencies deserve investigation.</p>
+<p>Native JavaScript modules have different loading behavior from traditional classic scripts.</p>
+<p>For example, an HTML page can load an application entry point with:</p>
+<p>Browsers treat this as a JavaScript module. Module scripts are deferred by default, meaning they are evaluated after HTML parsing rather than blocking parsing in the same way as ordinary synchronous classic scripts.</p>
+<p>Modules also have their own scope, so top-level declarations are not automatically added to the global object.</p>
+<p>During development, avoid testing module-based pages by simply opening the HTML file through a file:// URL. Browser security restrictions can prevent module imports from working correctly in that environment.</p>
+<p>Use a local development server instead. Also verify the correct MIME types and paths when deploying modules to a production server.</p>
+<p>One of the main advantages of modular code is that individual functions can be tested without loading the entire application.</p>
+<p>For example, the calculateTotal() function can be tested using simple assertions:</p>
+<p>This example uses Node.js's built-in assertion module and assumes the project is configured to support ECMAScript modules.</p>
+<p>Additional tests should cover edge cases, such as empty arrays, invalid data, and unexpected values, according to the function's intended contract.</p>
+<p>API modules can be tested separately from rendering code, while interface modules can be tested for the expected DOM behavior.</p>
+<p>Small modules do not automatically guarantee good tests, but clearly defined responsibilities generally make it easier to identify what needs to be tested.</p>
+<p>When adopting JavaScript modules, developers should watch for several recurring problems.</p>
+<p>Creating modules without clear responsibilities: A file that contains unrelated functions can become difficult to maintain even if it is technically modular.</p>
+<p>Duplicating shared logic: If multiple modules implement the same business rule, changes can become inconsistent. Extract genuinely reusable behavior into a shared module.</p>
+<p>Using dynamic imports everywhere: Loading every dependency dynamically can introduce unnecessary complexity and delays. Use dynamic imports when deferred loading provides a meaningful benefit.</p>
+<p>Ignoring error handling: Network requests and dynamic imports can fail. Applications should handle failures appropriately instead of assuming every operation succeeds.</p>
+<p>Overusing shared mutable state: Modules can export objects that multiple parts of an application modify. Uncontrolled shared state can create difficult-to-trace bugs.</p>
+<p>Confusing development and production behavior: Module paths, server configuration, and bundler settings should be verified in the actual deployment environment.</p>
+<p>JavaScript modules provide a straightforward foundation for organizing modern web applications. Named and default exports make dependencies explicit, separate files clarify responsibilities, and dynamic imports provide opportunities to load optional functionality when required.</p>
+<p>The most effective modular architecture is not necessarily the most elaborate. It is one that makes code easy to locate, test, understand, and change without introducing unnecessary dependencies.</p>
+<p>By separating API communication from interface logic, keeping module responsibilities focused, and testing individual functions, developers can create JavaScript applications that remain maintainable as their complexity grows.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/modern-javascript-modules-a-practical-guide-to-writing-maintainable-code/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-286">
+                <h2>#286. Designing For Distressed Users: Why Mental Health Apps Shouldn’t Follow Every UI Fashion</h2>
+                <img src="https://files.smashing.media/articles/designing-distressed-users-mental-health-apps-ui/designing-distressed-users-mental-health-apps-ui.jpg" alt="Ilustrasi Designing For Distressed Users: Why Mental Health Apps Shouldn’t Follow Every UI Fashion">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://files.smashing.media/articles/designing-distressed-users-mental-health-apps-ui/designing-distressed-users-mental-health-apps-ui.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Kat Homan is a product (UX/UI) designer at DŌBRA Studio. She designs B2C mobile and web products, including four mental-health products and have prior …
+More about
+Kat ↬</p>
+<p>Weekly tips on front-end & UX.Trusted by 182,000+ folks.</p>
+<p>Mental health applications keep facing a continuing, measurable crisis: many people stop using them quickly. The data is stark: almost 95% of users who open the app on day 1 abandon the app by day 30, with a median 30-day retention of only 3.3%. Even the recognised mental health giants lose around 50% of their users within the first ten days. This severe engagement loss and retention collapse are why effective interface design must be a clinical and operational priority. Good design is not merely aesthetic; it is a fundamental tool for user retention.</p>
+<p>While many factors drive this abandonment, research suggests that mental health apps have tended to prioritise visual appeal at the expense of what actually sustains users. In a space defined by vulnerability and cognitive strain, chasing visual fashion risks adding effort when users have the least to spare — quietly trading away the utility and trust the app depends on. Users don’t open mental health apps out of curiosity, but from need — often while stressed, anxious, overwhelmed, or exhausted. In these states, an unconventional icon, a confusing gesture, or a flashy animation instead of a delightful surprise becomes an extra cognitive overload. Moreover, it becomes a reason to disengage.</p>
+<p>In those moments, visual experimentation from a mild distraction can turn into a friction that undermines the very help the app is meant to deliver. A solution must be a visual interface that is simple in usage and understanding from the first moment.</p>
+<p>Crucially, improving engagement depends less on which UI trends you follow than on a single test applied to each one of them: does a trend lower the cost of using the app when the user can least afford it?</p>
+<p>Meet Smashing Workshops on front-end, design & UX, with practical takeaways, live sessions, video recordings and a friendly Q&A. With Brad Frost, Stéph Walter and so many others.</p>
+<p>Before we look into the specific problems, we must recognise a core tension: many UI trends are optimised for goals that mental health apps don’t share.</p>
+<p>Pursuing the former directly overrides the latter. It’s not a surface-level error of colour or font; it’s a foundational conflict of purpose. This tension surfaces across five fronts, each a place where adopting a trend on novelty alone can cost more engagement than it seeks to create.</p>
+<p>The proposed principles are not based on a single A/B test or one isolated study. They are built from published research on mental health app engagement, cognitive load, accessibility, and emotional response in mHealth, set against competitive product audits and app-store evidence, and pressure-tested against my own quantitative and qualitative product work. That last source I treat as an illustration, understanding the limits of personal experience. In this context, validation is less about proving that one interface pattern universally works and more about asking whether a design reduces effort, preserves agency, avoids emotional mismatch, and remains usable when the user is already under strain.</p>
+<p>A note on the examples: This isn’t a ranking of apps. Every app has its own positioning, target audience, constraints, and business pressures that may not be visible from outside, and a pattern that strains a user in distress may be exactly right for that product’s actual goal. I’m reading individual, visible design decisions for one question only: how they might affect someone arriving in a low-capacity state.</p>
+<p>The primary goal of any mental health tool is to reduce, not increase, cognitive load. Yet, many trendy interfaces achieve the opposite. Neo-brutalist layouts with stark contrasts demand visual parsing. Hidden navigation menus that rely on non-standard swipes turn simple tasks into puzzles. Abstract, unlabeled icons force users to guess rather than recognise. Each of these patterns adds friction — seconds of hesitation, a moment of confusion — and for a user whose mental energy is already low, those costs start to accumulate.</p>
+<p>This friction is most damaging during acute need. Research suggests that when a user is in a state of high anxiety or depression, even typing or making simple choices can feel overwhelming. When an interface demands high cognitive effort at the moment support is needed, it doesn’t just make that session harder — it gives an overwhelmed user a reason to close the app, and a reason not to reopen it. Each point of confusion can become a place where a user may quit for good.</p>
+<p>Other findings show that apps with simple interfaces reduce the time and effort required to engage, directly improving retention. Conversely, a complex, trend-driven UI increases that time, creating an obstacle course that undermines the very healthy habit formation the app is meant to support.</p>
+<p>This does not mean that every mental health product must be visually plain or minimal. The issue is whether the interface meets the user’s current capacity.</p>
+<p>A panic-support tool, for example, works best when it offers a small number of obvious actions, rather than asking the user to browse. However, if a calming action meant for a moment of panic instead surfaces an upgrade screen, the product fails the user at precisely the point where failing matters most. Monetization is not the issue by itself; the issue is whether it appears at a point where the user expects immediate support.</p>
+<p>Nonori shows the same principle in a more reflective context. The app does not present the user with a large content library or a complex dashboard at the start. Instead, it leads them through a simple, linear sequence of small actions. The value of this pattern is that it reduces the effort needed to begin. When a user is tired, anxious, or mentally overloaded, knowing exactly what to do next can lower the barrier to returning.</p>
+<p>At the other end of the spectrum, comprehensive tracking apps show a different trade-off. Bearable, for example, is genuinely powerful: it consolidates almost everything a person tracks — mood, symptoms, sleep, medication, habits, reports, correlations — into one place. For users managing chronic conditions or preparing for medical appointments, this can be genuinely useful. But the same comprehensiveness can become a burden for an exhausted user. Dense dashboards and multi-step check-ins require executive capacity — the very resource that anxiety, depression, burnout, or brain fog often reduce.</p>
+<p>A similar tension appears in anxiety apps with strong support content but busy entry points. A product may contain useful features yet still make the first screen feel noisy with too many cards, locked items, playful characters, or upgrade prompts. This is not evidence that the product is bad. It shows how the same interface can feel very different depending on the user’s state: clear enough during exploration, but too demanding during distress.</p>
+<p>This insight shaped a guiding principle for our work: every interaction point must meet users at their current level of capacity, removing mechanical and cognitive barriers rather than adding to them. This principle guided our integration of low-friction, state-aware interactions in apps like Bear Room, a stress and anxiety reduction app, and Teeni, an emotional-wellbeing app for parents of teens.</p>
+<p>In Bear Room, we already had a fast mood-based flow built around four emotion cards. At the same time, our product research supported a second need: users also wanted more personalised support. We avoided making this a long selection flow or a typing-only route because both can still create friction for people under stress or anxiety. Instead, we made voice a primary, prominent path, always alongside a text alternative. A central microphone button allows users to share what’s on their mind. The app then uses AI to analyse the input and provide a tailored set of coping practices.</p>
+<p>Rather than picking a single entry model, we kept two paths because they served different states. That matched what we saw in later analytics and user conversations: quick emotional selection worked better when users wanted speed, while open voice or text input worked better when they wanted personalisation and to feel more heard. This was more a pattern we noticed, without having the exact measured results.</p>
+<p>Similarly, in Teeni, we directly addressed the cognitive friction of parenting stress by introducing a “Quick Relief” button. This creates an empathy-friendly flow for parents experiencing anger or frustration. The button initiates a dedicated “Hot Flow,” allowing them to first vent and relieve their immediate negative emotions through voice input. Only after this emotional release does the app gently guide them into the more reflective “Cold Flow” for the rest of the app’s resources. This sequential, state-sensitive design acknowledges that a user in peak distress cannot navigate a complex app; they need a direct, simple, and validating first step.</p>
+<p>These solutions directly tackle cognitive friction by meeting users at their level of capacity, resisting trends that add visual or interaction complexity. Voice input and single-action buttons remove the mechanical and cognitive burden of navigation and typing. The result is an interface that feels reliably non-judgmental and genuinely helpful when users are least equipped to navigate complexity.</p>
+<p>A user’s emotional state is the context in which a mental health app operates. This is why its visual language must be empathetic and considerate. Research investigating how colour and aesthetics influence mood in mHealth apps suggests a critical insight: users in distress show a strong preference for subtlety. They long for dark palettes, sleek and sophisticated looks, and clean, uncluttered aesthetics, explicitly noting that cheerful, bright colours, while seemingly appropriate, can create a jarring, even physically uncomfortable conflict with their current mood.</p>
+<p>This does not mean that every mental health or wellbeing app should look dark, quiet, or clinically restrained. The category is broad: it includes self-care, anxiety support, habit change, addiction recovery, trauma tools, therapy-adjacent products, and apps for more severe mental health contexts. A playful visual style may be appropriate for one product and a poor fit for another. What matters is not whether the interface is bright or muted, but whether its emotional tone fits the product’s purpose and the likely state in which users arrive.</p>
+<p>Emotional mismatch can also appear in mechanics, not only in aesthetics. In Calmer, an anxiety and panic relief app, the interface itself appeared relatively clean and relaxed. Yet some of its engagement and monetisation mechanics sit in a different register from that relaxed: a discount wheel, or confetti celebrating a logged low mood. For a user who just recorded a hard moment, that shift — from quiet support to upsell or celebration — can land as a mismatch, whatever its intent.</p>
+<p>For Bear Room, we prototyped a “cosy room” design informed by direct feedback from our users, which echoed the study’s conclusions. Several users in our research described the apps they had tried for similar needs as “too bright, too happy, and too overwhelming”. Users longed for a digital safe space. This was part of what pointed us toward a quieter palette in the final design: muted, earthy tones — neutral hues like soft greens and taupes — set against darker, calming backgrounds. For this product — a refuge for users arriving overwhelmed — that meant a middle ground: a space that feels safe without being gloomy. The interface avoided any bright alerts or sudden animations, making calmness the core feature.</p>
+<p>This case underscores a critical principle: an overly cheerful, bold, or trend-forward interface can feel dismissive to someone in distress, creating a conflict that erodes trust. As Bear Room shows, trust is built when the interface respectfully aligns with the user’s emotional reality, offering solace through subtlety (which creates an overall feeling of a “welcoming and safe atmosphere”), not a solution through saturation.</p>
+<p>Mental health often relies on routine and predictability. Yet many contemporary UI trends thrive on novelty and disruption, intentionally reimagining fundamental navigation. When an app introduces a novel interaction pattern, such as a unique swipe or a non-standard button behavior, it asks the user to learn something before they can act, forcing them into cognitive effort they can’t afford.</p>
+<p>This does not mean that mental health apps must be plain, rigid, or generic. A product can have its own character, playfulness, and sense of identity. The question is whether that identity remains understandable and predictable when the user returns in a low-capacity state. A gamified self-care app like Finch may work well when the user arrives ready to explore, play, and build a routine. But open it after a hard day just to mark one task done, and the can’t-skip celebration screens that delight an engaged user become one more layer to get through before they reach what they came for.</p>
+<p>A similar tension appears in large meditation and wellbeing platforms. Apps such as Headspace and Calm offer extensive libraries of different content. This breadth can be valuable during exploration. But in moments of stress, the product question becomes sharper: can the user return and immediately find the exact support they need, or do they have to search, filter, and relearn the structure?</p>
+<p>Someone experiencing anxiety or executive dysfunction needs to use the tool in a straightforward navigation manner, not an interface they have to learn each time anew.</p>
+<p>PTSD Coach, a public-health-oriented trauma-support app designed to help users learn about and manage symptoms after trauma, offers a useful positive example. Its interface is not trying to be fashion-forward. Its strength lies in a stable information architecture: users can learn, track symptoms, manage symptoms, and get support through clearly separated areas. For a user returning during distress, this predictability matters more than novelty.</p>
+<p>CALMzone offers another useful example. Some of its breathing animations differ from standard visual patterns, but they remain tied to the exercise itself: the animation shows what to do, when to inhale, and when to hold. The guided audio screen also explicitly invites the user to put the phone down and listen. This is a rare and valuable form of interaction design: the product’s success is not more screen time, but reduced effort and regulation.</p>
+<p>These insights guided our approach in applications like Bear Room, where navigation reliability was treated as a therapeutic feature. We intentionally crafted an experience of an empathetic guided flow.</p>
+<p>Recognising that users would likely approach in states of overwhelm, we structured the interface as a clear, unwavering path, with a visible “Start” sign. Key emotional support tools here are represented as the room’s objects — symbols of daily life, unmistakably recognised by all. They are visually highlighted by design so that the user won’t get lost in the elements, can easily access the needed tool, and can remember their way around the digital space upon the next return to the app.</p>
+<p>Trend-driven interfaces sacrifice this navigational certainty for novelty. Each unconventional choice in mHealth apps, when core functions are buried behind experimental interactions or placed in unexpected locations, leads to a cumulative effect of fatigue instead of innovation. Users are not in a place to explore. They abandon the entire practice of seeking digital support when every interaction feels like solving a new puzzle. This does not restrict experimentation; it simply means that animations, micro-interactions, AI, or playful mechanics must serve the user’s state rather than interrupt it.</p>
+<p>Many popular UI trends can be exclusionary when applied without adaptation. The minimalist trend of low-contrast text fails users with visual impairments. Gesture-only navigation marginalises those with motor difficulties. Visually dense, animated interfaces can overwhelm users with cognitive or attentional conditions. In mental health, the population needing support disproportionately includes individuals with these accessibility needs.</p>
+<p>Choosing a trending aesthetic over an accessible one is therefore an active decision to limit the app’s reach and efficacy. It ensures that those who might benefit most cannot use the tool effectively. Accessibility isn’t a layer you add at the end; it’s a constraint you design within, with most of it codified in Web Content Accessibility Guidelines 2.2. Body text needs 4.5:1 contrast against its background, large text and interface elements 3:1 — exactly what low-contrast minimalism fails. Interactive targets need a floor of 24×24 px (more for unsteady hands). Every gesture needs a visible button fallback, or you risk excluding anyone who can’t perform the swipe.</p>
+<p>A final, and often overlooked, consequence of trend-following is the adoption of engagement mechanics designed for entertainment, educational, or productivity apps. Features like streaks, aggressive notifications, and gamified reward systems are engineered to maximise screen time and create dependency. Although they have long been considered effective tools for increasing retention, in a mental health context, this approach can easily be misguided. What presents as “motivation” can quickly transform into a source of performance pressure and guilt. For a user managing depression, a broken streak or a missed daily goal can exacerbate the very feelings the app aims to alleviate.</p>
+<p>These mechanics are not inherently unethical. In routine-building products, they can help some users. The risk appears when they are transferred into mental health contexts without adapting for shame, low energy, relapse, and non-linear recovery. A streak, for example, is not just a retention mechanic when the user is emotionally vulnerable. It can become a visible record of whether they have “kept up” with their well-being.</p>
+<p>In the apps I reviewed, this tension appeared through familiar persuasion patterns: streaks, streak freezes, commitment copy, urgency-based notifications, “don’t miss this offer” prompts, and success-framed buttons such as “Yes, I want to succeed.” In self-care or wellbeing products, these details can make the app feel less like a supportive tool and more like another system the user has to satisfy.</p>
+<p>Designers still need return triggers. A mental health app has little value if users install it once and forget it exists. But return mechanics must be adapted to the emotional context. In Bear Room, for example, this philosophy is embodied in short, forgiving three-day streaks: the streak does not reset when a user misses a day, and every third day brings a small benefit. The goal is not to punish absence, but to gently support return.</p>
+<p>The same principle applies to lighter interactions. Bear Room includes a simple, optional bubble-popping game. Its purpose, however, is not to hook the user but to offer a brief, calming interlude. It is deliberately finite, providing a small mood lift and gently signposting other resources within the app. The value is in the momentary relief, not the extended session.</p>
+<p>This commitment to supportive, non-coercive design extends to foundational app architecture:</p>
+<p>In mental health technology, sustainable retention is earned not by capturing attention, but by becoming a consistently respectful and helpful presence in a user’s life.</p>
+<p>The mHealth apps design invites finding a challenging balance between boosting their use without being too demanding.</p>
+<p>This is not a niche concern affecting a fringe audience. The World Health Organization (WHO) estimates that about one billion people globally live with a mental disorder, with depression alone affecting nearly 5% of adults. Critically, the overall number is rising — in the last decade, depression and anxiety cases have increased by 25%. This vast and vulnerable population cannot afford for its tools to fail due to poor design. While UI trends aren’t inherently problematic, their application within wellbeing products demands a radically contextual approach.</p>
+<p>Even a five-minute decompression tool between meetings has an emotional context, and a style chosen for its look — glassmorphism, a certain flavour of ultra-minimalism — can miss it, however sophisticated the audience. The point isn’t that these styles are wrong; it’s that the look has to answer to the moment. Soft biomorphic shapes or fluid transitions can genuinely help when they directly serve the goal of calm — and the same elements become noise when they’re there to impress.</p>
+<p>The five fronts outlined above are not just a diagnostic lens; they are the foundation of an evaluation framework for anyone designing in the mental health space. Before incorporating any trendy visual or interaction pattern, it is worth running it through each of them in sequence:</p>
+<p>A design that passes all five holds together as something more than usable: it becomes a tool that users can trust enough to return to in moments of genuine need.</p>
+<p>Trends can be inspiring. They can win awards and generate buzz. But in mental health, sometimes the best design is the one that helps users feel understood — a quiet helper they trust enough to return to in moments of stress and vulnerability. It doesn’t steal the spotlight, but focuses on the user’s emotions. In the end, the ultimate goal is not for the interface to be seen — but for the support to be felt.</p>
+<p>Tips on front-end & UX, delivered weekly in your inbox. Just the things you can actually use.</p>
+<p>With practical takeaways, live sessions, video recordings and a friendly Q&A.</p>
+<p>Everything TypeScript, with code walkthroughs and examples. And other printed books.</p>
+<p>With a commitment to quality content for the design community.</p>
+<p>Founded by Vitaly Friedman and Sven Lennartz. 2006–2026.</p>
+<p>Smashing is proudly running on Netlify, TinaCMS and Swell.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://smashingmagazine.com/2026/07/designing-distressed-users-mental-health-apps-ui/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-287">
+                <h2>#287. Google rolling out minor Nest Hub update</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2024/04/Photo-frame-demo-Nest-Hub-2nd-Gen.jpg?quality=82&strip=all&resize=1200,628" alt="Ilustrasi Google rolling out minor Nest Hub update">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://9to5google.com/wp-content/uploads/sites/4/2024/04/Photo-frame-demo-Nest-Hub-2nd-Gen.jpg?quality=82&strip=all&resize=1200,628" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Google is rolling out yet another update to its Nest Hub family but, as per usual, don’t expect much.</p>
+<p>Firmware version 31.20260429.103.8713700 is now rolling out to Nest Hub, Nest Hub (2nd Gen), and Nest Hub Max. The update is built on Google’s Fuchsia OS and started rolling out today, October 20.</p>
+<p>The official release notes lack much specific detail, only mentioning that the update contains bug fixes and security updates.</p>
+<p>Bug fixes and improvements, including critical security updates.</p>
+<p>Google rolled out two updates to its smart displays in September, and nearly a dozen so far this year in total. None of these updates have delivered any user-facing features, though, and are likely just for general maintenance of the platform.</p>
+<p>Follow Ben: Twitter/X, Threads, Bluesky, and Instagram</p>
+<p>FTC: We use income earning auto affiliate links. More.</p>
+<p>Check out 9to5Google on YouTube for more news:</p>
+<p>Find him on Twitter @NexusBen. Send tips to schoon@9to5g.com or encrypted to benschoon@protonmail.com.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/20/google-rolling-out-minor-nest-hub-update/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-288">
+                <h2>#288. IEEE Celebrates Innovators Shaping the Future</h2>
+                <img src="https://spectrum.ieee.org/media-library/photo-of-several-ieee-medals.jpg?id=25592000&width=1200&height=600&coordinates=0%2C112%2C0%2C113" alt="Ilustrasi IEEE Celebrates Innovators Shaping the Future">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://spectrum.ieee.org/media-library/photo-of-several-ieee-medals.jpg?id=25592000&width=1200&height=600&coordinates=0%2C112%2C0%2C113" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>The 2027 Technical Field Awards recognize their lasting impact on STEM</p>
+<p>IEEE Awards Board administers the organization’s highest medals, awards, and recognitions.</p>
+<p>The IEEE Technical Field Awards recognize those whose technical achievements and leadership have made a lasting impact on technology, engineering, and society worldwide.</p>
+<p>Every year, IEEE recognizes individual researchers, innovators, and collaborative teams whose technical achievements and leadership have made a lasting impact on technology, engineering, and society worldwide with its Technical Field Awards.</p>
+<p>The honorees are selected by the IEEE Awards Board based on their extraordinary technical achievements, societal impact, and leadership in specialized engineering disciplines and are approved by the IEEE Board of Directors.</p>
+<p>“The 2027 IEEE Technical Field Award recipients embody the relentless spirit of innovation and ingenuity that defines our global community,” said Mary Ellen Randall, 2026 IEEE president and CEO in a news release. “Across microelectronics, artificial intelligence, medical robotics, wireless networks, energy conversion, and technical education, their groundbreaking accomplishments continue to push the boundaries of science and solve critical challenges for the benefit of humanity.”</p>
+<p>Sponsors: IEEE Engineering in Medicine and Biology, IEEE Circuits and Systems, and IEEE Signal Processing societies</p>
+<p>Sunnybrook Research Institute in Toronto, and the University of Toronto</p>
+<p>“For pioneering contributions to the development, advancement, and clinical translation of therapeutic ultrasound.”</p>
+<p>“For contributions to heat-assisted magnetic technology powering ultra-high-capacity hard disk drives and enabling greater storage of digital information.”</p>
+<p>Sponsors: IEEE Control Systems Society and Friends and Family of Roger W. Brockett</p>
+<p>Bernoulli Institute at the University of Groningen in the Netherlands (Retired)</p>
+<p>“For contributions to robust and geometric approaches to nonlinear control, hybrid systems, and the control of physical systems.”</p>
+<p>Sponsors: IEEE Antennas and Propagation, IEEE Electromagnetic Compatibility, IEEE Geoscience and Remote Sensing, and IEEE Microwave Theory and Technology societies</p>
+<p>“For contributions to microwave and millimeter-wave circuit designs, including power amplifiers, power-combining, and wireless power systems.”</p>
+<p>Sponsor: Mitsubishi Electric Research Laboratories (MERL)</p>
+<p>“For contributions to and leadership in technologies that enable automatic speech and speaker recognition, including innovations in adaptive learning and discriminative training.”</p>
+<p>Sponsor: Mitsubishi Electric Research Laboratories (MERL)</p>
+<p>IEEE Fellow Nicholas Dimitrios Sidiropoulos</p>
+<p>University of Virginia in Charlottesville</p>
+<p>“For contributions to signal processing methods for analyzing complex data and identifying patterns in multiple dimensions.”</p>
+<p>University of Arizona in Tucson (Retired)</p>
+<p>“For foundational contributions to the physics and technology underlying MOS devices and circuits.”</p>
+<p>Quantum Valley Investments in Waterloo, Ont., Canada</p>
+<p>“For transformative contributions to mobile communication through visionary leadership that reshaped global consumer technology.”</p>
+<p>“For foundational contributions to analyzing Internet traffic and network structures, enabling better network management and understanding.”</p>
+<p>Sponsor: IEEE Industry Applications Society</p>
+<p>“For developing innovative current-fed and multilevel power electronics converters.”</p>
+<p>Sponsors: Tektronix Inc. and the IEEE Instrumentation and Measurement Society</p>
+<p>“For contributions to the measurement and standardization of analog-to-digital and digital-to-analog converters.”</p>
+<p>Sponsor: IEEE Circuits and Systems Society</p>
+<p>Siemens Digital Industries Software in Wilsonville, Ore.</p>
+<p>“For contributions to testing digital integrated circuits at the silicon level.”</p>
+<p>Sponsor: The IEEE Leon K. Kirchmayer Memorial Fund</p>
+<p>“For contributions to multi-disciplinary graduate education and mentoring of doctoral students in image processing, computer vision, and pattern recognition.”</p>
+<p>“For developing network systems that scale data centers to support modern cloud computing and machine learning.”</p>
+<p>RWTH Aachen University in Germany (Professor Emeritus)</p>
+<p>Fraunhofer Institute for Telecommunications Heinrich-Hertz-Institut in Berlin</p>
+<p>“For leadership in and contributions to developing the High Efficiency Video Coding (HEVC) international standard, which improves the efficiency of digital video compression.”</p>
+<p>“For contributions to advanced modeling and control of power electronics converters.”</p>
+<p>Sponsor: IEEE Solid-State Circuits Society</p>
+<p>Texas Instruments in Bellevue, Wash. (Retired)</p>
+<p>“For pioneering contributions to programmable digital signal processing systems through innovations in circuit design, system architecture, and silicon compilers.”</p>
+<p>Sponsor: The IEEE Frederik Philips Award Fund</p>
+<p>“For leading the historic advancement of CMOS process technology, culminating in the first node with backside power delivery.”</p>
+<p>“For contributions to microstructured and wide-bandgap semiconductor optoelectronics and for leadership in technological innovation.”</p>
+<p>Sponsor: IEEE Robotics and Automation Society</p>
+<p>“For contributions to, leadership in, and the clinical translation of surgical and medical robotics.”</p>
+<p>Sponsor: IEEE Computational Intelligence Society</p>
+<p>“For foundational contributions to neural network theory and information geometry.”</p>
+<p>Sponsor: IEEE Nuclear and Plasma Sciences Society</p>
+<p>Weizmann Institute of Science in Rehovot, Israel</p>
+<p>“For leadership in the development of laser-driven particle sources and advancing the technology toward practical applications.”</p>
+<p>Sponsors: Hitachi, Ltd. and the IEEE Computer Society</p>
+<p>Rutgers University in New Brunswick, N.J.</p>
+<p>The University of Texas Health Science Center at Houston</p>
+<p>“For leadership in designing and deploying privacy-preserving distributed clinical research infrastructures that enable secure, large-scale collaboration using health data.”</p>
+<p>Manhattan University in New York City (Professor Emeritus)</p>
+<p>“For leadership in the development and standardization of architecture, management, and protocols used in wireless communications and data networks.”</p>
+<p>Technische Universität Dresden Barkhausen Institut in Germany</p>
+<p>“For contributions to physical-layer communication technology that have had an impact on the global wireless industry.”</p>
+<p>Sponsors: Wolong Electric Group Co. Ltd. and the IEEE Industry Applications and IEEE Power & Energy societies</p>
+<p>“For contributions to the modeling, design, and application of electric machines in industrial, transportation, and renewable energy applications.”</p>
+<p>Sponsors: The late Dr. Kiyo Tomiyasu and the IEEE Geoscience and Remote Sensing and the IEEE Microwave Theory and Technology societies</p>
+<p>“For contributions to computer vision and augmented human-machine interaction.”</p>
+<p>Sponsors: IEEE Industry Applications, IEEE Industrial Electronics, IEEE Intelligent Transportation Systems, IEEE Microwave Theory and Technology, IEEE Power Electronics, IEEE Power & Energy, and IEEE Vehicular Technology societies</p>
+<p>“For contributions to advancing electric and hybrid electric vehicle technologies.”</p>
+<p>Sponsors: IEEE Electronics Packaging Society and Friends of Rao R. Tummala</p>
+<p>“For contributions to the development of technology that connects multiple chips within advanced electronic packages.”</p>
+<p>“For leadership in advancing inclusive workforce development initiatives that create clear and accessible career pathways via undergraduate engineering education.”</p>
+<p>Sponsor: IEEE Systems, Man, and Cybernetics Society</p>
+<p>“For contributions to artificial intelligence-based methods for robust control and filtering in complex systems.”</p>
+<p>Nominations are now open for the 2028 Technical Field Awards. The deadline to submit a nomination is 15 January.</p>
+<p>For more information on the awards, please visit the IEEE Awards webpage.</p>
+<p>IEEE Awards Board administers the organization’s highest medals, awards, and recognitions.</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://spectrum.ieee.org/ieee-technical-field-awards-2027" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-289">
+                <h2>#289. They Fled Trump’s America. Now They Regret It</h2>
+                <img src="https://media.wired.com/photos/6ab68ffabc7793cf754904bd/191:100/w_1280,c_limit/Final_Art.jpg" alt="Ilustrasi They Fled Trump’s America. Now They Regret It">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://media.wired.com/photos/6ab68ffabc7793cf754904bd/191:100/w_1280,c_limit/Final_Art.jpg" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>In the autumn of 2024, Annie was ready for something new. She was living in the southern United States when her husband received an unexpected job offer that would move them to a town just outside London. They were in their twenties with no kids. “We wanted to take a risk,” she says.</p>
+<p>While researching their new destination on Reddit, TikTok, and Instagram, Annie found Americans eager to explain how enchanting life in the British suburbs could be—all the benefits of a small town, just a short train ride away from one of the biggest cities in the world. The more she read, the sunnier her expectations about the UK’s health care system, social culture, and European transportation systems became.</p>
+<p>They moved before the end of the year. But the reality of life in the UK was dramatically different to what she’d imagined. “There are huge misconceptions about access to quality health care, standard of living … the quality of life is significantly lower than in the US,” she says, citing the challenges she experienced with the National Health Service’s maternity care—having moved while pregnant with her first child—as well as the lack of disposable income in Britain, thanks to lower salaries. “Things in the UK that are considered luxury items are very common” in America, like a dishwasher and dryer, she adds.</p>
+<p>Annie says she experienced a high amount of anti-American sentiment straight away. “I found it particularly surprising how people feel so comfortable mocking my accent and culture, even in a workplace environment,” she says. “The UK is very much a place of ‘it is what it is,’ but as Americans we are taught to always improve and strive for better things.” Annie and her husband now have an exit plan for summer next year, the earliest their employers would allow them to relocate back home.</p>
+<p>They’re not alone. Thousands of Americans have, like Annie, relocated to Europe in the last few years. Some left seeking adventure; others, the promise of a “slower” lifestyle outside the American grind. But, for many, these reasons were just bonuses to another kind of escape: political refuge in the wake of Trump’s second term.</p>
+<p>Annie is not her real name—in fact, she chose not to share any of the specifics of her work background, her husband’s industry, or the precise places they had lived when we spoke about her desperation to get back to America. Like several other Americans WIRED spoke to about their decision to leave and subsequent regret, Annie wanted to remain anonymous because she is concerned about the professional risks of publicly criticizing life abroad. Others cited recent online backlash when other Americans said they missed home, or, in one case, a realization that the political climate of Trump’s America was not something they could escape by heading to Europe.</p>
+<p>For left-leaning Americans concerned about Trump’s reelection, relocation to Europe was presented as a lifeboat: Some claim you can live gentler, freer, and, most of all, morally lighter. Celebrities, including Ellen DeGeneres and Portia de Rossi, and Rosie O’Donnell, all fled the US for political reasons. Courtney Love announced she was applying for UK citizenship in early 2025, describing the political climate at home as “frightening.” Digital nomad visas introduced after the pandemic in countries like Spain, Greece, and Portugal have made the jump logistically easier.</p>
+<p>The number of US migrants doubled in the first quarter of 2025 compared to the previous year. In Spain, the number of American residents reached a “record high” in 2026, according to the country’s National Statistics Institute. The Financial Times reported in April that there was a 63 percent increase in American applications to Ireland’s Foreign Births Register, the citizenship path for those with an Irish parent or grandparent, between 2024 and 2025. The UK Home office reported a surge in residency applications from the US between January and March 2025, the highest since records began in 2004.</p>
+<p>Private data also reflects the political climate is a major factor. The expatriation company, Expats, released a report earlier this year in which 71 percent of 58,000 respondents “cited the political climate in the United States as a reason for wanting to relocate.” But while Trump 2.0 has more than fulfilled the worst nightmares of many Americans who left, online posts reflect a growing number of them are quietly—and at times apologetically—plotting a move back home, if they haven’t already returned.</p>
+<p>Sarah Wood González, a journalist and consultant, recently returned to New York after three years in Spain and Edinburgh. She says she had few expectations of her life in Scotland and wasn’t glossy-eyed about Europe but was “surprised and delighted” by how “educated and intellectually curious” everyone was. However, when it came to work, she found the slowness to be a drawback.</p>
+<p>“Something I had taken for granted is the American outgoingness and default to action, where the question is ‘how can we collaborate?’” she explains. “Generally speaking, I also found that the American work style, for better or for worse, moves much faster and can get to a yes or no in less time.”</p>
+<p>This was a similar reality for Josh, another American immigrant who asked to remain completely anonymous, citing concerns about backlash. He moved to Berlin in 2023, in part anticipating what might happen at the 2024 election, and also because he felt his life had hit standstill post-Covid. He had even lived in Germany before, spoke German, and had friends in Berlin. But his expectations, particularly when it came to his career, didn’t align with reality.</p>
+<p>“Finding work was so hard, and the endless bureaucracy had grown worse since I’d left,” he tells WIRED. “I missed the friendlier people, freedom of speech, and ease of daily life” in the US. He adds, “If you aren’t born and raised there, and don’t look German, you’ll never be fully accepted.”</p>
+<p>“I thought that ‘British politeness’ existed as it does in movies,” Annie says, “but unfortunately, the reality is that present-day British culture is very individualistic, as well as without the sense of charity and helpfulness that many parts of American culture value.” She says she had negative experiences with the NHS maternal care, compared to the smooth experience of her private health insurance in the US, and didn’t expect it to cost her anything: “I pay huge amounts of taxes and an immigration surcharge to access the NHS services—so no, the health care is not free here.” She also expected train travel to be low cost, based on what she’d read about Europe (despite the extortionate train prices and terrible service quality being one of the biggest political conversations in the UK).</p>
+<p>A noticeable number of American influencers and anonymous social media users are calling it quits, often sheepishly confessing that life wasn’t what they expected—and that they missed their old lives back in the US. On subreddits dedicated to these kinds of discussions, like r/expats, r/GoingToSpain, r/AmericanExpatsUK, r/AmerExit, you can now find a number of stories about difficulties building a new community, trouble finding work, icier cultural norms compared to the open friendliness of America, and sometimes a higher-than-expected European cost of living. Many posts now feature people asking for a new kind of advice: Is it okay for me to miss, or even to want to move, back home?</p>
+<p>These posts are usually met with a huge amount of backlash. Commenters are quick to imply that the poster must be right-wing and privileged, in for a nasty shock if they did return home. Ironically, many times, they parrot the right-wing notion that they probably aren’t trying hard enough to assimilate into their new country. When one person recently said they badly missed their community of friends in a “blue city in a blue state” and were considering moving back, the majority of top comments agreed the user was “insane.”</p>
+<p>Kate Glavan, an influencer whose posts are often focused on leftist politics, moved to London in late 2024 from New York. She almost immediately found getting work incredibly difficult, with many of the brands she’d previously worked with not having a good enough reason to do sponsored content with a creator now speaking to a British audience. Earlier this year, she announced she’d be returning to New York.</p>
+<p>On Reddit, the response ranged from “feels a bit icky to me how she’s been living in the UK all this time instead of having to deal with all the BS in the US like the rest of us” to “Saying I hate it here about the UK while talking about wanting to move to America is definitely a choice in this political climate.”</p>
+<p>When Annie posted earlier this summer on Reddit her excitement about going back to the US in 2027, the comments were largely critical, and ones offering functional relocation advice were heavily downvoted. A moderator intervened, saying many people in the forum “believe the USA is evil” and conversely “the UK is paradise,” continuing that there was often little room for nuance or empathy for differing experiences. In another from earlier this year, where a user said they were struggling to adjust to life in Spain with a toddler, commenters warned that she may cause psychological damage to her child if she relocated back to the US.</p>
+<p>Jen Barnett, the cofounder of Expatsi Go, tells WIRED: “Our clients are not naive and don’t expect a political utopia anywhere. They’re just well-intentioned Americans who are trying to live meaningful lives while the fabric of society is kind of being ripped apart around them.”</p>
+<p>She adds that with the right tools and realistic expectations, it’s “more likely they’ll stay and thrive.”</p>
+<p>The irony is that Europe is not a left-wing paradise. Italy’s prime minister, Giorgia Meloni—who has been a Trump ally—is anti-abortion, anti same-sex marriage, and anti-migrant. Hard-right groups are on the rise in Britain, while Greece, Germany, and Portugal all have right-wing governments pursuing conservative, anti-immigration agendas.</p>
+<p>“What is happening in the US is also happening everywhere now, to the point I’m even a little hesitant in what I say to you, or anywhere online,” says Nick, an art director from New York who relocated to Poland in part because of right-wing populism in the US. He moved with his Polish wife to Krakow, where they have a young child, but despite these personal ties has found it difficult to adjust to the culture and bureaucracy. Now Nick feels trapped in Europe where he says the politics aren’t much better—conceding that Poland both politically and culturally has strong right-wing popularity.</p>
+<p>As of a few months ago, Josh is back living in the US, where he says he feels happier, and finally “accepted and at home.” In retrospect, he wonders if he got caught up in the frenzy of discourse when he chose to leave in the first place.</p>
+<p>“Once I was in Germany and had some distance from the situation in the US,” he says, “I felt perhaps I had overreacted.”</p>
+<p>Introducing the app: More ways to make the most of WIRED</p>
+<p>OpenAI claimed a huge math discovery—some academics cried foul</p>
+<p>Big Story: Her life was destroyed by the burnerverse—so she fought back</p>
+<p>Apple doesn’t want you to worry about the Apple Watch’s listening features</p>
+<p>In your inbox: Go inside the world of digital security with Kernel Panic</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.wired.com/story/they-fled-trumps-america-now-they-regret-it/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-290">
+                <h2>#290. NASA solves a strange mystery hidden inside asteroid Bennu’s boulders</h2>
+                <img src="https://www.sciencedaily.com/images/1920/bennu-sample-particle-x-ray-analysis.webp" alt="Ilustrasi NASA solves a strange mystery hidden inside asteroid Bennu’s boulders">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://www.sciencedaily.com/images/1920/bennu-sample-particle-x-ray-analysis.webp" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>NASA's OSIRIS-REx mission encountered an unexpected mystery when it arrived at asteroid Bennu in 2018. Instead of the relatively smooth terrain that earlier observations had suggested, the spacecraft found a rugged landscape dominated by enormous boulders, with very few areas suitable for collecting samples.</p>
+<p>"When OSIRIS-REx got to Bennu in 2018, we were surprised by what we saw," said Andrew Ryan, a scientist at the University of Arizona's Lunar and Planetary Laboratory, who led the mission's working group responsible for analyzing the physical and thermal properties of its samples. "We expected some boulders, but we anticipated at least some large regions with smoother, finer regolith that would be easy to collect. Instead, it looked like it was all boulders, and we were scratching our heads for a while."</p>
+<p>The discovery was especially confusing because of what astronomers had previously learned about Bennu's ability to retain heat. Measurements from NASA's Spitzer Space Telescope in 2007 indicated that the asteroid's surface warmed and cooled rapidly as it rotated through sunlight and darkness.</p>
+<p>Scientists describe this property as low thermal inertia. Materials with low thermal inertia, such as beach sand, quickly gain heat in sunlight and lose it once the Sun disappears. Large, solid rocks behave differently. Much like concrete, they typically hold on to warmth and release it gradually.</p>
+<p>Bennu's boulder-covered surface appeared to contradict those earlier measurements, leaving researchers with a puzzling question: How could an asteroid covered in massive rocks cool so quickly?</p>
+<p>Hidden Cracks Reveal the Secret of Bennu's Boulders</p>
+<p>Observations collected by OSIRIS-REx while surveying Bennu offered an early clue. The asteroid's boulders might contain far more empty space than scientists had assumed, allowing them to lose heat faster than ordinary solid rocks.</p>
+<p>When samples from Bennu were returned to Earth, researchers finally had an opportunity to examine that possibility directly.</p>
+<p>Ryan and his colleagues used several laboratory techniques to investigate tiny rock fragments collected from the asteroid. Their findings, published in Nature Communications, confirmed that the rocks were indeed highly porous. However, porosity alone could not fully explain Bennu's unusually rapid heat loss.</p>
+<p>The researchers discovered another important feature. Many of the rock particles contained extensive networks of cracks running through their interiors.</p>
+<p>To investigate how these fractures influence the movement of heat, researchers at Nagoya University in Japan examined the samples using a technique called lock-in thermography. This method uses a laser to heat a tiny area of a sample while measuring how the heat spreads through the surrounding material, much like ripples expanding across the surface of a pond.</p>
+<p>"That's when things became really interesting," Ryan said. "The thermal inertia measured in the lab samples turned out to be much higher than what the spacecraft's instruments had recorded, echoing similar findings obtained by the team of OSIRIS-REx's partner mission, JAXA's (Japan Aerospace Exploration Agency) Hayabusa-2."</p>
+<p>The difference between laboratory measurements and spacecraft observations suggested that the size and internal structure of Bennu's rocks were essential to understanding their behavior.</p>
+<p>Because the returned samples were much smaller than the enormous boulders covering Bennu, scientists needed a way to determine how heat would move through the material on a much larger scale.</p>
+<p>NASA Uses 3D Scans to Look Inside Asteroid Rocks</p>
+<p>At NASA's Johnson Space Center in Houston, researchers prepared the samples for detailed X-ray imaging while taking special precautions to prevent contamination.</p>
+<p>Inside a glove box filled with protective nitrogen gas, team members sealed individual rock particles in airtight containers. They then transported the containers to a laboratory for X-ray computed tomography, or XCT scanning. After imaging, the particles were returned to the glove box without being exposed to Earth's environment.</p>
+<p>"The sample goes into its own 'spacesuit,' gets a CT scan, and then comes back to its pristine environment, all without having any exposure to the terrestrial environment," said Nicole Lunning, lead OSIRIS-REx sample curator within the Astromaterials Research and Exploration Science division at NASA Johnson and one of the study's co-authors. "We can image right through these airtight containers to visualize the shape and internal structure of the rock that's inside."</p>
+<p>The scans gave scientists a detailed view of the samples' interiors, revealing structures that could not be examined simply by looking at their surfaces.</p>
+<p>"X-ray computed tomography allows us to look at the inside of an object in three dimensions, without damaging it," said study co-author and NASA Johnson X-ray scientist Scott Eckley.</p>
+<p>Each scan also produced a permanent three-dimensional digital record of the particle's exterior and internal features. These records were added to a publicly accessible database, allowing the samples to be studied without repeatedly handling the original material.</p>
+<p>Ryan's team then incorporated the X-ray scan data into computer simulations designed to track how heat travels through asteroid rocks. By extending the calculations from individual particles to the much larger boulders found on Bennu, they were able to reproduce the low thermal inertia observed by the spacecraft.</p>
+<p>A Discovery That Could Change How Scientists Study Asteroids</p>
+<p>The results resolved a key mystery about Bennu's unusual surface. Scientists had previously considered whether the asteroid's boulders might be extremely porous, with a soft, fluffy, or even sponge-like internal structure.</p>
+<p>Although the rocks do contain substantial pore space, the researchers found that their widespread internal fractures were equally important to understanding how they retain and release heat.</p>
+<p>"It turns out that they're really cracked too, and that was the missing piece of the puzzle," Ryan said.</p>
+<p>The discovery has implications beyond Bennu. Astronomers frequently rely on measurements of how an asteroid absorbs and releases heat to estimate the physical properties of its surface. Until now, interpreting those observations has been difficult without actual rock samples to examine.</p>
+<p>Ron Ballouz, a scientist at the Johns Hopkins University Applied Physics Laboratory in Laurel, Maryland, and the study's second author, explained that the findings provide a valuable connection between measurements made remotely and the true internal structure of asteroid material.</p>
+<p>"We can finally ground our understanding of telescope observations of the thermal properties of an asteroid through analyzing these samples from that very same asteroid," Ballouz said.</p>
+<p>Materials provided by University of Arizona. Note: Content may be edited for style and length.</p>
+<p>Scientists Discover a Potential Early Warning Sign of Alzheimerâs in Adults As Young as 45</p>
+<p>Late-Night Snacking Could Be Putting Your Liver at Risk</p>
+<p>Scientists Say a Simple Blood Test Could Reveal Depression</p>
+<p>40 Years of Superconductor Science Just Got Turned Upside Down by a Stunning Discovery</p>
+<p>Stay informed with ScienceDaily's free email newsletter, updated daily and weekly. Or view our many newsfeeds in your RSS reader:</p>
+<p>Keep up to date with the latest news from ScienceDaily via social networks:</p>
+<p>Tell us what you think of ScienceDaily -- we welcome both positive and negative comments. Have any problems using the site? Questions?</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sciencedaily.com/releases/2026/10/261018205101.htm" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-291">
+                <h2>#291. React Form Validation Using Shared Zod Schemas and Server Actions</h2>
+                <img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_e8bd2a86d4.png" alt="Ilustrasi React Form Validation Using Shared Zod Schemas and Server Actions">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://uploads.sitepoint.com/wp-content/uploads/medium_data_e8bd2a86d4.png" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Have 30-200 Employees? Make $50k-$500k selling your data for AI Training.</p>
+<p>Stay up to date with AI tools, model releases, and developer workflows that matter.</p>
+<p>Duplicated validation logic is one of the most persistent sources of bugs in React applications. A client-side rule changes, the server-side copy stays the same, and invalid data slips through the gap. React form validation that relies on a single Zod schema, shared between React Hook Form on the client and a Next.js Server Action on the server, eliminates that drift entirely. This tutorial walks through building that pattern from scratch: a contact form with client-side validation via zodResolver, server-side re-validation with safeParse, accessible error rendering following ARIA authoring practices, and a Vitest test suite that locks down the schema's correctness.</p>
+<p>The result is a Next.js App Router contact form where every validation rule lives in one file. When the server rejects a submission, field-level errors map back to individual inputs using setError, and screen readers announce them through aria-describedby associations.</p>
+<p>Prerequisites: you should know React, TypeScript, and the Next.js App Router. You will also need Node 20.9 or later, which is the minimum for current Next.js releases. The code below was type-checked with TypeScript 5.9.3 and 7.0.2 and the tests were run with Vitest 5.0.5, React Hook Form 7.90.0, @hookform/resolvers 5.9.1 and Zod 4.6.7.</p>
+<p>Start with the standard create-next-app scaffolding. The flags below suppress all interactive prompts and ensure the resulting directory structure matches the file paths used throughout this tutorial:</p>
+<p>Each flag matters: --no-src-dir places the app/ directory at the project root (rather than inside src/), and --import-alias '@/*' configures the @/ path alias in tsconfig.json so that imports like @/lib/schemas/contact resolve correctly.</p>
+<p>The form layer requires three packages: react-hook-form for state management, @hookform/resolvers for connecting external schema libraries, and zod for schema definition. Testing relies on vitest.</p>
+<p>Add @testing-library/react if you plan to write component-level tests beyond the schema tests shown in this tutorial.</p>
+<p>After installation, the relevant portion of package.json should look similar to:</p>
+<p>The devDependencies block shown is abridged. Your actual file will also contain @types/react, @types/react-dom, @types/node, and ESLint-related packages installed by create-next-app. Those are omitted here for brevity.</p>
+<p>The schema lives in its own file so both the client component and the Server Action can import it without pulling in unnecessary dependencies.</p>
+<p>Each field carries a custom error message. This tutorial uses Zod 4, where z.email() replaces the deprecated z.string().email(); on Zod 3 keep the older form. The ContactFormData type is inferred directly from the schema with z.infer<typeof contactSchema>, so the TypeScript type and the runtime validation rules can never diverge.</p>
+<p>Both the client component and the Server Action import contactSchema from this one module. On the client, zodResolver wraps the schema so React Hook Form can evaluate it during its validation cycle. On the server, safeParse() runs the same rules against raw input and returns structured errors without throwing. You author the schema once, but it executes in two runtimes. Any change to a validation rule propagates to both sides immediately.</p>
+<p>You author the schema once, but it executes in two runtimes. Any change to a validation rule propagates to both sides immediately.</p>
+<p>The complete component is shown below as a single file. It combines the hook setup, the onSubmit handler, and the JSX return in the order they appear in the source.</p>
+<p>The useForm hook accepts a resolver option that delegates validation to Zod. Setting mode to 'onTouched' means fields validate on blur and re-validate on subsequent changes, giving users immediate feedback without triggering errors before they interact with a field.</p>
+<p>The register function connects inputs to React Hook Form's internal state. errors provides per-field error objects, and isSubmitting tracks whether an async submission is in flight.</p>
+<p>Every input receives aria-invalid when its corresponding error exists and aria-describedby pointing to a <span> that holds the error message. The aria-describedby attribute is always present (pointing to a consistently rendered <span>) so that screen readers maintain the association even when errors are cleared. This follows the ARIA authoring practices for inline error messages: aria-describedby links the error <span> to its input, and aria-invalid signals the error state, so screen readers announce the error when the user focuses the field.</p>
+<p>The noValidate attribute on the <form> element turns off built-in browser validation so Zod's rules run instead. The submit button disables itself during submission to prevent duplicate requests. The aria-busy attribute on the form communicates the loading state to assistive technology.</p>
+<p>When React Hook Form's client-side validation passes, onSubmit fires. It calls the Server Action, inspects the response for field errors, and maps any server-returned errors back to individual inputs using the applyServerErrors helper (defined in the "Mapping Server Errors" section below). A try/catch block wraps the handler so that network failures or unexpected Server Action crashes surface as a root-level form error instead of leaving the form stuck in a submitting state.</p>
+<p>The type: 'server' string used inside applyServerErrors is a convention, not a React Hook Form requirement. It makes it possible to distinguish server-originated errors from client-originated ones when logging, styling, or routing analytics events.</p>
+<p>The Server Action imports the same contactSchema and runs safeParse against the incoming data. If parsing fails, the flattened field errors return to the client. If it succeeds, business logic executes inside a try/catch block to ensure unexpected errors come back as structured responses rather than crashing the action. In a real application, the success branch would perform a concrete operation like inserting a row into a contacts table via Prisma or dispatching a transactional email.</p>
+<p>The parameter is typed unknown deliberately. Typing it ContactFormData would let TypeScript accept the data without re-parsing, defeating server-side re-validation.</p>
+<p>The z.flattenError() helper turns a ZodError into a flat { formErrors: string[], fieldErrors: { name: string[], email: string[] } } shape, which maps directly to the setError loop on the client. (Zod 3 and 4 also have an error.flatten() method, deprecated in Zod 4.) Zod types each field value as optional via a partial record, so the filtering step above narrows out undefined entries and the returned fieldErrors object is a safe Record<string, string[]>.</p>
+<p>Client-side validation runs in the browser. A user can bypass it entirely by disabling JavaScript, manipulating form data through DevTools, or submitting requests directly via cURL or an automated bot. Server re-validation using the same schema guarantees that identical rules apply regardless of how the request arrives.</p>
+<p>Server re-validation using the same schema guarantees that identical rules apply regardless of how the request arrives.</p>
+<p>Implement rate limiting and CSRF token verification alongside schema validation. These complementary measures address different threat vectors, though they fall outside the scope of this tutorial.</p>
+<p>The applyServerErrors helper (used in the onSubmit handler above) takes each key from the server's fieldErrors object and injects it into React Hook Form's error state. Because the error spans in the JSX read from formState.errors.fieldName, the correct <span> re-renders automatically and aria-invalid toggles to true on the corresponding input. The accessible error contract stays intact without adding manual DOM queries or event listeners.</p>
+<p>For unexpected errors that do not map to a specific field, React Hook Form supports root-level errors via setError('root.serverError', { message: '...' }) (requires react-hook-form >=7.34.0; alternatively use setError('root', ...) on earlier versions). This is useful for handling cases like network failures or internal server errors where no individual field is at fault.</p>
+<p>To keep this pattern DRY across multiple forms, the mapping logic lives in a reusable helper. The helper accepts an explicit list of valid field paths and routes any unrecognized keys to a root-level error, preventing server-supplied keys from silently corrupting form state:</p>
+<p>This helper is generic over the form's field values type, so it works with any Zod schema and any form that uses React Hook Form. The validFields parameter ensures that only known form field paths are passed to setError, while any unexpected keys from the server response are safely routed to a root-level error. The ContactForm component imports it directly, replacing the inline loop shown in earlier drafts.</p>
+<p>Create vitest.config.ts at the project root. This configures the @/ path alias so Vitest can resolve the same imports used in the application code:</p>
+<p>Because the schema is a standalone module with no UI dependencies, it can be tested in isolation with fast unit tests. Each test calls safeParse and asserts on the structured result.</p>
+<p>These tests assert exact error messages, which catches regressions in user-facing copy as well as validation logic.</p>
+<p>Run the full suite with npx vitest run. For continuous feedback during development, npx vitest starts watch mode. Adding either command to a CI pipeline ensures that schema changes are verified on every push.</p>
+<p>A single Zod schema, shared between React Hook Form's zodResolver and a Next.js Server Action, eliminates validation drift. The setError mapping closes the feedback loop between server and client. ARIA attributes ensure that error states are perceivable by assistive technology. Vitest locks down the schema's correctness independent of the UI.</p>
+<p>A single Zod schema, shared between React Hook Form's zodResolver and a Next.js Server Action, eliminates validation drift.</p>
+<p>From here, add file upload validation on the client with z.instanceof(File). Note that server-side file validation requires inspecting FormData entries directly, since uploaded files arrive in the server's FormData rather than in a typed object. You can also integrate useFormStatus from React DOM for streaming submission indicators; this hook must live in a child component of the <form> element, not in the component that renders the form itself. For multi-step forms, split a larger schema across wizard steps using z.pick() or z.omit() so each step validates only its own subset.</p>
+<p>For further reading on React Hook Form and Zod, see the relevant guides on SitePoint.</p>
+<p>Sharing our passion for building incredible internet things.</p>
+<p>Get the freshest news and resources for developers, designers and digital creators in your inbox each week</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://www.sitepoint.com/react-form-validation-hook-form-zod/?utm_source=rss" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+            <article class="article-card" id="artikel-292">
+                <h2>#292. Here’s everything new in Android 17 QPR3 Beta 2 [Gallery]</h2>
+                <img src="https://9to5google.com/wp-content/uploads/sites/4/2026/09/Android-17-QPR1-yellow.jpg?quality=82&strip=all&resize=1200,628" alt="Ilustrasi Here’s everything new in Android 17 QPR3 Beta 2 [Gallery]">
+                <div class="article-body">
+                    
+            <div style="text-align:center; margin-bottom:20px;"><img src="https://9to5google.com/wp-content/uploads/sites/4/2026/09/Android-17-QPR1-yellow.jpg?quality=82&strip=all&resize=1200,628" style="max-width:100%; height:auto; border-radius:8px;"></div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            <div class="article-body" style="font-size: 16px; line-height: 1.8; color: #333;">
+                <p>Google today rolled out Android 17 QPR3 Beta 2 with a number of fixes for Pixel devices.</p>
+<p>Over the coming hours, we’ll dive into all of Android 17 QPR3 Beta 2’s new features and every single change. (The newest updates will be at the top of this list. Be sure to check back often and tell us what you find in the comments below.) Android 17 QPR3 Beta 1 screenshots appear on the left and Android 17 QPR3 Beta 2 on the right.</p>
+<p>If you want to quickly install Android 17 QPR3 Beta 2 on your compatible Pixel 6a, Pixel 7, Pixel 7 Pro, Pixel 7a, Pixel Tablet, Pixel Fold, Pixel 8, Pixel 8 Pro, Pixel 8a, Pixel 9, Pixel 9 Pro, Pixel 9 Pro XL, Pixel 9 Pro Fold, Pixel 9a, Pixel 10, Pixel 10 Pro, Pixel 10 Pro XL, Pixel 10 Pro Fold, Pixel 10a, Pixel 11, Pixel 11 Pro, Pixel 11 Pro XL, and Pixel 11 Pro Fold be sure to check out our step-by-step guide.</p>
+<p>FTC: We use income earning auto affiliate links. More.</p>
+<p>Check out 9to5Google on YouTube for more news:</p>
+<p>Editor-in-chief. Interested in the minutiae of Google and Alphabet. Tips/talk: abner@9to5g.com</p>
+                <p style="margin-top: 25px;">
+                    <a href="https://9to5google.com/2026/10/20/android-17-qpr3-beta-2-everything-new/" target="_blank" rel="nofollow noopener" style="color: #0d6efd; text-decoration: none; font-weight: bold;">
+                        &rarr; Baca artikel asli
+                    </a>
+                </p>
+            </div>
+            
+<div style="text-align:center; margin:20px 0;">
+    <script type="text/javascript">
+        atOptions = {
+            'key' : 'f9e40eb3b3cd05f1038aac7b36b33ad2',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+        };
+    </script>
+    <script type="text/javascript" src="https://upholdbrilliancerecast.com/f9e40eb3b3cd05f1038aac7b36b33ad2/invoke.js"></script>
+</div>
+
+            
+                </div>
+            </article>
+
+        </div>
+        <div class="pagination no-print">
+<a href="halaman_11.html">« Sebelumnya</a><a href="halaman_13.html">Berikutnya »</a>
+        </div>
+    </div>
+</body>
+</html>
